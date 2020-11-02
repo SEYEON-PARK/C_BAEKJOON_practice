@@ -1,0 +1,2 @@
+# C_BAEKJOON_4
+ C언어 BAEKJOON 10718번 문제 풀기!(1)
