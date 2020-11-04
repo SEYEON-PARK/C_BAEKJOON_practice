@@ -1,0 +1,2 @@
+# C_BAEKJOON_6
+C언어 BAEKJOON 10171번 문제 풀기!(1)
