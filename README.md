@@ -1,0 +1,2 @@
+# C_BAEKJOON_12
+C언어 BAEKJOON 1330번 문제 풀기!(1)
