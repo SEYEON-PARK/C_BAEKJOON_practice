@@ -1,0 +1,2 @@
+# C_BAEKJOON_16
+C언어 BAEKJOON 2798번 문제 풀기!(1)
