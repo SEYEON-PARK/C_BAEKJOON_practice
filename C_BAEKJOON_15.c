@@ -3,7 +3,7 @@
 int main(void)
 {
     double a, b;
-    scanf("%lf %lf", &a, &b);
+    scanf("%lf %lf", &a, &b); // 두 개의 실수 
     
     printf("%0.9lf", a/b);
     
