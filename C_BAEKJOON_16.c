@@ -4,7 +4,7 @@
 int main(void)
 {
     int N, M;
-    scanf("%d %d", &N, &M); # N, M 입력받기!
+    scanf("%d %d", &N, &M); // N, M 입력받기!
         
     int cards[100]={0};
     int sum, big=0;
@@ -12,7 +12,7 @@ int main(void)
     for(int i=0;i<N;i++)
     {
         scanf("%d ", &cards[i]);
-    } # 카드 숫자 초기화!
+    } // 카드 숫자 초기화!
     
     for(int i=0;i<N;i++)
     {
@@ -30,9 +30,9 @@ int main(void)
                 
             }
         }
-    } # for문과 if문을 이용하여 정답 알아보기!
+    } // for문과 if문을 이용하여 정답 알아보기!
     
-    printf("%d\n", big); # 결과 출력하기!
+    printf("%d\n", big); // 결과 출력하기!
     
     return 0;
     
