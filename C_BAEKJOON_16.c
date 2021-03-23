@@ -12,7 +12,7 @@ int main(void)
     for(int i=0;i<N;i++)
     {
         scanf("%d ", &cards[i]);
-    }
+    } # 카드 숫자 초기화!
     
     for(int i=0;i<N;i++)
     {
