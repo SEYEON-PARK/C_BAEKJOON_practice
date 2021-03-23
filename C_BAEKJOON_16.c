@@ -30,9 +30,9 @@ int main(void)
                 
             }
         }
-    }
+    } # for문과 if문을 이용하여 정답 알아보기!
     
-    printf("%d\n", big);
+    printf("%d\n", big); # 결과 출력하기!
     
     return 0;
     
