@@ -4,7 +4,7 @@
 int main(void)
 {
     int N, M;
-    scanf("%d %d", &N, &M);
+    scanf("%d %d", &N, &M); # N, M 입력받기!
         
     int cards[100]={0};
     int sum, big=0;
