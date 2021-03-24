@@ -19,11 +19,11 @@ int main(void)
         for(int j=0;j<N;j++)
         {
             if(j==i)
-                continue; // 같은 카드 제외하기
+                continue; // 같은 카드 제외하기!
             for(int k=0;k<N;k++)
             {
                 if(k==i || k==j)
-                    continue;
+                    continue; // 같은 카드 제외하기!
                 sum=cards[i]+cards[j]+cards[k];
                 if(sum>big && sum<=M)
                     big=sum;
