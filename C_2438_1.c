@@ -5,7 +5,7 @@
 int main(void)
 {
     int N;
-    scanf("%d", &N);
+    scanf("%d", &N); // 정수 N 입력받기
     
     for(int i=0;i<N;i++)
     {
