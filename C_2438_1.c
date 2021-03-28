@@ -14,6 +14,6 @@ int main(void)
            printf("*");
         }
         printf("\n");
-    }
+    } // 조건에 맞게 별 출력하기
     return 0;
 }
