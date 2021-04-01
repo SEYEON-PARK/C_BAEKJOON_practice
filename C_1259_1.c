@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int R(int a);
+int R(int a); // 함수 원형 선언하기
 
 int main(void)
 {
