@@ -1,3 +1,4 @@
+//N을 입력받아 1부터 N까지 출력
 
 #include <stdio.h>
 
