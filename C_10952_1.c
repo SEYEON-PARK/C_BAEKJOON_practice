@@ -6,7 +6,7 @@ int main(void)
     int B[100]; // 배열 B 선언
     int i=0; // 변수 i 선언 및 초기화
     
-    while(1) // 무한 
+    while(1) // 무한 반복
     {
         scanf("%d %d", &A[i], &B[i]); // 사용자로부터 A[i], B[i] 값 입력받기
         
