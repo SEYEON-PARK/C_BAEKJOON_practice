@@ -17,7 +17,7 @@ int main(void)
     
     for(i=0;A[i]!=0 && B[i]!=0;i++) // i가 0부터 A[i]가 0이 아니고, B[i]가 0이 아니면 i에 1씩 더해가며 반복하기
     {
-        printf("%d\n", A[i]+B[i]); // A[i]+B[i] 
+        printf("%d\n", A[i]+B[i]); // A[i]+B[i] 출력하기!
     }
     
     return 0;
