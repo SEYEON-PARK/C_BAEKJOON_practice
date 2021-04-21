@@ -15,7 +15,7 @@ int main(void)
         scanf("%d", &a[i]); // 사용자로부터 숫자 입력받기
     }
     
-    for(int i=0;i<9;i++)
+    for(int i=0;i<9;i++) 
     {
         if(a[i]>big)
         {
