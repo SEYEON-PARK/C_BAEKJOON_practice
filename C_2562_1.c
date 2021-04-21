@@ -8,11 +8,11 @@
 
 int main(void)
 {
-    int a[9], big=0, num;
+    int a[9], big=0, num; // 배열과 변수 선언
     
-    for(int i=0;i<9;i++)
+    for(int i=0;i<9;i++) // i가 0부터 8까지 1씩 증가하며 반복
     {
-        scanf("%d", &a[i]);
+        scanf("%d", &a[i]); // 사용자로부터 숫자 입력받기
     }
     
     for(int i=0;i<9;i++)
