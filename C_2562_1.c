@@ -15,16 +15,16 @@ int main(void)
         scanf("%d", &a[i]); // 사용자로부터 숫자 입력받기
     }
     
-    for(int i=0;i<9;i++) 
+    for(int i=0;i<9;i++) // i가 0부터 8까지 1씩 증가하며 반복
     {
-        if(a[i]>big)
+        if(a[i]>big) // 만약, a[i]가 big보다 크다면
         {
-            big=a[i];
-            num=i+1;
+            big=a[i]; // big에 a[i] 대입하기
+            num=i+1; // num에 i+1 값 대입하기
         }
     }
     
-    printf("%d\n%d", big, num);
+    printf("%d\n%d", big, num); // 결과 출력하기
     
     return 0;
 }
