@@ -4,8 +4,8 @@
 
 int main(void)
 {
-    char a; // a 변수 선언
-    scanf("%c", &a);
+    char a; // 변수 a 선언
+    scanf("%c", &a); // 사용자로부터 문자 입력받기
     
     printf("%d", a);
     
