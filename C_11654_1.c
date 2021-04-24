@@ -7,7 +7,7 @@ int main(void)
     char a; // 변수 a 선언
     scanf("%c", &a); // 사용자로부터 문자 입력받기
     
-    printf("%d", a);
+    printf("%d", a); // 해당 문자의 아스키 코드 출력하기
     
     return 0;
 }
