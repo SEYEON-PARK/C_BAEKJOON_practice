@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char a;
+    char a; // a 변수 선언
     scanf("%c", &a);
     
     printf("%d", a);
