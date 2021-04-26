@@ -36,18 +36,18 @@ int main(void)
     }
     for(int i=0, a=8;i<8;i++)
     {
-        if(A[0]==8)
+        if(A[0]==8) // 만약 입력받은 첫 번째 숫자가 8이라면
         {
-            if(A[i]!=a)
+            if(A[i]!=a) // 만약 입력받은 첫 번째 숫자가 8이고 A[i]가 a와 같지 않다면
             {
-                printf("mixed\n");
-                break;
+                printf("mixed\n"); // "mixed"를 출력하고
+                break; // 반복문을 빠져나가기
             }
-            else if(i==7)
+            else if(i==7) // 만약 입력받은 첫 번째 숫자가 8이고 A[i]가 a와 같으며 i가 7이라면
             {
-                printf("descending\n");
+                printf("descending\n"); // "descending"을 출력하기
             }
-            a--;
+            a--; // a에 1 빼기
         }
     }
 }
