@@ -7,12 +7,12 @@
 
 int main(void)
 {
-    int N, a[100], sum=0;
-    scanf("%d", &N);
+    int N, a[100], sum=0; // 변수와 배열 선언
+    scanf("%d", &N); // 변수 N 초기화
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N-1까지 1씩 증가하며
     {
-        scanf("%d", &a[i]);
+        scanf("%d", &a[i]); // 숫자 입력받기
     }
     for(int i=0;i<N;i++)
     {
