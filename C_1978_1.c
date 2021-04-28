@@ -23,13 +23,13 @@ int main(void)
         }
         for(int j=2;j<a[i];j++) // j가 2부터 a[i]보다 작을 때까지 1씩 증가하며
         {
-            if(a[i]%j==0)
-                break;
-            else if(j==a[i]-1)
-                sum++;
+            if(a[i]%j==0) // 만약, a[i]%j의 값이 0과 같다면
+                break; // 가장 가까운 반복문을 빠져나간다.
+            else if(j==a[i]-1) // 만약, a[i]%j의 값이 0이 아니고 j가 a[i]-1과 같다면
+                sum++; // sum에 1 더하기
         }
     }
-    printf("%d\n", sum);
+    printf("%d\n", sum); // 결과 출력하기
     
     return 0;
 }
