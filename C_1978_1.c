@@ -14,14 +14,14 @@ int main(void)
     {
         scanf("%d", &a[i]); // 숫자 입력받기
     }
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N-1까지 1씩 증가하며
     {
-        if(a[i]==2)
+        if(a[i]==2) // 만약, a[i]가 2라면
         {    
-            sum++;
-            continue;
+            sum++; // sum에 1 더하기
+            continue; // 반복문에 가서 다시 반복
         }
-        for(int j=2;j<a[i];j++)
+        for(int j=2;j<a[i];j++) // j가 2부터 a[i]보다 작을 때까지 1씩 증가하며
         {
             if(a[i]%j==0)
                 break;
