@@ -7,7 +7,7 @@
 int main(void)
 {
     printf("강한친구 대한육군\n"); // 출력하기
-    printf("강한친구 대한육군\n"); //
+    printf("강한친구 대한육군\n"); // 출력하기
     
     return 0;
 }
