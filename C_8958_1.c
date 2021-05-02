@@ -22,7 +22,7 @@ int main(void)
     for (int i = 0; i < num; i++) // i가 0부터 num보다 작을 때까지 1씩 더하면서 반복
     {
         sum1 = 0, sum2 = 0; // 변수 sum1, sum2을 0으로 초기화
-        for (int j = 0; s[i][j] != NULL; j++) // j가 0부터 s[i][j]가 NULL이 아닐 때까지 j에 1씩 더하면서 반복
+        for (int j = 0; s[i][j] != NULL; j++) // j가 0부터 s[i][j]가 NULL이 아니라면 j에 1씩 더하면서 반복
         {
             if (s[i][j] == 'O') // 만약, s[i][j]가 문자 'O'라면
             {
@@ -34,7 +34,7 @@ int main(void)
                 sum1 = 0; // sum1에 0 대입하기
             }
         }
-        printf("%d\n", sum2); // sum2를 
+        printf("%d\n", sum2); // sum2를 출력하기
     }
 
     return 0;
