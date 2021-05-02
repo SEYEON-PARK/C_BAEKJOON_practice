@@ -14,27 +14,27 @@ int main(void)
 
     scanf("%d", &num); // 사용자로부터 정수 입력받기
 
-    for (int i = 0; i < num; i++) // i가 0부터 num보다 작을 때까지 1씩 더하면서 반복
+    for (int i = 0; i < num; i++) // i가 0부터 num보다 작을 때까지 i에 1씩 더하면서 반복
     {
         scanf("%s", &s[i], sizeof(s[i])); // 사용자로부터 num개의 문자열 입력받기
     }
 
-    for (int i = 0; i < num; i++)
+    for (int i = 0; i < num; i++) // i가 0부터 num보다 작을 때까지 1씩 더하면서 반복
     {
         sum1 = 0, sum2 = 0; // 변수 sum1, sum2을 0으로 초기화
-        for (int j = 0; s[i][j] != NULL; j++)
+        for (int j = 0; s[i][j] != NULL; j++) // j가 0부터 s[i][j]가 NULL이 아닐 때까지 j에 1씩 더하면서 반복
         {
             if (s[i][j] == 'O') // 만약, s[i][j]가 문자 'O'라면
             {
-                sum1++; // 
-                sum2 += sum1;
+                sum1++; // sum1에 1 더하기
+                sum2 += sum1; // sum2에 sum2+sum1 값 대입하기
             }
-            else if (s[i][j] == 'X')
+            else if (s[i][j] == 'X') // 만약, s[i][j]가 문자 'O'이 아니고, 문자 'X'라면
             {
-                sum1 = 0;
+                sum1 = 0; // sum1에 0 대입하기
             }
         }
-        printf("%d\n", sum2);
+        printf("%d\n", sum2); // sum2를 
     }
 
     return 0;
