@@ -4,3 +4,38 @@
 "OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
 OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int num, sum1, sum2;
+    char s[100][80];
+
+    scanf("%d", &num);
+
+    for (int i = 0; i < num; i++)
+    {
+        scanf("%s", &s[i], sizeof(s[i]));
+    }
+
+    for (int i = 0; i < num; i++)
+    {
+        sum1 = 0, sum2 = 0;
+        for (int j = 0; s[i][j] != NULL; j++)
+        {
+            if (s[i][j] == 'O')
+            {
+                sum1++;
+                sum2 += sum1;
+            }
+            else if (s[i][j] == 'X')
+            {
+                sum1 = 0;
+            }
+        }
+        printf("%d\n", sum2);
+    }
+
+    return 0;
+}
