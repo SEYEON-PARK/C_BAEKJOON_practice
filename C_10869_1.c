@@ -7,8 +7,8 @@
 
 int main(void)
 {
-    int A, B;
-    scanf("%d %d", &A, &B);
+    int A, B; // 변수 선언
+    scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
     
     printf("%d\n", A+B);
     printf("%d\n", A-B);
