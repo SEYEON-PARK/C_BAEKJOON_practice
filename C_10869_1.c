@@ -11,10 +11,10 @@ int main(void)
     scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
     
     printf("%d\n", A+B); // 두 정수의 합 출력하기
-    printf("%d\n", A-B);
-    printf("%d\n", A*B);
-    printf("%d\n", A/B);
-    printf("%d\n", A%B);
+    printf("%d\n", A-B); // 두 정수의 차 출력하기
+    printf("%d\n", A*B); // 두 정수의 곱 출력하기
+    printf("%d\n", A/B); // 두 정수를 나눈 후의 몫 출력하기
+    printf("%d\n", A%B); // 두 정수를 나눈 후의 나머지 출력하기
     
     return 0;
 }
