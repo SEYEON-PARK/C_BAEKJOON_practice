@@ -15,10 +15,10 @@ int main(void)
     int A, B, C; // 변수 선언
     scanf("%d %d %d", &A, &B, &C); // 사용자로부터 세 개의 정수 입력받기
     
-    printf("%d\n", (A+B)%C); // 
-    printf("%d\n", ((A%C) + (B%C))%C);
-    printf("%d\n", (A*B)%C);
-    printf("%d\n", ((A%C) * (B%C))%C);
+    printf("%d\n", (A+B)%C); // (A+B)%C 결과 출력하기
+    printf("%d\n", ((A%C) + (B%C))%C); // ((A%C) + (B%C))%C 결과 출력하기
+    printf("%d\n", (A*B)%C); // (AxB)%C 결과 출력하기
+    printf("%d\n", ((A%C) * (B%C))%C); // ((A%C) x (B%C))%C 결과 출력하기
     
     return 0;
 }
