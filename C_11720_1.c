@@ -15,12 +15,14 @@ int main(void)
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     scanf("%s", &num); // 사용자로부터 문자열 입력받기
 
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 i에 1씩 더해가며 반복
     {
-        sum+=num[i]-'0';
+        sum+=num[i]-'0'; // sum에 sum + num[i]-'0' 대입
+                         // 문자 num[i]의 아스키 코드 값에서 문자 '0'의 아스키 코드 값을 빼면 문자 num[i]를 숫자값으로 바꿀 수 있다.
+                         // 예를 들어, 문자 '3' 빼기 문자 '0'('3'-'0')은 숫자 3이다.
     }
     
-    printf("%d\n", sum);
+    printf("%d\n", sum); // sum 출력하기
     
     return 0;
 }
