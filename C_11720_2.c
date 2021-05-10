@@ -24,6 +24,7 @@ int main(void)
         따라서, 10진수 숫자 3으로 바꿔주기 위해, 문자 '0'의 아스키 코드 값인 48을 빼준다.*/
     }
 
-    printf("%d\n", sum); 
+    printf("%d\n", sum); // sum 출력하기
+  
     return 0;
 }
