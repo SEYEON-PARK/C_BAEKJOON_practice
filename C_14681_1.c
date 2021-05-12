@@ -10,9 +10,9 @@
 
 int main(void)
 {
-    int x, y;
-    scanf("%d", &x);
-    scanf("%d", &y);
+    int x, y; // 변수 선언
+    scanf("%d", &x); // 사용자로부터 정수 x 입력받기
+    scanf("%d", &y); // 사용자로부터 정수 입력받기
     
     if(x>0)
     {
