@@ -14,19 +14,19 @@ int main(void)
     scanf("%d", &x); // 사용자로부터 정수 x 입력받기
     scanf("%d", &y); // 사용자로부터 정수 입력받기
     
-    if(x>0)
+    if(x>0) // 만약, x가 양수라면
     {
-        if(y>0)
-            printf("1\n");
-        else
-            printf("4\n");
+        if(y>0) // 만약, x가 양수이고 y가 양수라면
+            printf("1\n"); // 1 출력하기
+        else // x가 양수이고 y가 음수라면
+            printf("4\n"); // 4 출력하기
     }
-    else
+    else // x가 음수라면
     {
-        if(y>0)
-            printf("2\n");
-        else
-            printf("3\n");
+        if(y>0) // 만약, x가 음수이고 y가 양수라면
+            printf("2\n"); // 2 출력하기
+        else // 만약, x가 음수이고 y가 음수라면
+            printf("3\n"); // 3 출력하기
     }
     
     return 0;
