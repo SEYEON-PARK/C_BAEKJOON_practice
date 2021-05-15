@@ -11,7 +11,7 @@
 
 int main(void)
 {
-    int A, B;
+    int A, B; // 변수 선언
     
     while(scanf("%d %d", &A, &B)!=EOF)
     {
