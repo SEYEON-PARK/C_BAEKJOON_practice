@@ -13,7 +13,7 @@ int main(void)
 {
     int A, B; // 변수 선언
     
-    while(scanf("%d %d", &A, &B)!=EOF) // EOF은 파일의 끝을 알리는 역할을 한다. EOF은 최대 몇개의 입력이 들어오는지 모르는 문제에서 사용한다.
+    while(scanf("%d %d", &A, &B)!=EOF) // EOF은 파일의 끝을 알리는 역할을 한다. EOF은 최대 몇 개의 입력이 들어오는지 모르는 문제에서 사용한다.
     {
         printf("%d\n", A+B); // A+B 출력하기
     }
