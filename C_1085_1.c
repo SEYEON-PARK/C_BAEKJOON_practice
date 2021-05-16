@@ -31,13 +31,13 @@ int main(void)
     r[3]=h-y; // r[3]에 h-y 대입하기(h-y는 y와 h 사이의 거리)
     min=r[0]; // min에 r[0] 대입하기
     
-    for(int i=0;i<4;i++)
+    for(int i=0;i<4;i++) // i가 0부터 3까지 1씩 증가하며 반복
     {
-        if(r[i]<min)
-            min=r[i];
+        if(r[i]<min) // 만약, r[i]가 min보다 작다면
+            min=r[i]; // min에 r[i] 대입
     }
     
-    printf("%d\n", min);
+    printf("%d\n", min); // min 출력하기
     
     return 0;
 }
