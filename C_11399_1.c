@@ -53,7 +53,7 @@ int s(int o[], int n) // 함수 s() 정의
     {
         for(int x=0;x<=i;x++) // x가 0부터 i보다 작거나  때까지 1씩 더해가며 반복
         {
-            sum+=o[x]; // sum에 sum+o[x] 대입하기
+            sum+=o[x]; // sum에 sum + o[x] 대입하기
         }
     }
     return sum;
