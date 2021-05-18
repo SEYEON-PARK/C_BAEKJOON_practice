@@ -14,44 +14,44 @@
 */
 
 #include <stdio.h>
-int s(int o[], int n);
+int s(int o[], int n); // 함수 s()의 함수 원형
 int main(void)
 {
-    int N, a=1, j=0;
-    int P[1000]={0}, P1[1000]={0};
+    int N, a=1, j=0; // 변수 선언
+    int P[1000]={0}, P1[1000]={0}; // 배열 선언
     
-    scanf("%d", &N);
-    for(int i=0;i<N;i++)
+    scanf("%d", &N); // 사용자로부터 사람의 수 입력받기
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 더해가며 반복
     {
-        scanf("%d", &P[i]);
+        scanf("%d", &P[i]); // 사용자로부터 각 사람이 돈을 인출하는데 걸리는 시간 입력받기
     }
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 더해가며 반복
     {
-        for(int k=0;k<N;k++)
+        for(int k=0;k<N;k++) // k가 0부터 N보다 작을 때까지 1씩 더해가며 반복
         {
-            if(P[k]==a)
+            if(P[k]==a) // 만약, P[k]가 a와 같다면
             {
-                P1[j]=P[k];
-                j++;
+                P1[j]=P[k]; // P1[j]에 P[k]를 대입
+                j++; // j에 1 더하기
             }
         }
-        a++;
+        a++; // a에 1 더하기
     }
     
-    int sum=s(P1, N);
-    printf("%d\n", sum);
+    int sum=s(P1, N); // sum에 함수 s()에서 반환한 값 저장 
+    printf("%d\n", sum); // 결과 출력하기
     
     return 0;
 }
 
-int s(int o[], int n)
+int s(int o[], int n) // 함수 s() 정의
 {
-    int sum=0;
+    int sum=0; // 변수 선언
     
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) // i가 0부터 n보다 작을 때까지 1씩 더해가며 반복
     {
-        for(int x=0;x<=i;x++)
+        for(int x=0;x<=i;x++) // x가 0부터 i보다 작거나  때까지 1씩 더해가며 반복
         {
             sum+=o[x];
         }
