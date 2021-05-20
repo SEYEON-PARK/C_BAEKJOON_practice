@@ -31,10 +31,10 @@ int main(void)
     }
     else // M이 45 미만이고 H가 0이 아니라면
     {
-        M=60-(45-M);
-        H--;
+        M=60-(45-M); // M에 60-(45-M) 대입하기
+        H--; // H에 1 빼기
     }
     
-    printf("%d %d", H, M);
+    printf("%d %d", H, M); // 결과 출력하기
     return 0;
 }
