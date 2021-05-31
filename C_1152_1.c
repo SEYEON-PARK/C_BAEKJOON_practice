@@ -9,19 +9,19 @@
 */
 
 #include <stdio.h>
-#include <string.h>
+#include <string.h> // strlen()을 사용하기 위해서
 
 int main(void)
 {
-    int num=1;
-    char word[1000001];
-    scanf("%[^\n]", word);
-    int len=strlen(word);
+    int num=1; // 변수 선언 및 초기화
+    char word[1000001]; // 배열 선언
+    scanf("%[^\n]", word); // 한 줄 띄는 것을 제외하고 전부 입력받기
+    int len=strlen(word); // len에 배열 word의 길이 대입
     
-    for(int i=0;word[i]!=0;i++)
+    for(int i=0;word[i]!=0;i++) // i가 0부터 word[i]가 0이 아닐 때까지 반복
     {   
-        if(word[i]==32)
-            num++;
+        if(word[i]==32) // 만약, word[i]가 32(Space)라면
+            num++; // num에 1 더하기
     }
     if(word[0]==32 && word[len-1]==32)
         printf("%d\n", num-2);
