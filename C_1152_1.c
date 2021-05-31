@@ -23,11 +23,11 @@ int main(void)
         if(word[i]==32) // 만약, word[i]가 32(Space)라면
             num++; // num에 1 더하기
     }
-    if(word[0]==32 && word[len-1]==32)
-        printf("%d\n", num-2);
-    else if(word[0]==32 || word[len-1]==32)
-        printf("%d\n", num-1);
-    else
+    if(word[0]==32 && word[len-1]==32) // 만약, word[0]이 32(Space)고 word[len-1]이 32(Space)라면
+        printf("%d\n", num-2); // num에 2를 뺀 결과 출력하기
+    else if(word[0]==32 || word[len-1]==32) // 만약, word[0]이 32(Space)거나 word[len-1]이 32(Space)라면
+        printf("%d\n", num-1); // num에 1을 뺀 결과 출력하기
+    else // 만약, word[0]이 32(Space)가 아니고 word[len-1]이 32(Space)가 
         printf("%d\n", num);
     
     return 0;
