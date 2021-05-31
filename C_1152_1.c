@@ -28,7 +28,7 @@ int main(void)
     else if(word[0]==32 || word[len-1]==32) // 만약, word[0]이 32(Space)거나 word[len-1]이 32(Space)라면
         printf("%d\n", num-1); // num에 1을 뺀 결과 출력하기
     else // 만약, word[0]이 32(Space)가 아니고 word[len-1]이 32(Space)가 
-        printf("%d\n", num);
+        printf("%d\n", num); // 결과 출력하기
     
     return 0;
 }
