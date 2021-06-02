@@ -15,8 +15,8 @@ int main(void)
     int A, B, C, T; // 변수 선언
     int num[10]={0}; // 배열 선언 및 초기화
     scanf("%d", &A); // 사용자로부터 정수 입력받기
-    scanf("%d", &B);
-    scanf("%d", &C);
+    scanf("%d", &B); // 사용자로부터 정수 입력받기
+    scanf("%d", &C); // 사용자로부터 정수 입력받기
     T=A*B*C; // T에 AxBxC 값 대입하기
     
     while(T/10!=0 || T%10!=0) // T를 10으로 나눈 몫이 0이 아니거나 T를 10으로 나눈 나머지가 0이 아니면 계속 반복
@@ -26,35 +26,35 @@ int main(void)
             case 0: // 0이라면
                 num[0]++; // num[0]에 1 더하기
                 break; // switch문을 여기까지만 실행
-            case 1:
-                num[1]++;
-                break;
-            case 2:
-                num[2]++;
-                break;
-            case 3:
-                num[3]++;
-                break;
-            case 4:
-                num[4]++;
-                break;
-            case 5:
-                num[5]++;
-                break;
-            case 6:
-                num[6]++;
-                break;
-            case 7:
-                num[7]++;
-                break;
-            case 8:
-                num[8]++;
-                break;
-            case 9:
-                num[9]++;
-                break;
+            case 1: // 1이라면
+                num[1]++; // num[1]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 2: // 2라면
+                num[2]++; // num[2]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 3: // 3이라면
+                num[3]++; // num[3]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 4: // 4라면
+                num[4]++; // num[4]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 5: // 5라면
+                num[5]++; // num[5]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 6: // 6이라면
+                num[6]++; // num[6]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 7: // 7이라면
+                num[7]++; // num[7]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 8: // 8이라면
+                num[8]++; // num[8]에 1 더하기
+                break; // switch문을 여기까지만 실행
+            case 9: // 9라면
+                num[9]++; // num[9]에 1 더하기
+                break; // switch문을 여기까지만 실행
         }
-        T/=10;
+        T/=10; // T에 T를 10으로 나눈 몫 
     }
     
     for(int a=0;a<10;a++) // a가 0부터 10보다 작을 때까지 1씩 커지면서 반복
