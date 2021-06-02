@@ -12,20 +12,20 @@
 
 int main(void)
 {
-    int A, B, C, T;
-    int num[10]={0};
-    scanf("%d", &A);
+    int A, B, C, T; // 변수 선언
+    int num[10]={0}; // 배열 선언 및 초기화
+    scanf("%d", &A); // 사용자로부터 정수 입력받기
     scanf("%d", &B);
     scanf("%d", &C);
-    T=A*B*C;
+    T=A*B*C; // T에 AxBxC 값 대입하기
     
-    while(T/10!=0 || T%10!=0)
+    while(T/10!=0 || T%10!=0) // T를 10으로 나눈 몫이 0이 아니거나 T를 10으로 나눈 나머지가 0이 아니면 계속 반복
     {
-        switch(T%10)
+        switch(T%10) // T를 10으로 나눈 나머지가
         {
-            case 0:
-                num[0]++;
-                break;
+            case 0: // 0이라면
+                num[0]++; // num[0]에 1 더하기
+                break; // switch문을 여기까지만 실행
             case 1:
                 num[1]++;
                 break;
