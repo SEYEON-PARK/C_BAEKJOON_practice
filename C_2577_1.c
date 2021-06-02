@@ -57,9 +57,9 @@ int main(void)
         T/=10;
     }
     
-    for(int a=0;a<10;a++)
+    for(int a=0;a<10;a++) // a가 0부터 10보다 작을 때까지 1씩 커지면서 반복
     {
-        printf("%d\n", num[a]);
+        printf("%d\n", num[a]); // 결과 출력하기
     }
     
     return 0;
