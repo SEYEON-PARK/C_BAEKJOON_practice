@@ -10,13 +10,13 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 int main(void)
 {
-    int N, A[1000], B[1000], temp=-1000, j=0;
-    scanf("%d", &N);
+    int N, A[1000], B[1000], temp=-1000, j=0; // 변수 및 배열 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
-        scanf("%d", &A[i]);
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 늘어나며 반복
+        scanf("%d", &A[i]); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<2001;i++, temp++)
+    for(int i=0;i<2001;i++, temp++) // 
     {
         for(int k=0;k<N;k++)
         {
