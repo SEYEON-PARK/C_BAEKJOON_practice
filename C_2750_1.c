@@ -16,20 +16,20 @@ int main(void)
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 늘어나며 반복
         scanf("%d", &A[i]); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<2001;i++, temp++) // 
+    for(int i=0;i<2001;i++, temp++) // i가 0부터 2001보다 작을 때까지 1씩 늘어나고, temp도 1씩 늘어나며 반복 
     {
-        for(int k=0;k<N;k++)
+        for(int k=0;k<N;k++) // k가 0부터 N보다 작을 때까지 1씩 늘어나며 반복
         {
-            if(A[k]==temp)
+            if(A[k]==temp) // 만약 A[k]가 temp와 같다면
             {
-                B[j]=A[k];
-                j++;
-                break;
+                B[j]=A[k]; // B[j]에 A[k] 대입하기
+                j++; // j에 1 더하기
+                break; // 가장 가까운 반복문 빠져나가기
             }
         }
     }
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 늘어나며 반복
     {
         printf("%d\n", B[i]);
     }
