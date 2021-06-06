@@ -31,7 +31,7 @@ int main(void)
     
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 늘어나며 반복
     {
-        printf("%d\n", B[i]);
+        printf("%d\n", B[i]); // 결과 출력하기
     }
     
     return 0;
