@@ -30,8 +30,8 @@ int main(void)
             else if(d%7==6)
                 printf("SAT");
             else if(d%7==0)
-                printf("SUN");
-            break;
+                printf("SUN"); // 상황에 맞게 출력하기
+            break; 
         case 2: // 2
             if(d%7==5)
                 printf("MON");
@@ -46,7 +46,7 @@ int main(void)
             else if(d%7==3)
                 printf("SAT");
             else if(d%7==4)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 3: // 3이라면
             if(d%7==5)
@@ -62,7 +62,7 @@ int main(void)
             else if(d%7==3)
                 printf("SAT");
             else if(d%7==4)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 4: // 4
             if(d%7==2)
@@ -78,7 +78,7 @@ int main(void)
             else if(d%7==0)
                 printf("SAT");
             else if(d%7==1)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 5: // 5라면
             if(d%7==0)
@@ -94,7 +94,7 @@ int main(void)
             else if(d%7==5)
                 printf("SAT");
             else if(d%7==6)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 6: // 6이라면
             if(d%7==4)
@@ -110,7 +110,7 @@ int main(void)
             else if(d%7==2)
                 printf("SAT");
             else if(d%7==3)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 7: // 7이라면
             if(d%7==2)
@@ -126,7 +126,7 @@ int main(void)
             else if(d%7==0)
                 printf("SAT");
             else if(d%7==1)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 8: // 8이라면
             if(d%7==6)
@@ -142,7 +142,7 @@ int main(void)
             else if(d%7==4)
                 printf("SAT");
             else if(d%7==5)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 9: // 9라면
             if(d%7==3)
@@ -158,7 +158,7 @@ int main(void)
             else if(d%7==1)
                 printf("SAT");
             else if(d%7==2)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 10: // 10이라면
             if(d%7==1)
@@ -174,7 +174,7 @@ int main(void)
             else if(d%7==6)
                 printf("SAT");
             else if(d%7==0)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 11: // 11이라면
             if(d%7==5)
@@ -190,7 +190,7 @@ int main(void)
             else if(d%7==3)
                 printf("SAT");
             else if(d%7==4)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
         case 12: // 12라면
             if(d%7==3)
@@ -206,7 +206,7 @@ int main(void)
             else if(d%7==1)
                 printf("SAT");
             else if(d%7==2)
-                printf("SUN");
+                printf("SUN"); // 상황에 맞게 출력하기
             break;
     }
     
