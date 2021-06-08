@@ -128,7 +128,7 @@ int main(void)
             else if(d%7==1)
                 printf("SUN");
             break;
-        case 8: // 8
+        case 8: // 8이라면
             if(d%7==6)
                 printf("MON");
             else if(d%7==0)
@@ -144,7 +144,7 @@ int main(void)
             else if(d%7==5)
                 printf("SUN");
             break;
-        case 9:
+        case 9: // 9라면
             if(d%7==3)
                 printf("MON");
             else if(d%7==4)
@@ -160,7 +160,7 @@ int main(void)
             else if(d%7==2)
                 printf("SUN");
             break;
-        case 10:
+        case 10: // 10이라면
             if(d%7==1)
                 printf("MON");
             else if(d%7==2)
@@ -176,7 +176,7 @@ int main(void)
             else if(d%7==0)
                 printf("SUN");
             break;
-        case 11:
+        case 11: // 11이라면
             if(d%7==5)
                 printf("MON");
             else if(d%7==6)
@@ -192,7 +192,7 @@ int main(void)
             else if(d%7==4)
                 printf("SUN");
             break;
-        case 12:
+        case 12: // 12라면
             if(d%7==3)
                 printf("MON");
             else if(d%7==4)
