@@ -32,7 +32,7 @@ int main(void)
             else if(d%7==0)
                 printf("SUN"); // 상황에 맞게 출력하기
             break; 
-        case 2: // 2
+        case 2: // 2라면
             if(d%7==5)
                 printf("MON");
             else if(d%7==6)
@@ -64,7 +64,7 @@ int main(void)
             else if(d%7==4)
                 printf("SUN"); // 상황에 맞게 출력하기
             break;
-        case 4: // 4
+        case 4: // 4라면
             if(d%7==2)
                 printf("MON");
             else if(d%7==3)
