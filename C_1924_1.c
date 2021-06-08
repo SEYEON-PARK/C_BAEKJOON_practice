@@ -11,12 +11,12 @@
 
 int main(void)
 {
-    int m, d;
-    scanf("%d %d", &m, &d);
+    int m, d; // 변수 선언
+    scanf("%d %d", &m, &d); // 사용자로부터 변수 입력받기
     
-    switch(m)
+    switch(m) // m이
     {
-        case 1:
+        case 1: // 1이라면
             if(d%7==1)
                 printf("MON");
             else if(d%7==2)
@@ -32,7 +32,7 @@ int main(void)
             else if(d%7==0)
                 printf("SUN");
             break;
-        case 2:
+        case 2: // 2
             if(d%7==5)
                 printf("MON");
             else if(d%7==6)
@@ -48,7 +48,7 @@ int main(void)
             else if(d%7==4)
                 printf("SUN");
             break;
-        case 3:
+        case 3: // 3이라면
             if(d%7==5)
                 printf("MON");
             else if(d%7==6)
@@ -64,7 +64,7 @@ int main(void)
             else if(d%7==4)
                 printf("SUN");
             break;
-        case 4:
+        case 4: // 4
             if(d%7==2)
                 printf("MON");
             else if(d%7==3)
@@ -80,7 +80,7 @@ int main(void)
             else if(d%7==1)
                 printf("SUN");
             break;
-        case 5:
+        case 5: // 5라면
             if(d%7==0)
                 printf("MON");
             else if(d%7==1)
@@ -96,7 +96,7 @@ int main(void)
             else if(d%7==6)
                 printf("SUN");
             break;
-        case 6:
+        case 6: // 6이라면
             if(d%7==4)
                 printf("MON");
             else if(d%7==5)
@@ -112,7 +112,7 @@ int main(void)
             else if(d%7==3)
                 printf("SUN");
             break;
-        case 7:
+        case 7: // 7이라면
             if(d%7==2)
                 printf("MON");
             else if(d%7==3)
@@ -128,7 +128,7 @@ int main(void)
             else if(d%7==1)
                 printf("SUN");
             break;
-        case 8:
+        case 8: // 8
             if(d%7==6)
                 printf("MON");
             else if(d%7==0)
