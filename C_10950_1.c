@@ -11,10 +11,10 @@
 
 int main(void)
 {
-    int T, A, B;
-    scanf("%d", &T);
+    int T, A, B; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for (int i=0;i<T;i++)
+    for (int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
         scanf("%d %d", &A, &B);
         printf("%d\n", A+B);
