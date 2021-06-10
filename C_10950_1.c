@@ -17,7 +17,7 @@ int main(void)
     for (int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
         scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
-        printf("%d\n", A+B);
+        printf("%d\n", A+B); // 결과 출력하기
     }
     
     return 0;
