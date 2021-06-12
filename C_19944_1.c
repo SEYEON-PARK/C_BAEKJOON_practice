@@ -19,9 +19,9 @@ int main(void)
     
     if(M==1 || M==2) // 만약, M이 1이거나 2라면
         printf("NEWBIE!");
-    else if(N>=M)
+    else if(N>=M) // M이 1이거나 2가 아니고 N이 M보다 크거나 같으면
         printf("OLDBIE!");
-    else
+    else // M이 1이거나 2가 아니고 N이 M보다 작으면
         printf("TLE!");
     
     return 0;
