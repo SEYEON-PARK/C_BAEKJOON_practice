@@ -14,10 +14,10 @@ M학년이 뉴비라면 NEWBIE!를, 올드비라면 OLDBIE!를 TLE이라면 TLE!
 
 int main(void)
 {
-    int N, M;
-    scanf("%d %d", &N, &M);
+    int N, M; // 변수 선언
+    scanf("%d %d", &N, &M); // 사용자로부터 두 개의 정수 입력받기
     
-    if(M==1 || M==2)
+    if(M==1 || M==2) // 만약, M이 1이거나 2라면
         printf("NEWBIE!");
     else if(N>=M)
         printf("OLDBIE!");
