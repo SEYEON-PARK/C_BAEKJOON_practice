@@ -18,11 +18,11 @@ int main(void)
     scanf("%d %d", &N, &M); // 사용자로부터 두 개의 정수 입력받기
     
     if(M==1 || M==2) // 만약, M이 1이거나 2라면
-        printf("NEWBIE!");
+        printf("NEWBIE!"); // "NEWBIE!" 출력하기
     else if(N>=M) // M이 1이거나 2가 아니고 N이 M보다 크거나 같으면
-        printf("OLDBIE!");
+        printf("OLDBIE!"); // "OLDBIE!" 출력하기
     else // M이 1이거나 2가 아니고 N이 M보다 작으면
-        printf("TLE!");
+        printf("TLE!"); // "TLE!" 출력하기
     
     return 0;
 }
