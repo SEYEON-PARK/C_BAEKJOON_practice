@@ -9,13 +9,13 @@
 */
 
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // pow() 함수를 사용하기 위해서
 
 int main(void)
 {
-    int A, B;
-    double M, result;
-    scanf("%d %d", &A, &B);
+    int A, B; // 변수 선언
+    double M, result; // 변수 선언
+    scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
     M=(B-A)/400.0;
     result=1/(1+pow(10, M));
     
