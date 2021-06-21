@@ -16,8 +16,8 @@ int main(void)
     int A, B; // 변수 선언
     double M, result; // 변수 선언
     scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
-    M=(B-A)/400.0; // M에 
-    result=1/(1+pow(10, M));
+    M=(B-A)/400.0; // M에 (B-A)/400.0 대입하기
+    result=1/(1+pow(10, M)); // result에 1/(1+pow(10, M)) 대입하기
     
     printf("%lf\n", result); // 결과 출력하기
     
