@@ -14,17 +14,17 @@
 
 int main(void)
 {
-    char a[3], b[3];
+    char a[3], b[3]; //  배열 선언
    
-    scanf("%s", a, sizeof(a));
+    scanf("%s", a, sizeof(a)); // 사용자로부터 문자열 입력받기
     scanf("%s", b, sizeof(b));
     
-    for(int i=2;i>=0;i--)
+    for(int i=2;i>=0;i--) // i가 2부터 0보다 크거나 같을 때까지 1씩 감소하며 반복
     {
-        if(a[i]>b[i])
+        if(a[i]>b[i]) // 만약 a[i]가 b[i]보다 크다면
         {
-            printf("%c%c%c\n", a[2], a[1], a[0]);
-            break;
+            printf("%c%c%c\n", a[2], a[1], a[0]); // 출력하기
+            break; // 가장 가까운 반복문 빠져나오기.
         }
         else if(a[i]<b[i])
         {
