@@ -26,7 +26,7 @@ int main(void)
             printf("%c%c%c\n", a[2], a[1], a[0]); // 출력하기
             break; // 가장 가까운 반복문 빠져나오기.
         }
-        else if(a[i]<b[i])
+        else if(a[i]<b[i]) // 
         {
             printf("%c%c%c\n", b[2], b[1], b[0]);
             break;      
