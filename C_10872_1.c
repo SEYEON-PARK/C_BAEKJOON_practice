@@ -18,9 +18,9 @@ int f(int n) // 함수 f 정의
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
-    printf("%d\n", f(N));
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
+    printf("%d\n", f(N)); // 
     
     return 0;
 }
