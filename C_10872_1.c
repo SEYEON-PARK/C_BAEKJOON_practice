@@ -8,12 +8,12 @@
 
 #include <stdio.h>
 
-int f(int n)
+int f(int n) // 함수 f 정의
 {
-    if(n>=2)
-        return n*f(n-1);
-    if(n==1 || n==0)
-        return 1;
+    if(n>=2) // 만약 n이 2보다 크거나 같다면
+        return n*f(n-1); // n*f(n-1)을 반환하기
+    if(n==1 || n==0) // 만약, n이 1이거나 0이라면
+        return 1; // 1을 반환하기
 }
 
 int main(void)
