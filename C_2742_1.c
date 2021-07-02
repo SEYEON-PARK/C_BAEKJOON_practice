@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    int N;
+    int N; // 변수 선언
     scanf("%d", &N);
     
     for(int i=N;i>0;i--)
