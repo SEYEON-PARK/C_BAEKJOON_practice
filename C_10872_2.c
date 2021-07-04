@@ -18,7 +18,7 @@ int main(void)
         result*=i; // result에 result*i 값 대입하기
     }
     
-    printf("%d\n", result); // 결과
+    printf("%d\n", result); // 결과 출력하기
     
     return 0;
 }
