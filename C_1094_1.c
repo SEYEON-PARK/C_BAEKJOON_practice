@@ -35,7 +35,7 @@ int main(void)
                 return 0; // 0 반환 후, 종료
             }
             num++; // num에 1 더하기
-            X=X-length;
+            X=X-length; // X에 X-length 대입하기
         }
         length/=2;
     }
