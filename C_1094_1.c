@@ -37,6 +37,6 @@ int main(void)
             num++; // num에 1 더하기
             X=X-length; // X에 X-length 대입하기
         }
-        length/=2;
+        length/=2; // length에 length/2 
     }
 }
