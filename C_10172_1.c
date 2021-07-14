@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    printf("|\\_/|\n");
+    printf("|\\_/|\n"); // 출력하기
     printf("|q p|   /}\n");
     printf("( 0 )\"\"\"\\\n");
     printf("|\"^\"`    |\n");
