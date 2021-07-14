@@ -10,11 +10,11 @@
 
 int main(void)
 {
-    printf("|\\_/|\n"); // 출력하기
+    printf("|\\_/|\n");
     printf("|q p|   /}\n");
     printf("( 0 )\"\"\"\\\n");
     printf("|\"^\"`    |\n");
-    printf("||_/=\\\\__|\n");
+    printf("||_/=\\\\__|\n"); // 조건에 맞게 출력하기
 
     return 0;
 }
