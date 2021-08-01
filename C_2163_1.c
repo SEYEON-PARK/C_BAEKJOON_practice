@@ -17,7 +17,7 @@ int main(void)
 {
     int N, M; // 변수 선언
     scanf("%d %d", &N, &M); // 사용자로부터 두 개의 정수 입력받기
-    printf("%d\n", N*M-1);
+    printf("%d\n", N*M-1); // 결과 출력하기
     
     return 0;
 }
