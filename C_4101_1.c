@@ -11,12 +11,12 @@
 
 int main(void)
 {
-    int A, B;
+    int A, B; // 변수 선언
     
-    while(1)
+    while(1) // 무한 반복
     {
-        scanf("%d %d", &A, &B);
-        if(A==0 && B==0)
+        scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
+        if(A==0 && B==0) // 만약, A가 0이고 B가 0이라면
         {
             break;
         }
