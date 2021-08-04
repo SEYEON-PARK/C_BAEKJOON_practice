@@ -23,11 +23,11 @@ int main(void)
         
         if(A>B) // 만약, A가 B보다 크다면
         {
-            printf("Yes\n"); // 
+            printf("Yes\n"); // 출력하기
         }
-        else
+        else // 만약, A가 B보다 크지 않다면
         {
-            printf("No\n");
+            printf("No\n"); // 출력하기
         }
     }
     
