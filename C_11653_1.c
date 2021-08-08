@@ -22,7 +22,7 @@ int main(void)
         {
             printf("%d\n", j); // j 값 출력하기
             N/=j; // N에 N/j 값 저장하기
-            j=1;
+            j=1; // j에 1 저장하기
         }
     }
     
