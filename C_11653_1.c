@@ -10,13 +10,13 @@ N의 소인수분해 결과를 한 줄에 하나씩 오름차순으로 출력한
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    if(N==1)
-        return 0;
+    if(N==1) // 만약 N이 1이라면
+        return 0; // 0을 반환하고 프로그램 종료하기
     
-    for(int j=2;j<=N;j++)
+    for(int j=2;j<=N;j++) // j가 2부터 N보다 작거나 같을 때까지 1씩 증가하며 반복
     {
         if(N%j==0)
         {
