@@ -18,10 +18,10 @@ int main(void)
     
     for(int j=2;j<=N;j++) // j가 2부터 N보다 작거나 같을 때까지 1씩 증가하며 반복
     {
-        if(N%j==0)
+        if(N%j==0) // 만약, N을 j로 나눈 나머지가 0이라면
         {
-            printf("%d\n", j);
-            N/=j;
+            printf("%d\n", j); // j 값 출력하기
+            N/=j; // N에 N/j 값 저장하기
             j=1;
         }
     }
