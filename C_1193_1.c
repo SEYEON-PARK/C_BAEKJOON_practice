@@ -39,12 +39,12 @@ int main(void)
     {
         for(int i=0;i<num;i++) // i가 0부터 num보다 작을 때까지 1씩 증가하며 반복
         {
-            if(X==0)
+            if(X==0) // 만약, X가 0과 같다면
             {
-                printf("%d/%d", num-i, i+1);
-                return 0;
+                printf("%d/%d", num-i, i+1); // 결과 출력하기
+                return 0; // 0 반환 및 프로그램 종료
             }
-            X--;
+            X--; // X에 1 빼기
         }
     }
     
