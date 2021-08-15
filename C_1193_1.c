@@ -48,16 +48,16 @@ int main(void)
         }
     }
     
-    if(num%2==0)
+    if(num%2==0) // 만약, num%2가 0과 같다면
     {
-        for(int i=0;i<num;i++)
+        for(int i=0;i<num;i++) // i가 0부터 num보다 작을 때까지 1씩 증가하며 반복
         {
-            if(X==0)
+            if(X==0) // 만약, X가 0과 같다면
             {
-                printf("%d/%d", i+1, num-i);
-                return 0;
+                printf("%d/%d", i+1, num-i); // 결과 출력하기
+                return 0; // 0 반환 및 프로그램 종료
             }
-            X--;
+            X--; // X에 1 빼기
         }
     }
 }
