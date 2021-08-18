@@ -15,12 +15,12 @@ int main(void)
     
     for(int i=N;i>0;i--) // i가 N부터 0보다 클 때까지 1씩 줄어들며 반복
     {
-        for(int j=N;j>0;j--) // j가 N부터 0보다 클 때까지 1씩 줄어들며 
+        for(int j=N;j>0;j--) // j가 N부터 0보다 클 때까지 1씩 줄어들며 반복
         {
             printf("*"); // * 출력하기
         }
-        N--; // N에 1 
-        printf("\n");
+        N--; // N에 1 빼기
+        printf("\n"); // 한 줄 띄기
     }
     
     return 0;
