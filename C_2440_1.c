@@ -17,9 +17,9 @@ int main(void)
     {
         for(int j=N;j>0;j--) // j가 N부터 0보다 클 때까지 1씩 줄어들며 
         {
-            printf("*");
+            printf("*"); // * 출력하기
         }
-        N--;
+        N--; // N에 1 
         printf("\n");
     }
     
