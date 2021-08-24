@@ -18,7 +18,7 @@ int main(void)
     {
         for (int j=i;N-j>0;j++)
         {
-            printf(" "); // 공백 
+            printf(" "); // 공백 출력하기
         }
         for (int u=i;u>0;u--)
         {
