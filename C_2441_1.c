@@ -16,15 +16,15 @@ int main(void)
     
     for (int i=N;i>0;i--) // i가 N부터 0보다 클 때까지 1씩 감소하며 반복
     {
-        for (int j=i;N-j>0;j++)
+        for (int j=i;N-j>0;j++) // j가 i부터 N-j가 0보다 클 때까지 j가 1씩 증가하며 반복
         {
             printf(" "); // 공백 출력하기
         }
-        for (int u=i;u>0;u--)
+        for (int u=i;u>0;u--) // u가 i부터 0보다 클 때까지 1씩 감소하며 반복
         {
-            printf("*");
+            printf("*"); // 별 출력하기
         }
-        printf("\n");
+        printf("\n"); // 한 줄 띄기
     }
     
     return 0;
