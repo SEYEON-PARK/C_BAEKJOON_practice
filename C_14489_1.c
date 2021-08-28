@@ -12,9 +12,9 @@
 
 int main(void)
 {
-    int a, b, price, price2;
-    scanf("%d %d", &a, &b);
-    scanf("%d", &price);
+    int a, b, price, price2; // 변수 선언
+    scanf("%d %d", &a, &b); // 사용자로부터 두 통장의 잔고 입력받기
+    scanf("%d", &price); // 사용자로부터 치킨 한 마리의 가격 입력받기
     
     price2=price*2;
     
