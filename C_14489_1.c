@@ -18,13 +18,13 @@ int main(void)
     
     price2=price*2; // price2에 price*2 대입하기
     
-    if(a+b>=price2) // 만약, 두 통장의 잔고를 합친 것이 price2(치킨 두 마리 가격)보다 크거나 같다면
+    if(a+b>=price2) // 만약, 두 통장의 잔고를 합한 것이 price2(치킨 두 마리 가격)보다 크거나 같다면
     {
-        printf("%d\n", a+b-price2);
+        printf("%d\n", a+b-price2); // 두 통장 잔고의 합에서 치킨 두 마리 가격을 뺀 값 출력하기
     }
-    else
+    else // 두 통장의 잔고를 합친 것이 price2(치킨 두 마리 가격)보다 작다면
     {
-        printf("%d\n", a+b);
+        printf("%d\n", a+b); // 두 통장 잔고의 합을 출력하기
     }
     
     return 0;
