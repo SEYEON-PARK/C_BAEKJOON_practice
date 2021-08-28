@@ -16,9 +16,9 @@ int main(void)
     scanf("%d %d", &a, &b); // 사용자로부터 두 통장의 잔고 입력받기
     scanf("%d", &price); // 사용자로부터 치킨 한 마리의 가격 입력받기
     
-    price2=price*2;
+    price2=price*2; // price2에 price*2 대입하기
     
-    if(a+b>=price2)
+    if(a+b>=price2) // 만약, 두 통장의 잔고를 합친 것이 price2(치킨 두 마리 가격)보다 크거나 같다면
     {
         printf("%d\n", a+b-price2);
     }
