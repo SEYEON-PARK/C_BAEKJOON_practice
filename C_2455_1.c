@@ -42,12 +42,12 @@ int main(void)
     
     for(int i=0;i<4;i++)
     {
-        num=num-A[i]+B[i];
-        if(num>max)
-            max=num;
+        num=num-A[i]+B[i]; // num에 num-A[i]+B[i] 대입하기
+        if(num>max) // 만약, num이 max보다 크다면
+            max=num; // max에 num 대입하기
     }
     
-    printf("%d\n", max);
+    printf("%d\n", max); // 결과 
     
     return 0;
 }
