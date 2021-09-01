@@ -40,14 +40,14 @@ int main(void)
         scanf("%d %d", &A[i], &B[i]); // 사용자로부터 두 개의 정수 입력받기
     }
     
-    for(int i=0;i<4;i++)
+    for(int i=0;i<4;i++) // i가 0부터 4보다 작을 때까지 1씩 증가하며 반복
     {
         num=num-A[i]+B[i]; // num에 num-A[i]+B[i] 대입하기
         if(num>max) // 만약, num이 max보다 크다면
             max=num; // max에 num 대입하기
     }
     
-    printf("%d\n", max); // 결과 
+    printf("%d\n", max); // 결과 출력하기
     
     return 0;
 }
