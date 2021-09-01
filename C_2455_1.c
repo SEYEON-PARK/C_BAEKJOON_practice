@@ -34,10 +34,10 @@
 
 int main(void)
 {
-    int A[4], B[4], num=0, max=0;
-    for(int i=0;i<4;i++)
+    int A[4], B[4], num=0, max=0; // 배열 선언, 변수 선언 및 초기화
+    for(int i=0;i<4;i++) // i가 0부터 4보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d", &A[i], &B[i]);
+        scanf("%d %d", &A[i], &B[i]); // 사용자로부터 두 개의 정수 입력받기
     }
     
     for(int i=0;i<4;i++)
