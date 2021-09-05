@@ -12,16 +12,16 @@
 
 int main(void)
 {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    for (int i = 0; i < 3; i++)
+    int a, b, c; // 변수 선언
+    scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
+    for (int i = 0; i < 3; i++) // i가 0부터 3이 되기 전까지 1씩 증가하며 반복
     {
-        if(a<b)
+        if(a<b) // 만약, a가 b보다 작다면
         {
-            if(a<c)
+            if(a<c) // 만약, a가 c보다 작다면
             {
-                printf("%d ", a);
-                a=1000001;
+                printf("%d ", a); // a 출력하기
+                a=1000001; // a에 1000001 대입하기
             }
             else
             {
