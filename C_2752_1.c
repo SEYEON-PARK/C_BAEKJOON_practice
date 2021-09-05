@@ -23,7 +23,7 @@ int main(void)
                 printf("%d ", a); // a 출력하기
                 a=1000001; // a에 1000001 대입하기
             }
-            else
+            else // a가 c보다 작지 않다면
             {
                 printf("%d ", c);
                 c=1000001;
