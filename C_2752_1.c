@@ -25,21 +25,21 @@ int main(void)
             }
             else // a가 c보다 작지 않다면
             {
-                printf("%d ", c);
-                c=1000001;
+                printf("%d ", c); // c 출력하기
+                c=1000001; // c에 1000001 대입하기
             }
         }
-        else
+        else // a가 b보다 작지 않다면
         {
-            if(b<c)
+            if(b<c) // b가 c보다 작다면
             {
-                printf("%d ", b);
-                b=1000001;
+                printf("%d ", b); // b 출력하기
+                b=1000001; // b에 1000001 대입하기
             }
-            else
+            else // b가 c보다 작지 않다면
             {
-                printf("%d ", c);
-                c=1000001;
+                printf("%d ", c); // c 출력하기
+                c=1000001; // c에 1000001 대입하기
             }
         }
     }
