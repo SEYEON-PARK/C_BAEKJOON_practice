@@ -23,10 +23,10 @@ int main(void)
         scanf("%d %d", &P, &M); // 사용자로부터 두 개의 정수 입력받기
         for(int j=0;j<P;j++) //
         {
-            scanf("%d", &person[j]);
-            if(seat[person[j]]==1)
-                num++;
-            else
+            scanf("%d", &person[j]); // 사용자로부터 정수 입력받기
+            if(seat[person[j]]==1) // 만약, seat[person[j]]가 1이라면
+                num++; // num에 1 더하기
+            else // 
                 seat[person[j]]=1;
         }
         
