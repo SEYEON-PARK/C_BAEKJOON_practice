@@ -19,18 +19,18 @@ int main(void)
     
     for (int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
-        int P, M, person[500], seat[501]={0}, num=0; // 변수, 배열 선언 및 초기화 
+        int P, M, person[500], seat[501]={0}, num=0; // 변수, 배열 선언 및 초기화
         scanf("%d %d", &P, &M); // 사용자로부터 두 개의 정수 입력받기
-        for(int j=0;j<P;j++) //
+        for(int j=0;j<P;j++) // j가 0부터 P보다 작을 때까지 1씩 증가하며 반복
         {
             scanf("%d", &person[j]); // 사용자로부터 정수 입력받기
             if(seat[person[j]]==1) // 만약, seat[person[j]]가 1이라면
                 num++; // num에 1 더하기
-            else // 
-                seat[person[j]]=1;
+            else // seat[person[j]]가 1이 아니라면
+                seat[person[j]]=1; // seat[person[j]]에 1 대입하기
         }
         
-        printf("%d\n", num);
+        printf("%d\n", num); // 결과 출력하기
     }
     return 0;
 }
