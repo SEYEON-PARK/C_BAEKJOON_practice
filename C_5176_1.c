@@ -14,14 +14,14 @@
 
 int main(void)
 {
-    int T;
-    scanf("%d", &T);
+    int T; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for (int i=0;i<T;i++)
+    for (int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
-        int P, M, person[500], seat[501]={0}, num=0;
-        scanf("%d %d", &P, &M);
-        for(int j=0;j<P;j++)
+        int P, M, person[500], seat[501]={0}, num=0; // 변수, 배열 선언 및 초기화 
+        scanf("%d %d", &P, &M); // 사용자로부터 두 개의 정수 입력받기
+        for(int j=0;j<P;j++) //
         {
             scanf("%d", &person[j]);
             if(seat[person[j]]==1)
