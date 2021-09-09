@@ -14,10 +14,10 @@ int main(void)
 {
     int a, b, c; // 변수 선언
     scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
-    for (int i = 0; i < 3; i++) // 
+    for (int i = 0; i < 3; i++) // i가 0부터 3이 되기 전까지 1씩 증가하며 반복
     {
-        printf("%d ", (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c));
-        if (((a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c)) == a)
+        printf("%d ", (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c)); // a, b, c 중 가장 작은 수를 출력하기
+        if (((a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c)) == a) // 만약, 가장 작은 수가 a라면
             a = 1000001;
         else if (((a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c)) == b)
             b = 1000001;
