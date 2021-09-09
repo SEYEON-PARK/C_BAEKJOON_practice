@@ -12,9 +12,9 @@
 
 int main(void)
 {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    for (int i = 0; i < 3; i++)
+    int a, b, c; // 변수 선언
+    scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
+    for (int i = 0; i < 3; i++) // 
     {
         printf("%d ", (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c));
         if (((a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c)) == a)
