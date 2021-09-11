@@ -18,7 +18,7 @@ int main(void)
     scanf("%d %d %d %d", &score[0][0], &score[0][1], &score[0][2], &score[0][3]); // 사용자로부터 네 개의 정수를 입력받아서 배열에 저장하기
     scanf("%d %d %d %d", &score[1][0], &score[1][1], &score[1][2], &score[1][3]);
     
-    S=score[0][0]+score[0][1]+score[0][2]+score[0][3];
+    S=score[0][0]+score[0][1]+score[0][2]+score[0][3]; // S에 
     T=score[1][0]+score[1][1]+score[1][2]+score[1][3];
     
     printf("%d\n", S>=T?S:T);
