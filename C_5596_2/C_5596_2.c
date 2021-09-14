@@ -14,26 +14,26 @@
 
 int main(void)
 {
-    int S=0, T=0, score[2][4];
+    int S=0, T=0, score[2][4]; // 정수, 배열 선언
     
-    for (int i=0;i<=1;i++)
+    for (int i=0;i<=1;i++) // i가 0부터 1보다 작거나 같을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d %d %d", &score[i][0], &score[i][1], &score[i][2], &score[i][3]);
+        scanf("%d %d %d %d", &score[i][0], &score[i][1], &score[i][2], &score[i][3]); // 사용자로부터 네 개의 정수 입력받기
     }
     
-    for (int j=0;j<=3;j++)
+    for (int j=0;j<=3;j++) // j가 0부터 3보다 작거나 같을 때까지 1씩 증가하며 반복
     {
-        S+=score[0][j];
+        S+=score[0][j]; // S에 S+score[0][j] 대입하기
     }
-    for (int j=0;j<=3;j++)
+    for (int j=0;j<=3;j++) // j가 0부터 3보다 작거나 같을 때까지 1씩 증가하며 반복
     {
-        T+=score[1][j];
+        T+=score[1][j]; // T에 T+score[1][j] 대입하기
     }
     
-    if(S>=T)
-        printf("%d\n", S);
-    else
-        printf("%d\n", T);
+    if(S>=T) // 만약, S가 T보다 크거나 같다면
+        printf("%d\n", S); // S 출력하기
+    else // S가 T보다 크거나 같지 않다면(작다면)
+        printf("%d\n", T); // T 출력하기
     
     return 0;
 }
