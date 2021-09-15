@@ -14,13 +14,13 @@
 
 int main(void)
 {
-    int S=0, T=0, score[2][4];
+    int S=0, T=0, score[2][4]; // 변수, 배열 선언
     
-    for (int i=0;i<=1;i++)
+    for (int i=0;i<=1;i++) // i가 0부터 1보다 작거나 같을 때까지 1씩 증가하며 반복
     {
-        for(int k=0;k<4;k++)
+        for(int k=0;k<4;k++) // k가 0부터 4보다 작을 때까지 1씩 증가하며 반복
         {
-            scanf("%d", &score[i][k]);
+            scanf("%d", &score[i][k]); // 사용자로부터 정수 입력받기
         }
     }
     
