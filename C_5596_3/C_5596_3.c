@@ -26,7 +26,7 @@ int main(void)
     
     for (int j=0;j<=3;j++)
     {
-        S+=score[0][j];
+        S+=score[0][j]; // S에 
     }
     for (int j=0;j<=3;j++)
     {
