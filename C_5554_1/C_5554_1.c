@@ -13,6 +13,7 @@
 
 총 이동시간 x 분 y 초를 출력한다. 첫 번째 줄에 x를, 두 번째 줄에 y를 출력한다.
 */
+
 #include <stdio.h>
 
 int main(void)
