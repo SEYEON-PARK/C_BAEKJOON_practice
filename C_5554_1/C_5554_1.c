@@ -24,7 +24,7 @@ int main(void)
     scanf("%d", &c);
     scanf("%d", &d);
     
-    sum=a+b+c+d;
+    sum=a+b+c+d; // sum에 a+b+c+d 대입하기
     
     x=sum/60;
     y=sum%60;
