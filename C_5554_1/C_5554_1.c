@@ -19,18 +19,18 @@
 int main(void)
 {
     int a, b, c, d, sum, x, y; // 변수 선언
-    scanf("%d", &a); // 사용자로부터 정수 입력받기
-    scanf("%d", &b);
-    scanf("%d", &c);
-    scanf("%d", &d);
+    scanf("%d", &a); // 사용자로부터 정수(집에서 학교까지의 이동 시간) 입력받기
+    scanf("%d", &b); // 사용자로부터 정수(학교에서 PC방까지의 이동 시간) 입력받기
+    scanf("%d", &c); // 사용자로부터 정수(PC방에서 학원까지의 이동 시간) 입력받기
+    scanf("%d", &d); // 사용자로부터 정수(학원에서 집까지의 이동 시간) 입력받기
     
     sum=a+b+c+d; // sum에 a+b+c+d 대입하기
     
-    x=sum/60;
-    y=sum%60;
+    x=sum/60; // x에 sum을 60으로 나눈 몫 대입하기
+    y=sum%60; // y에 sum을 60으로 나눈 나머지 대입하기
     
-    printf("%d\n", x);
-    printf("%d\n", y);
+    printf("%d\n", x); // x값 출력하기
+    printf("%d\n", y); // y값 출력하기
     
     return 0;
 }
