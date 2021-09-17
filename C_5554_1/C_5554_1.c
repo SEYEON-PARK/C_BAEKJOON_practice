@@ -13,3 +13,23 @@
 
 총 이동시간 x 분 y 초를 출력한다. 첫 번째 줄에 x를, 두 번째 줄에 y를 출력한다.
 */
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, c, d, sum, x, y;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    scanf("%d", &d);
+    
+    sum=a+b+c+d;
+    
+    x=sum/60;
+    y=sum%60;
+    
+    printf("%d\n", x);
+    printf("%d\n", y);
+    
+    return 0;
+}
