@@ -18,8 +18,8 @@
 
 int main(void)
 {
-    int a, b, c, d, sum, x, y;
-    scanf("%d", &a);
+    int a, b, c, d, sum, x, y; // 변수 선언
+    scanf("%d", &a); // 사용자로부터 정수 입력받기
     scanf("%d", &b);
     scanf("%d", &c);
     scanf("%d", &d);
