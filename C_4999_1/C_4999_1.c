@@ -12,3 +12,25 @@
 재환이가 그 병원에 가야하면 "go"를, 아니면 "no"를 출력한다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    int a_num=0, b_num=0;
+    char a[1001], b[1001];
+    scanf("%s", a, sizeof(a));
+    scanf("%s", b, sizeof(b));
+    
+    for(int i=0;a[i]!=NULL;i++)
+        a_num++;
+    
+    for(int i=0;b[i]!=NULL;i++)
+        b_num++;
+    
+    if(a_num>=b_num)
+        printf("go\n");
+    else
+        printf("no\n");
+    
+    return 0;
+}
