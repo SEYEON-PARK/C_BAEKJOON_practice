@@ -16,9 +16,9 @@
 
 int main(void)
 {
-    int a_num=0, b_num=0;
-    char a[1001], b[1001];
-    scanf("%s", a, sizeof(a));
+    int a_num=0, b_num=0; // 문자열의 길이를 저장할 변수 선언 및 초기화
+    char a[1001], b[1001]; // 배열 선언
+    scanf("%s", a, sizeof(a)); // 사용자로부터 문자열(재환
     scanf("%s", b, sizeof(b));
     
     for(int i=0;a[i]!=NULL;i++)
