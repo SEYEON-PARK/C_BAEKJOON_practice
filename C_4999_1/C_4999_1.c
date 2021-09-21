@@ -18,14 +18,14 @@ int main(void)
 {
     int a_num=0, b_num=0; // 문자열의 길이를 저장할 변수 선언 및 초기화
     char a[1001], b[1001]; // 배열 선언
-    scanf("%s", a, sizeof(a)); // 사용자로부터 문자열(재환
-    scanf("%s", b, sizeof(b));
+    scanf("%s", a, sizeof(a)); // 사용자로부터 문자열(재환이가 가장 길게 낼 수 있는 "aaah") 입력받기
+    scanf("%s", b, sizeof(b)); // 사용자로부터 문자열(의사가 듣기를 원하는 "aaah") 입력받기
     
-    for(int i=0;a[i]!=NULL;i++) // i가 0부터 a[i]가 NULL이 아니라면 i를 1씩 증가하며 반복
+    for(int i=0;a[i]!=NULL;i++) // i가 0부터 a[i]가 NULL이 아니라면 i를 1씩 증가하면서 반복
         a_num++; // a_num에 1 더하기
     
-    for(int i=0;b[i]!=NULL;i++)
-        b_num++;
+    for(int i=0;b[i]!=NULL;i++) // i가 0부터 b[i]가 NULL이 아니라면 i를 1씩 증가하면서 반복
+        b_num++; // b_num에 1 더하기
     
     if(a_num>=b_num) // 만약, a_num이 b_num보다 크거나 같다면
         printf("go\n"); // go 출력하기
