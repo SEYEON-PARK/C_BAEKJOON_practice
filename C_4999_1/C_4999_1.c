@@ -21,16 +21,16 @@ int main(void)
     scanf("%s", a, sizeof(a)); // 사용자로부터 문자열(재환
     scanf("%s", b, sizeof(b));
     
-    for(int i=0;a[i]!=NULL;i++)
-        a_num++;
+    for(int i=0;a[i]!=NULL;i++) // i가 0부터 a[i]가 NULL이 아니라면 i를 1씩 증가하며 반복
+        a_num++; // a_num에 1 더하기
     
     for(int i=0;b[i]!=NULL;i++)
         b_num++;
     
-    if(a_num>=b_num)
-        printf("go\n");
-    else
-        printf("no\n");
+    if(a_num>=b_num) // 만약, a_num이 b_num보다 크거나 같다면
+        printf("go\n"); // go 출력하기
+    else // a_num이 b_num보다 크거나 같지 않다면(작다면)
+        printf("no\n"); // no 출력하기
     
     return 0;
 }
