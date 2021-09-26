@@ -9,4 +9,26 @@
 첫째 줄에 거절당하는 사람의 수를 출력한다.
 */
 
-C언어 BAEKJOON 1453번 문제 풀기!(1)
+#include <stdio.h>
+
+int main(void)
+{
+    int N, num=0, pc[101]={0}, person[101]={0};
+    scanf("%d", &N);
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d", &person[i]);
+    }
+    for(int j=0;j<N;j++)
+    {
+        if(pc[person[j]]==1)
+        {
+            num++;
+            continue;
+        }
+        pc[person[j]]=1;
+    }
+    
+    printf("%d\n", num);
+    return 0;
+}
