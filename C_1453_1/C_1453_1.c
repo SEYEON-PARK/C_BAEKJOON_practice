@@ -14,21 +14,21 @@
 int main(void)
 {
     int N, num=0, pc[101]={0}, person[101]={0}; // 변수, 배열 선언 및 초기화
-    scanf("%d", &N); // 사용자로부터 정수 입력받기
+    scanf("%d", &N); // 사용자로부터 정수(손님의 수) 입력받기
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d", &person[i]); // 사용자로부터 정수 입력받기
+        scanf("%d", &person[i]); // 사용자로부터 정수(각 손님이 앉고 싶어하는 자리) 입력받기
     }
-    for(int j=0;j<N;j++)
+    for(int j=0;j<N;j++) // j가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        if(pc[person[j]]==1)
+        if(pc[person[j]]==1) // 만약, pc[person[j]]가 1이라면
         {
-            num++;
-            continue;
+            num++; // num에 1 더하기
+            continue; // 반복문 처음으로 돌아가서 계속 반복 진행하기
         }
-        pc[person[j]]=1;
+        pc[person[j]]=1; // pc[person[j]]에 1 대입하기
     }
     
-    printf("%d\n", num);
+    printf("%d\n", num); // num 출력하기
     return 0;
 }
