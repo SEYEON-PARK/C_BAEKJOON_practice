@@ -17,7 +17,7 @@ int main(void)
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d", &person[i]);
+        scanf("%d", &person[i]); // 사용자로부터 정수 입력받기
     }
     for(int j=0;j<N;j++)
     {
