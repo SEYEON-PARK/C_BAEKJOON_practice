@@ -16,14 +16,14 @@ int main(void)
 {
     int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6]; // 배열 선언 및 초기화
     
-    for(int i=0;i<6;i++)
+    for(int i=0;i<6;i++) // i가 0부터 6이 되기 전까지 1씩 증가하며 반복
     {
-        scanf("%d", &white[i]);
+        scanf("%d", &white[i]); // 사용자로부터 정수 입력받기
     }
     
     for(int i=0;i<6;i++)
     {
-        after[i]=original[i]-white[i];
+        after[i]=original[i]-white[i]; // after[i]에 ori
     }
     
     for(int i=0;i<6;i++)
