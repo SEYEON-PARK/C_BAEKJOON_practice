@@ -14,7 +14,7 @@
 
 int main(void)
 {
-    int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6];
+    int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6]; // 배열 선언 및 초기화
     
     for(int i=0;i<6;i++)
     {
