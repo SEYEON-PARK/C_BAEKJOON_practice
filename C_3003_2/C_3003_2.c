@@ -11,25 +11,25 @@
 */
 
 #include <stdio.h>
-#define NUM 6
+#define NUM 6 // 기호상수 NUM 선언
 
 int main(void)
 {
     int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6]; // 배열 선언 및 초기화
     
-    for(int i=0;i<NUM;i++)
+    for(int i=0;i<NUM;i++) // i가 0부터 기호상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
         scanf("%d", &white[i]); // 사용자로부터 정수 입력받기
     }
     
     for(int i=0;i<NUM;i++) // i가 0부터 기호상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
-        after[i]=original[i]-white[i]; // after[i]에 
+        after[i]=original[i]-white[i]; // after[i]에 original[i]-white[i] 대입하기
     }
     
-    for(int i=0;i<NUM;i++)
+    for(int i=0;i<NUM;i++) // i가 0부터 기호상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
-        printf("%d ", after[i]);
+        printf("%d ", after[i]); // 결과 출력하기
     }
     
     return 0;
