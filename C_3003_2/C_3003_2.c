@@ -19,12 +19,12 @@ int main(void)
     
     for(int i=0;i<NUM;i++)
     {
-        scanf("%d", &white[i]);
+        scanf("%d", &white[i]); // 사용자로부터 정수 입력받기
     }
     
-    for(int i=0;i<NUM;i++)
+    for(int i=0;i<NUM;i++) // i가 0부터 기호상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
-        after[i]=original[i]-white[i];
+        after[i]=original[i]-white[i]; // after[i]에 
     }
     
     for(int i=0;i<NUM;i++)
