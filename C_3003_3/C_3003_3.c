@@ -10,3 +10,27 @@
 만약 수가 양수라면 동혁이는 그 개수 만큼 피스를 더해야 하는 것이고, 음수라면 제거해야 하는 것이다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    const int NUM=6;
+    int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6];
+    
+    for(int i=0;i<NUM;i++)
+    {
+        scanf("%d", &white[i]);
+    }
+    
+    for(int i=0;i<NUM;i++)
+    {
+        after[i]=original[i]-white[i];
+    }
+    
+    for(int i=0;i<NUM;i++)
+    {
+        printf("%d ", after[i]);
+    }
+    
+    return 0;
+}
