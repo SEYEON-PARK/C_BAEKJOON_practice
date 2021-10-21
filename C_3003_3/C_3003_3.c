@@ -14,12 +14,12 @@
 
 int main(void)
 {
-    const int NUM=6;
-    int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6];
+    const int NUM=6; // 기호 상수 NUM 선언
+    int white[6], original[6]={1, 1, 2, 2, 2, 8}, after[6]; // 배열 선언 및 초기화
     
     for(int i=0;i<NUM;i++)
     {
-        scanf("%d", &white[i]);
+        scanf("%d", &white[i]); // 사용자로부터 정수 입력받기
     }
     
     for(int i=0;i<NUM;i++)
