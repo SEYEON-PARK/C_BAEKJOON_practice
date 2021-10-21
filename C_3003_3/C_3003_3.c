@@ -22,14 +22,14 @@ int main(void)
         scanf("%d", &white[i]); // 사용자로부터 정수 입력받기
     }
     
-    for(int i=0;i<NUM;i++)
+    for(int i=0;i<NUM;i++) // i가 0부터 기호 상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
-        after[i]=original[i]-white[i];
+        after[i]=original[i]-white[i]; // after[i]에 original[i]-white[i] 대입하기
     }
     
-    for(int i=0;i<NUM;i++)
+    for(int i=0;i<NUM;i++) // i가 0부터 기호 상수 NUM이 되기 전까지 1씩 증가하며 반복
     {
-        printf("%d ", after[i]);
+        printf("%d ", after[i]); // 결과 출력하기
     }
     
     return 0;
