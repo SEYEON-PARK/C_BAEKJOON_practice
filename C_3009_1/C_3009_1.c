@@ -15,7 +15,7 @@ int main(void)
     scanf("%d %d", &x2, &y2);
     scanf("%d %d", &x3, &y3);
     
-    if(x1 != x2 && x1 != x3)
+    if(x1 != x2 && x1 != x3) // 만약, x1이 x2와 다르고 x1이 x3와도 다르면 
     {
         x4=x1;
     }
