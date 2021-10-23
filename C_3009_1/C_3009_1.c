@@ -10,8 +10,8 @@
 
 int main(void)
 {
-    int x1, y1, x2, y2, x3, y3, x4, y4;
-    scanf("%d %d", &x1, &y1);
+    int x1, y1, x2, y2, x3, y3, x4, y4; // 변수 선언
+    scanf("%d %d", &x1, &y1); // 사용자로부터 직사각형 첫 번째 점 좌표 입력받기
     scanf("%d %d", &x2, &y2);
     scanf("%d %d", &x3, &y3);
     
