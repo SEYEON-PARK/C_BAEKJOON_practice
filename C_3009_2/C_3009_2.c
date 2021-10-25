@@ -15,9 +15,9 @@ int main(void)
     scanf("%d %d", &x2, &y2);
     scanf("%d %d", &x3, &y3);
     
-    if(x1==x2)
+    if(x1==x2) // 만약, x1이 x2와 같다면
     {
-        x4=x3;
+        x4=x3; // x4에 x3를 대입하기
     }
     else if(x1==x3)
     {
