@@ -28,12 +28,12 @@ int main(void)
     for(int i=0;i<3;i++) // i가 0부터 3보다 작을 때까지 1씩 증가하며 반복
     {
         result[i]=a*(b%10); // result[i]에 a*(b%10) 값 대입하기
-        b=b/10; // 
+        b=b/10; // b에 b/10 값 대입하기
     }
     
-    for(int i=0;i<4;i++)
+    for(int i=0;i<4;i++) // i가 0부터 4보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("%d\n", result[i]);
+        printf("%d\n", result[i]); // 결과 출력하기
     }
     
     return 0;
