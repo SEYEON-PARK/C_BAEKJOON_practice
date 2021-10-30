@@ -21,7 +21,7 @@ int main(void)
 {
     int a, b, result[4], j=0; // 변수, 배열 선언 및 초기화
     scanf("%d", &a); // 사용자로부터 정수 입력받기
-    scanf("%d", &b); //
+    scanf("%d", &b); // 사용자로부터 정수 입력받기
     
     result[3]=a*b; // result[3]에 a*b 값 대입하기
     
@@ -32,9 +32,9 @@ int main(void)
         j++; // j에 1 더하기
     }
     
-    for(int i=0;i<4;i++)
+    for(int i=0;i<4;i++) // i가 0부터 4가 되기 전까지 1씩 증가하면서 반복
     {
-        printf("%d\n", result[i]);
+        printf("%d\n", result[i]); // 결과 출력하기
     }
     
     return 0;
