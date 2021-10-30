@@ -19,9 +19,9 @@
 
 int main(void)
 {
-    int a, b, result[4], j=0;
-    scanf("%d", &a);
-    scanf("%d", &b);
+    int a, b, result[4], j=0; // 변수, 배열 선언 및 초기화
+    scanf("%d", &a); // 사용자로부터 정수 입력받기
+    scanf("%d", &b); //
     
     result[3]=a*b;
     
