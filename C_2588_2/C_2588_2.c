@@ -23,13 +23,13 @@ int main(void)
     scanf("%d", &a); // 사용자로부터 정수 입력받기
     scanf("%d", &b); //
     
-    result[3]=a*b;
+    result[3]=a*b; // result[3]에 a*b 값 대입하기
     
-    while(b!=0)
+    while(b!=0) // b가 0이 아니라면 계속 반복
     {
-        result[j]=a*(b%10);
-        b=b/10;
-        j++;
+        result[j]=a*(b%10); // result[j]에 a*(b%10) 값 대입하기
+        b=b/10; // b에 b/10 값 대입하기
+        j++; // j에 1 더하기
     }
     
     for(int i=0;i<4;i++)
