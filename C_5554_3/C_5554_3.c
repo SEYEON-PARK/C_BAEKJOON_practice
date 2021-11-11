@@ -18,10 +18,10 @@
 
 int main(void)
 {
-    int d[4], sum=0, x, y;
-    for(int i=0;i<4;i++)
+    int d[4], sum=0, x, y; // 배열 선언, 변수 선언 및 초기화
+    for(int i=0;i<4;i++) // i가 0부터 4보다 작을 때까지 1씩 증가하며 반복
     {
-       scanf("%d", &d[i]);
+       scanf("%d", &d[i]); // 사용자로부터 정수 입력받기
        sum+=d[i]; 
     } 
     
