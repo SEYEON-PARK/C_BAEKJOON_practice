@@ -22,7 +22,7 @@ int main(void)
     for(int i=0;i<4;i++) // i가 0부터 4보다 작을 때까지 1씩 증가하며 반복
     {
        scanf("%d", &d[i]); // 사용자로부터 정수 입력받기
-       sum+=d[i]; 
+       sum+=d[i]; // sum에 sum+d[i] 값을 대입하기
     } 
     
     x=sum/60; 
