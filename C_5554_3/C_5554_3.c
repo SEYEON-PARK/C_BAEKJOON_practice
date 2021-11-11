@@ -25,11 +25,11 @@ int main(void)
        sum+=d[i]; // sum에 sum+d[i] 값을 대입하기
     } 
     
-    x=sum/60; 
-    y=sum%60;
+    x=sum/60; // x에 sum을 60으로 나눈 몫 저장하기
+    y=sum%60; // y에 sum을 60으로 나눈 나머지 저장하기
     
-    printf("%d\n", x); 
-    printf("%d\n", y); 
+    printf("%d\n", x); // x 값 출력하기
+    printf("%d\n", y); // y 값 출력하기
     
     return 0;
 }
