@@ -7,3 +7,13 @@
    리턴값: a에 포함되어 있는 정수 n개의 합
 */
 
+long long sum(int *a, int n) 
+{
+	long long ans = 0;
+    for(int i=0;i<n;i++)
+    {
+        ans+=a[i];
+    }
+    
+	return ans;
+}
