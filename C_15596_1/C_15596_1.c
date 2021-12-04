@@ -7,9 +7,9 @@
    리턴값: a에 포함되어 있는 정수 n개의 합
 */
 
-long long sum(int *a, int n) 
+long long sum(int *a, int n) // 함수 정의
 {
-	long long ans = 0;
+    long long ans = 0; // 변수 선언 및 초기화
     for(int i=0;i<n;i++)
     {
         ans+=a[i];
