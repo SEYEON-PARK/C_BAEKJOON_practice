@@ -12,8 +12,8 @@ long long sum(int *a, int n) // 함수 정의
     long long ans = 0; // 변수 선언 및 초기화
     for(int i=0;i<n;i++) // i가 0부터 n보다 작을 때까지 1씩 증가하며 반복
     {
-        ans+=a[i];
+        ans+=a[i]; // ans에 ans+a[i] 대입하기
     }
     
-	return ans;
+	return ans; // 변수 ans의 값 반환하고 함수 종료하기
 }
