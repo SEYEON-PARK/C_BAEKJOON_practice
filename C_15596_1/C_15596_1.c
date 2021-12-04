@@ -10,7 +10,7 @@
 long long sum(int *a, int n) // 함수 정의
 {
     long long ans = 0; // 변수 선언 및 초기화
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) // i가 0부터 n보다 작을 때까지 1씩 증가하며 반복
     {
         ans+=a[i];
     }
