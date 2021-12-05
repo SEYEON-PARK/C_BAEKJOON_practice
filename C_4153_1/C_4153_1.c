@@ -16,10 +16,10 @@ int main(void)
         scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
         if(a==0 && b==0 && c==0) // 만약, a가 0이고 b가 0이고 c가 0이라면
             break; // 가장 가까운 반복문을 빠져 나가기
-        if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a) // 만약, 
-            printf("right\n");
-        else
-            printf("wrong\n");
+        if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a) // 만약, a*a+b*b==c*c이거나 a*a+c*c==b*b이거나 b*b+c*c==a*a면
+            printf("right\n"); // "right" 출력하기
+        else // a*a+b*b==c*c이거나 a*a+c*c==b*b이거나 b*b+c*c==a*a가 아니라면
+            printf("wrong\n"); // "wrong" 출력하기
     }
     
     return 0;
