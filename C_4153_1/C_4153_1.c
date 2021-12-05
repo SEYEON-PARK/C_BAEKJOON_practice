@@ -14,9 +14,9 @@ int main(void)
     while(1) // 무한 반복
     {
         scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
-        if(a==0 && b==0 && c==0)
-            break;
-        if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a)
+        if(a==0 && b==0 && c==0) // 만약, a가 0이고 b가 0이고 c가 0이라면
+            break; // 가장 가까운 반복문을 빠져 나가기
+        if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a) // 만약, 
             printf("right\n");
         else
             printf("wrong\n");
