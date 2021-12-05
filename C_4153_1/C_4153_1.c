@@ -10,10 +10,10 @@
 
 int main(void)
 {
-    int a, b, c;
-    while(1)
+    int a, b, c; // 변수 선언
+    while(1) // 무한 반복
     {
-        scanf("%d %d %d", &a, &b, &c);
+        scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
         if(a==0 && b==0 && c==0)
             break;
         if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a)
