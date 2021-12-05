@@ -18,7 +18,7 @@ int main(void)
             break; // 가장 가까운 반복문을 빠져 나가기
         if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a) // 만약, a*a+b*b==c*c이거나 a*a+c*c==b*b이거나 b*b+c*c==a*a면
             printf("right\n"); // "right" 출력하기
-        else // a*a+b*b==c*c이거나 a*a+c*c==b*b이거나 b*b+c*c==a*a가 아니라면
+        else // a*a+b*b==c*c가 아니고 a*a+c*c==b*b도 아니고 b*b+c*c==a*a도 아니라면
             printf("wrong\n"); // "wrong" 출력하기
     }
     
