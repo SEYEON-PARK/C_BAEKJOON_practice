@@ -7,4 +7,22 @@
 각 입력에 대해 직각 삼각형이 맞다면 "right", 아니라면 "wrong"을 출력한다.
 */
 
+#include <stdio.h>
+#include <math.h>
 
+int main(void)
+{
+    int a, b, c;
+    while(1)
+    {
+        scanf("%d %d %d", &a, &b, &c);
+        if(a==0 && b==0 && c==0)
+            break;
+        if(pow((double)a, 2.0)+pow((double)b, 2.0)==pow((double)c, 2.0) || pow((double)a, 2.0)+pow((double)c, 2.0)==pow((double)b, 2.0) || pow((double)b, 2.0)+pow((double)c, 2.0)==pow((double)a, 2.0))
+            printf("right\n");
+        else
+            printf("wrong\n");
+    }
+    
+    return 0;
+}
