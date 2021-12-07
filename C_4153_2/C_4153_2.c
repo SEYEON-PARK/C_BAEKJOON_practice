@@ -15,9 +15,9 @@ int main(void)
     int a, b, c; // 변수 선언
     while(1) // 무한 반복
     {
-        scanf("%d %d %d", &a, &b, &c);
-        if(a==0 && b==0 && c==0)
-            break;
+        scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
+        if(a==0 && b==0 && c==0) // a가 0이 아니고 b도 0이 아니고 c도 0이 아니라면
+            break; // while문 빠져나가기
         if(pow((double)a, 2.0)+pow((double)b, 2.0)==pow((double)c, 2.0) || pow((double)a, 2.0)+pow((double)c, 2.0)==pow((double)b, 2.0) || pow((double)b, 2.0)+pow((double)c, 2.0)==pow((double)a, 2.0))
             printf("right\n");
         else
