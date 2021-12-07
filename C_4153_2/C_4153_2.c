@@ -8,12 +8,12 @@
 */
 
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // 함수 pow()를 사용하기 위해
 
 int main(void)
 {
-    int a, b, c;
-    while(1)
+    int a, b, c; // 변수 선언
+    while(1) // 무한 반복
     {
         scanf("%d %d %d", &a, &b, &c);
         if(a==0 && b==0 && c==0)
