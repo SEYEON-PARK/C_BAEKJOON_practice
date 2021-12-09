@@ -7,7 +7,7 @@ N이 2의 제곱수면 1을 아니면 0을 출력하는 프로그램을 작성�
 */
 
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // pow()를 사용하기 위해서
 
 int main(void)
 {
@@ -17,15 +17,15 @@ int main(void)
     
     while(1) // 무한 반복
     {
-        if(N<pow(2.0, i)) //
-            break;
-        if(N==pow(2.0, i))
+        if(N<pow(2.0, i)) // 만약, N보다 2.0의 i 제곱이 더 크다면 
+            break; // 가장 가까운 반복문을 빠져 나가기
+        if(N==pow(2.0, i)) // 만약, N과 2.0의 i 제곱이 같다면
         {
-            printf("1\n");
-            return 0;
+            printf("1\n"); // 1 출력하기
+            return 0; // 0을 반환하고 프로그램 종료하기
         }
-        i++;
+        i++; // i에 1 더하기
     }
-    printf("0\n");
+    printf("0\n"); // 0 출력하기
     return 0;
 }
