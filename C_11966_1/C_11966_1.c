@@ -13,11 +13,11 @@ int main(void)
 {
     int N; // 정수 변수 선언
     double i=0; // 실수 변수 선언
-    scanf("%d", &N); //
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    while(1)
+    while(1) // 무한 반복
     {
-        if(N<pow(2.0, i))
+        if(N<pow(2.0, i)) //
             break;
         if(N==pow(2.0, i))
         {
