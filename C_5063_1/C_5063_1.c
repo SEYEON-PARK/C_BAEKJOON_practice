@@ -11,3 +11,25 @@ r은 광고를 하지 않았을 때 수익, e는 광고를 했을 때의 수익,
 각 테스트 케이스에 대해서, 광고를 해야 하면 "advertise", 하지 않아야 하면 "do not advertise", 광고를 해도 수익이 차이가 없다면 "does not matter"를 출력한다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    int T, r, e, c, o;
+    scanf("%d", &T);
+    
+    for(int i=0;i<T;i++)
+    {
+        scanf("%d %d %d", &r, &e, &c);
+        o=e-r;
+        
+        if(o>c)
+            printf("advertise\n");
+        else if(o<c)
+            printf("do not advertise\n");
+        else
+            printf("does not matter\n");
+    }
+    
+    return 0;
+}
