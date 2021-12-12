@@ -24,11 +24,11 @@ int main(void)
         o=e-r; // o에 e-r 대입하기
         
         if(o>c) // 만약, o가 c보다 크다면
-            printf("advertise\n"); 
-        else if(o<c)
-            printf("do not advertise\n");
-        else
-            printf("does not matter\n");
+            printf("advertise\n"); // "advertise" 출력하기
+        else if(o<c) // 만약, o가 c보다 크지 않고 o가 c보다 작다면
+            printf("do not advertise\n"); // "do not advertise" 출력하기
+        else // o가 c보다 크지도 않고 작지도 않다면(같다면)
+            printf("does not matter\n"); // "does not matter" 
     }
     
     return 0;
