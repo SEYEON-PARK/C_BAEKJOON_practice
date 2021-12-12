@@ -21,10 +21,10 @@ int main(void)
     for(int i=0;i<T;i++) // i가 0부터 T가 되기 전까지 1씩 증가하며 반복
     {
         scanf("%d %d %d", &r, &e, &c); // 사용자로부터 세 개의 정수 입력받기
-        o=e-r;
+        o=e-r; // o에 e-r 대입하기
         
-        if(o>c)
-            printf("advertise\n");
+        if(o>c) // 만약, o가 c보다 크다면
+            printf("advertise\n"); 
         else if(o<c)
             printf("do not advertise\n");
         else
