@@ -15,12 +15,12 @@ r은 광고를 하지 않았을 때 수익, e는 광고를 했을 때의 수익,
 
 int main(void)
 {
-    int T, r, e, c, o;
-    scanf("%d", &T);
+    int T, r, e, c, o; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<T;i++)
+    for(int i=0;i<T;i++) // i가 0부터 T가 되기 전까지 1씩 증가하며 반복
     {
-        scanf("%d %d %d", &r, &e, &c);
+        scanf("%d %d %d", &r, &e, &c); // 사용자로부터 세 개의 정수 입력받기
         o=e-r;
         
         if(o>c)
