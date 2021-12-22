@@ -8,3 +8,23 @@ N마리의 새가 나무에 앉아있고, 자연수를 배우기 원한다. 새�
 
 첫째 줄에 정답을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    int num=1, time=0;
+    
+    while(N>0)
+    {
+        if(N<num)
+            num=1;
+        N-=num;
+        time++;
+        num++;
+    }
+    
+    printf("%d\n", time);
+}
