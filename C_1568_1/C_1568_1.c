@@ -15,7 +15,7 @@ int main(void)
 {
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
-    int num=1, time=0; // 변수 선언 및 초기화
+    int num=1, time=0; // 변수 선언 및 초기화(num은 지금 불러야 하는 수, time은 시간(초)를 의미한다.)
     
     while(N>0)
     {
