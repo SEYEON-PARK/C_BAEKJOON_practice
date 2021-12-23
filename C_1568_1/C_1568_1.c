@@ -14,17 +14,17 @@ N마리의 새가 나무에 앉아있고, 자연수를 배우기 원한다. 새�
 int main(void)
 {
     int N; // 변수 선언
-    scanf("%d", &N); // 사용자로부터 정수 입력받기
+    scanf("%d", &N); // 사용자로부터 정수(나무에 앉아있는 새의 수) 입력받기
     int num=1, time=0; // 변수 선언 및 초기화(num은 지금 불러야 하는 수, time은 시간(초)를 의미한다.)
     
-    while(N>0)
+    while(N>0) // N이 0보다 크다면 계속 반복
     {
-        if(N<num)
-            num=1;
-        N-=num;
-        time++;
-        num++;
+        if(N<num) // 만약, N이 num보다 작다면
+            num=1; // num에 1 대입하기
+        N-=num; // N에 N-num 값 대입하기
+        time++; // time 1 더하기
+        num++; // num 1 더하기
     }
     
-    printf("%d\n", time);
+    printf("%d\n", time); // 결과 출력하기
 }
