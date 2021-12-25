@@ -22,41 +22,41 @@ int main(void)
     
     while(s[i]!=NULL) // s[i]가 NULL이 아니라면 계속 반복
     {
-        if(s[i]=='A' || s[i]=='B' || s[i]=='C')
+        if(s[i]=='A' || s[i]=='B' || s[i]=='C') // 만약, s[i]가 'A'거나 'B'거나 'C'라면
         {
-            number+=3;
+            number+=3; // number에 number+3 값 대입하기
         }
-        else if(s[i]=='D' || s[i]=='E' || s[i]=='F')
+        else if(s[i]=='D' || s[i]=='E' || s[i]=='F') // 앞 조건에 맞지 않고, s[i]가 'D'거나 'E'거나 'F'라면
         {
-            number+=4;
+            number+=4; // number에 number+4 값 대입하기
         }
-        else if(s[i]=='G' || s[i]=='H' || s[i]=='I')
+        else if(s[i]=='G' || s[i]=='H' || s[i]=='I') // 앞 조건들에 맞지 않고, s[i]가 'G'거나 'H'거나 'I'라면
         {
-            number+=5;
+            number+=5; // number에 number+5 값 대입하기
         }
-        else if(s[i]=='J' || s[i]=='K' || s[i]=='L')
+        else if(s[i]=='J' || s[i]=='K' || s[i]=='L')  // 앞 조건들에 맞지 않고, s[i]가 'J'거나 'K'거나 'L'이라면
         {
-            number+=6;
+            number+=6; // number에 number+6 값 대입하기
         }
-        else if(s[i]=='M' || s[i]=='N' || s[i]=='O')
+        else if(s[i]=='M' || s[i]=='N' || s[i]=='O') // 앞 조건들에 맞지 않고, s[i]가 'M'이거나 'N'이거나 'O'라면
         {
-            number+=7;
+            number+=7; // number에 number+7 값 대입하기
         }
-        else if(s[i]=='P' || s[i]=='Q' || s[i]=='R' || s[i]=='S')
+        else if(s[i]=='P' || s[i]=='Q' || s[i]=='R' || s[i]=='S') // 앞 조건들에 맞지 않고, s[i]가 'P'거나 'Q'거나 'R'이거나 'S'라면
         {
-            number+=8;
+            number+=8; // number에 number+8 값 대입하기
         }
-        else if(s[i]=='T' || s[i]=='U' || s[i]=='V')
+        else if(s[i]=='T' || s[i]=='U' || s[i]=='V') // 앞 조건들에 맞지 않고, s[i]가 'T'거나 'U'거나 'V'라면
         {
-            number+=9;
+            number+=9; // number에 number+9 값 대입하기
         }
-        else if(s[i]=='W' || s[i]=='X' || s[i]=='Y' || s[i]=='Z')
+        else if(s[i]=='W' || s[i]=='X' || s[i]=='Y' || s[i]=='Z') // 앞 조건들에 맞지 않고, s[i]가 'W'거나 'X'거나 'Y'이거나 'Z'라면
         {
-            number+=10;
+            number+=10; // number에 number+10 값 대입하기
         }
-        i++;
+        i++; // i에 1 더하기
     }
     
-    printf("%d\n", number);
+    printf("%d\n", number); // 결과 출력하기
     return 0;
 }
