@@ -18,9 +18,9 @@ int main(void)
 {
     char s[16]; // 문자열 s 선언
     scanf("%s", s, sizeof(s)); // 사용자로부터 문자열 입력받기
-    int i=0, number=0;
+    int i=0, number=0; // 정수 선언 및 초기화
     
-    while(s[i]!=NULL)
+    while(s[i]!=NULL) // s[i]가 NULL이 아니라면 계속 반복
     {
         if(s[i]=='A' || s[i]=='B' || s[i]=='C')
         {
