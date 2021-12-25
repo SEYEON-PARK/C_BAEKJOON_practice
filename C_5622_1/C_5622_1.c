@@ -11,3 +11,52 @@
 
 첫째 줄에 다이얼을 걸기 위해서 필요한 최소 시간을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char s[16];
+    scanf("%s", s, sizeof(s));
+    int i=0, number=0;
+    
+    while(s[i]!=NULL)
+    {
+        if(s[i]=='A' || s[i]=='B' || s[i]=='C')
+        {
+            number+=3;
+        }
+        else if(s[i]=='D' || s[i]=='E' || s[i]=='F')
+        {
+            number+=4;
+        }
+        else if(s[i]=='G' || s[i]=='H' || s[i]=='I')
+        {
+            number+=5;
+        }
+        else if(s[i]=='J' || s[i]=='K' || s[i]=='L')
+        {
+            number+=6;
+        }
+        else if(s[i]=='M' || s[i]=='N' || s[i]=='O')
+        {
+            number+=7;
+        }
+        else if(s[i]=='P' || s[i]=='Q' || s[i]=='R' || s[i]=='S')
+        {
+            number+=8;
+        }
+        else if(s[i]=='T' || s[i]=='U' || s[i]=='V')
+        {
+            number+=9;
+        }
+        else if(s[i]=='W' || s[i]=='X' || s[i]=='Y' || s[i]=='Z')
+        {
+            number+=10;
+        }
+        i++;
+    }
+    
+    printf("%d\n", number);
+    return 0;
+}
