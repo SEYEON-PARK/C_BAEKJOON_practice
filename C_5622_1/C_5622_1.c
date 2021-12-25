@@ -16,8 +16,8 @@
 
 int main(void)
 {
-    char s[16];
-    scanf("%s", s, sizeof(s));
+    char s[16]; // 문자열 s 선언
+    scanf("%s", s, sizeof(s)); // 사용자로부터 문자열 입력받기
     int i=0, number=0;
     
     while(s[i]!=NULL)
