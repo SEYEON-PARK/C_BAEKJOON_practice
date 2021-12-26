@@ -12,3 +12,51 @@
 첫째 줄에 다이얼을 걸기 위해서 필요한 최소 시간을 출력한다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    char s[16];
+    scanf("%s", s, sizeof(s));
+    int i=0, number=0;
+    
+    while(s[i]!=NULL)
+    {
+        if((int)s[i]==65 || (int)s[i]==66 || (int)s[i]==67)
+        {
+            number+=3;
+        }
+        else if((int)s[i]==68 || (int)s[i]==69 || (int)s[i]==70)
+        {
+            number+=4;
+        }
+        else if((int)s[i]==71 || (int)s[i]==72 || (int)s[i]==73)
+        {
+            number+=5;
+        }
+        else if((int)s[i]==74 || (int)s[i]==75 || (int)s[i]==76)
+        {
+            number+=6;
+        }
+        else if((int)s[i]==77 || (int)s[i]==78 || (int)s[i]==79)
+        {
+            number+=7;
+        }
+        else if((int)s[i]==80 || (int)s[i]==81 || (int)s[i]==82 || (int)s[i]==83)
+        {
+            number+=8;
+        }
+        else if((int)s[i]==84 || (int)s[i]==85 || (int)s[i]==86)
+        {
+            number+=9;
+        }
+        else if((int)s[i]==87 || (int)s[i]==88 || (int)s[i]==89 || (int)s[i]==90)
+        {
+            number+=10;
+        }
+        i++;
+    }
+    
+    printf("%d\n", number);
+    return 0;
+}
