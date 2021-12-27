@@ -22,41 +22,41 @@ int main(void)
     
     while(s[i]!=NULL) // s[i]가 NULL이 아니라면 계속 반복
     {
-        if((int)s[i]==65 || (int)s[i]==66 || (int)s[i]==67)
+        if((int)s[i]==65 || (int)s[i]==66 || (int)s[i]==67) // 만약 (int)s[i]가 65와 같거나 66과 같거나 67과 같다면
         {
-            number+=3;
+            number+=3; // number에 number+3 값 대입하기
         }
-        else if((int)s[i]==68 || (int)s[i]==69 || (int)s[i]==70)
+        else if((int)s[i]==68 || (int)s[i]==69 || (int)s[i]==70) // 앞 조건에 맞지 않고, (int)s[i]가 68과 같거나 69와 같거나 70과 같다면
         {
-            number+=4;
+            number+=4; // number에 number+4 값 대입하기
         }
-        else if((int)s[i]==71 || (int)s[i]==72 || (int)s[i]==73)
+        else if((int)s[i]==71 || (int)s[i]==72 || (int)s[i]==73) // 앞 조건들에 맞지 않고, (int)s[i]가 71과 같거나 72와 같거나 73과 같다면
         {
-            number+=5;
+            number+=5; // number에 number+5 값 대입하기
         }
-        else if((int)s[i]==74 || (int)s[i]==75 || (int)s[i]==76)
+        else if((int)s[i]==74 || (int)s[i]==75 || (int)s[i]==76) // 앞 조건들에 맞지 않고, (int)s[i]가 74와 같거나 75와 같거나 76과 같다면
         {
-            number+=6;
+            number+=6; // number에 number+6 값 대입하기
         }
-        else if((int)s[i]==77 || (int)s[i]==78 || (int)s[i]==79)
+        else if((int)s[i]==77 || (int)s[i]==78 || (int)s[i]==79) // 앞 조건들에 맞지 않고, (int)s[i]가 77과 같거나 78과 같거나 79와 같다면
         {
-            number+=7;
+            number+=7; // number에 number+7 값 대입하기
         }
-        else if((int)s[i]==80 || (int)s[i]==81 || (int)s[i]==82 || (int)s[i]==83)
+        else if((int)s[i]==80 || (int)s[i]==81 || (int)s[i]==82 || (int)s[i]==83) // 앞 조건들에 맞지 않고, (int)s[i]가 80과 같거나 81과 같거나 82와 같거나 83과 같다면
         {
-            number+=8;
+            number+=8; // number에 number+8 값 대입하기
         }
-        else if((int)s[i]==84 || (int)s[i]==85 || (int)s[i]==86)
+        else if((int)s[i]==84 || (int)s[i]==85 || (int)s[i]==86) // 앞 조건들에 맞지 않고, (int)s[i]가 84와 같거나 85와 같거나 86과 같다면
         {
-            number+=9;
+            number+=9; // number에 number+9 값 대입하기
         }
-        else if((int)s[i]==87 || (int)s[i]==88 || (int)s[i]==89 || (int)s[i]==90)
+        else if((int)s[i]==87 || (int)s[i]==88 || (int)s[i]==89 || (int)s[i]==90) // 앞 조건들에 맞지 않고, (int)s[i]가 87과 같거나 88과 같거나 89와 같거나 90과 같다면
         {
-            number+=10;
+            number+=10; // number에 number+10 값 대입하기
         }
-        i++;
+        i++; // i에 1 더하기
     }
     
-    printf("%d\n", number);
+    printf("%d\n", number); // 결과 출력하기
     return 0;
 }
