@@ -9,3 +9,57 @@
 셀의 크기가 N인 골뱅이를 출력한다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    
+    for(int j=0;j<N;j++)
+    {
+        for(int i=0;i<5*N;i++)
+        {
+            printf("@");
+        }
+        printf("\n");
+    }
+    
+    for(int j=0;j<N;j++)
+    {
+        for(int i=0;i<N;i++)
+        {
+            printf("@");
+        }
+        printf("\n");
+    }
+    
+    for(int j=0;j<N;j++)
+    {
+        for(int i=0;i<5*N;i++)
+        {
+            printf("@");
+        }
+        printf("\n");
+    }
+    
+    for(int j=0;j<N;j++)
+    {
+        for(int i=0;i<N;i++)
+        {
+            printf("@");
+        }
+        printf("\n");
+    }
+    
+    for(int j=0;j<N;j++)
+    {
+        for(int i=0;i<N;i++)
+        {
+            printf("@");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
