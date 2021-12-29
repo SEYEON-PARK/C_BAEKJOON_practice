@@ -13,8 +13,8 @@
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 정수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     for(int j=0;j<N;j++)
     {
