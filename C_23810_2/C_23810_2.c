@@ -16,32 +16,31 @@ int main(void)
     int N; // 정수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int j=0;j<N;j++)
+    for(int j=0;j<N;j++) // j가 0부터 N이 되기 전까지 1씩 증가하며 반복
     {
-        for(int i=0;i<5*N;i++)
+        for(int i=0;i<5*N;i++) // i가 0부터 5*N이 되기 전까지 1씩 증가하며 반복
         {
-            printf("@");
+            printf("@"); // "@" 출력하기
         }
-        printf("\n");
+        printf("\n"); // 한 줄 띄기
     }
     
-    for(int j=0;j<N;j++)
+    for(int j=0;j<N;j++) // j가 0부터 N이 되기 전까지 1씩 증가하며 반복
     {
-        for(int i=0;i<N;i++)
+        for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 1씩 증가하며 반복
         {
-            printf("@");
+            printf("@"); // "@" 출력하기
         }
-        printf("\n");
+        printf("\n"); // 한 줄 띄기
     }
     
-    for(int j=0;j<N;j++)
+    for(int j=0;j<N;j++) // j가 0부터 N이 되기 전까지 1씩 증가하며 반복
     {
-        for(int i=0;i<5*N;i++)
+        for(int i=0;i<5*N;i++) // i가 0부터 5*N이 되기 전까지 1씩 증가하며 반복
         {
-            printf("@");
+            printf("@"); // "@" 출력하기
         }
-        printf("\n");
-    }
+        printf("\n"); // 한 줄 띄기
     
     for(int j=0;j<2*N;j++)
     {
