@@ -11,12 +11,12 @@
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 정수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N+2;i++)
+    for(int i=0;i<N+2;i++) // i가 0부터 N+2보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
+        printf("@"); // "@" 출력하기
     }
     printf("\n");
     
