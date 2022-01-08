@@ -20,19 +20,19 @@ int main(void)
     }
     printf("\n"); // 한 줄 띄기
     
-    for(int j=0;j<N;j++)
+    for(int j=0;j<N;j++) // j가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@"); // 
-        for(int i=0;i<N;i++)
+        printf("@"); // "@" 출력하기
+        for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
         {
-            printf(" ");
+            printf(" "); // 공백 출력하기
         }
-        printf("@\n");
+        printf("@\n"); // "@" 출력 후, 한 줄 띄기
     }
     
-    for(int i=0;i<N+2;i++)
+    for(int i=0;i<N+2;i++) // i가 0부터 N+2보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
+        printf("@"); // "@" 출력하기
     }
     
     return 0;
