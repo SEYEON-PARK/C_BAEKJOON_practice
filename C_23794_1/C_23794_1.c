@@ -18,11 +18,11 @@ int main(void)
     {
         printf("@"); // "@" 출력하기
     }
-    printf("\n");
+    printf("\n"); // 한 줄 띄기
     
     for(int j=0;j<N;j++)
     {
-        printf("@");
+        printf("@"); // 
         for(int i=0;i<N;i++)
         {
             printf(" ");
