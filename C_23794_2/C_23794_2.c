@@ -16,3 +16,28 @@ void f1(int n)
     }
     printf("\n");
 }
+
+void f2(int n)
+{
+    for(int j=0;j<n;j++)
+    {
+        printf("@");
+        for(int i=0;i<n;i++)
+        {
+            printf(" ");
+        }
+        printf("@\n");
+    }
+}
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    
+    f1(N);
+    f2(N);
+    f1(N);
+    
+    return 0;
+}
