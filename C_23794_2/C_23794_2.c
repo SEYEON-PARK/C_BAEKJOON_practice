@@ -14,7 +14,7 @@ void f1(int n) // f1 함수 선언
     {
         printf("@"); // "@" 출력하기
     }
-    printf("\n"); // 공백 출력하기
+    printf("\n"); // 한 줄 띄기
 }
 
 void f2(int n) // f2 함수 선언
