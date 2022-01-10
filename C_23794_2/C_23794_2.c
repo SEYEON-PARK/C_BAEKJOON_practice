@@ -8,13 +8,13 @@
 */
 
 #include <stdio.h>
-void f1(int n)
+void f1(int n) // f1 함수 선언
 {
-    for(int i=0;i<n+2;i++)
+    for(int i=0;i<n+2;i++) // i가 0부터 n+2보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
+        printf("@"); // "@" 출력하기
     }
-    printf("\n");
+    printf("\n"); // 공백 출력하기
 }
 
 void f2(int n)
