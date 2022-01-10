@@ -32,12 +32,12 @@ void f2(int n) // f2 함수 선언
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 정수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    f1(N);
-    f2(N);
-    f1(N);
+    f1(N); // 함수 f1(N) 호출
+    f2(N); // 함수 f2(N) 호출
+    f1(N); // 함수 f1(N) 호출
     
     return 0;
 }
