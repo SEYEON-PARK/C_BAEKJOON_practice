@@ -17,16 +17,16 @@ void f1(int n) // f1 함수 선언
     printf("\n"); // 공백 출력하기
 }
 
-void f2(int n)
+void f2(int n) // f2 함수 선언
 {
-    for(int j=0;j<n;j++)
+    for(int j=0;j<n;j++) // j가 0부터 n보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
-        for(int i=0;i<n;i++)
+        printf("@"); // "@" 출력하기
+        for(int i=0;i<n;i++) // i가 0부터 n보다 작을 때까지 1씩 증가하며 반복
         {
-            printf(" ");
+            printf(" "); // 한 칸 띄기
         }
-        printf("@\n");
+        printf("@\n"); // "@" 출력하고, 한 줄 띄기
     }
 }
 
