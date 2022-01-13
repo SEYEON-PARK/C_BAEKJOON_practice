@@ -15,19 +15,19 @@ int main(void)
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     f1(N); // 함수 f1() 호출하기
-    f2(N); 
-    f1(N);
+    f2(N); // 함수 f2() 호출하기
+    f1(N); // 함수 f1() 호출하기
     
     return 0;
 }
 
-void f1(int n)
+void f1(int n) // 함수 f1() 선언
 {
-    for(int i=0;i<n+2;i++)
+    for(int i=0;i<n+2;i++) // i가 0부터 n+2보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
+        printf("@"); // "@" 출력하기
     }
-    printf("\n");
+    printf("\n"); // 한 줄 띄기
 }
 
 void f2(int n)
