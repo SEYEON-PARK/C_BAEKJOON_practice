@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 void f1(int n); // 함수 f1()의 함수 원형 
-void f2(int n);
+void f2(int n); // 함수 f2()의 함수 원형 
 
 int main(void)
 {
@@ -18,8 +18,8 @@ int main(void)
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     f1(N); // 함수 f1() 호출
-    f2(N);
-    f1(N);
+    f2(N); // 함수 f2() 호출
+    f1(N); // 함수 f1() 호출
     
     return 0;
 }
