@@ -24,24 +24,24 @@ int main(void)
     return 0;
 }
 
-void f1(int n)
+void f1(int n) // 함수 f1() 정의
 {
-    for(int i=0;i<n+2;i++)
+    for(int i=0;i<n+2;i++) // i가 0부터 n+2보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
+        printf("@"); // "@" 출력하기
     }
-    printf("\n");
+    printf("\n"); // 한 줄 띄기
 }
 
-void f2(int n)
+void f2(int n) // 함수 f2() 정의
 {
-    for(int j=0;j<n;j++)
+    for(int j=0;j<n;j++) // j가 0부터 n보다 작을 때까지 1씩 증가하며 반복
     {
-        printf("@");
-        for(int i=0;i<n;i++)
+        printf("@"); // "@" 출력하기
+        for(int i=0;i<n;i++) // i가 0부터 n보다 작을 때까지 1씩 증가하며 반복
         {
-            printf(" ");
+            printf(" "); // 공백 출력하기
         }
-        printf("@\n");
+        printf("@\n"); // "@" 출력 후, 한 줄 
     }
 }
