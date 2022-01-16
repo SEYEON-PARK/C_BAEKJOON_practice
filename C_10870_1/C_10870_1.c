@@ -28,17 +28,17 @@ int main(void)
         printf("0"); // "0" 출력하기
         return 0; // 0을 반환하고 프로그램 종료하기
     }
-    else if(N==1)
-    {
-        printf("1");
-        return 0;
+    else if(N==1) // 만약, N이 0이 아니고 1이라면
+    { 
+        printf("1"); // "1" 출력하기
+        return 0; // 0을 반환하고 프로그램 종료하기
     }
     
-    for(int j=1;j<N;j++)
+    for(int j=1;j<N;j++) // j가 1부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        f(i, B);
-        i++;
+        f(i, B); // 함수 f()에 i, B를 넣어 호출하기 
+        i++; // i에 1 더하기
     }
-    printf("%d", B[N]);
+    printf("%d", B[N]); // 결과 출력하기
     return 0;
 }
