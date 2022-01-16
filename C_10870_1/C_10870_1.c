@@ -12,9 +12,9 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 
 #include <stdio.h>
 
-void f(int i, int *b)
+void f(int i, int *b) // 함수 f() 선언
 {
-    b[i]=b[i-2]+b[i-1];
+    b[i]=b[i-2]+b[i-1]; // b[i]에 b[i-2]+b[i-1] 값 대입하기
 }
 
 int main(void)
