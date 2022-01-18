@@ -14,7 +14,7 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 
 void f(int i, int *b) // 정수 i와 배열 b를 매개변수로 받아 작동하는 함수 f() 선언
 {
-    b[i]=b[i-2]+b[i-1]; // 
+    b[i]=b[i-2]+b[i-1]; // b[i]에 b[i-2]+b[i-1] 대입하기
 }
 
 int main(void)
@@ -26,18 +26,18 @@ int main(void)
     if(N==0) // 만약, N이 0이라면
     {
         printf("0"); // "0" 출력하기
-        return 0;
+        return 0; // 0 반환 후, 종료하기
     }
-    else if(N==1)
+    else if(N==1) // 만약, N이 0이 아니고 1이라면
     {
-        printf("1");
-        return 0;
+        printf("1"); // "1" 출력하기
+        return 0; // 0 반환 후, 종료하기
     }
     
-    for(int j=1;j<N;j++)
+    for(int j=1;j<N;j++) // j가 1부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        f(i++, B);
+        f(i++, B); // 함수 f()에 정수 i와 배열 B를 인수로 보낸 후, i에 1 더하기
     }
-    printf("%d", B[N]);
+    printf("%d", B[N]); // 결과 출력하기
     return 0;
 }
