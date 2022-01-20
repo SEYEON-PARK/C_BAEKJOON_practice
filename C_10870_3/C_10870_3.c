@@ -12,13 +12,13 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 
 #include <stdio.h>
 
-void f(int i, int *b);
+void f(int i, int *b); // f() 함수의 함수 원형
 
 int main(void)
 {
-    int N, i=2;
-    scanf("%d", &N);
-    int B[21]={0, 1};
+    int N, i=2; // 정수 선언 및 초기화
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
+    int B[21]={0, 1}; // 배열 선언 및 초기화
     
     if(N==0)
     {
