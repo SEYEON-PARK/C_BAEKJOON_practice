@@ -13,10 +13,10 @@
 
 int main(void)
 {
-    int i=0;
-    double f[10000];
+    int i=0; // 변수 선언 및 초기화
+    double f[10000]; // 배열 선언 및 초기화
     
-    while(1)
+    while(1) // 무한 반복
     {
         scanf("%lf", &f[i]);
         if(f[i]==999)
