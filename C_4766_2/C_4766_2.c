@@ -26,11 +26,11 @@ int main(void)
         i++; // i에 1 더하기
     }
     
-    i=1;
+    i=1; // i에 1 대입하기
     
-    for(int j=1;f[j]!=999;j++)
+    for(int j=1;f[j]!=999;j++) // j가 1부터 f[j]가 999가 아닐 때까지 1씩 증가하며 반복
     {
-        printf("%.2lf\n", f[i]-f[i-1]);
+        printf("%.2lf\n", f[i]-f[i-1]); // 
         ++i;
     }
     
