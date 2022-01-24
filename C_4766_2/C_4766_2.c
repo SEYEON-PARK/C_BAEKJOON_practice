@@ -30,8 +30,8 @@ int main(void)
     
     for(int j=1;f[j]!=999;j++) // j가 1부터 f[j]가 999가 아닐 때까지 1씩 증가하며 반복
     {
-        printf("%.2lf\n", f[i]-f[i-1]); // 
-        ++i;
+        printf("%.2lf\n", f[i]-f[i-1]); // 결괏값을 소수점 둘째 자리까지 출력하기
+        ++i; // i에 1 
     }
     
     return 0;
