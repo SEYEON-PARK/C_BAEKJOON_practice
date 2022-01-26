@@ -13,17 +13,17 @@
 
 int main(void)
 {
-    int i=0;
-    float f[10000];
+    int i=0; // 변수 선언 및 초기화
+    float f[10000]; // 실수 배열 선언
     
-    while(1)
+    while(1) // 무한 반복
     {
-        scanf("%f", &f[i]);
-        if(f[i]==999)
+        scanf("%f", &f[i]); // 사용자로부터 실수 입력받기
+        if(f[i]==999) // 만약, f[i]가 999라면
         {
-            break;
+            break; // 가장 가까운 반복문 빠져 나가기
         }
-        i++;
+        i++; // i에 1 더하기
     }
     
     i=0;
