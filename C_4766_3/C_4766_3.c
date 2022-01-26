@@ -26,12 +26,12 @@ int main(void)
         i++; // i에 1 더하기
     }
     
-    i=0;
+    i=0; // i에 0 대입하기
     
     for(int j=0;f[j+1]!=999;j++)
     {
-        printf("%.2f\n", f[i+1]-f[i]);
-        i++;
+        printf("%.2f\n", f[i+1]-f[i]); // 결괏값을 소수점 둘째 자리까지 출력하기
+        i++; // i에 1 더하기
     }
     
     return 0;
