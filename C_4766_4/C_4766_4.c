@@ -8,3 +8,30 @@
 
 입력으로 주어진 각 온도와 이전 온도와의 차이를 출력한다. 첫 번째 측정할 온도는 이전 온도가 없으니 출력할 필요가 없다. 차이는 항상 소수점 둘째자리까지 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i=0;
+    double f[10000];
+    
+    while(1)
+    {
+        scanf("%lf", &f[i]);
+        if(f[i]==999)
+        {
+            break;
+        }
+        i++;
+    }
+    
+    i=0;
+    
+    for(int j=0;f[j+1]!=999;j++, i++)
+    {
+        printf("%.2lf\n", f[i+1]-f[i]);
+    }
+    
+    return 0;
+}
