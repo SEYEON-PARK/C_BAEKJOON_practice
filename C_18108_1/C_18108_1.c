@@ -16,7 +16,7 @@ int main(void)
     int y; // 변수 선언
     scanf("%d", &y); // 사용자로부터 정수(불기 연도) 입력받기
     
-    printf("%d\n", y-543);
+    printf("%d\n", y-543); // 결과(서기 연도) 출력하기
     
     return 0;
 }
