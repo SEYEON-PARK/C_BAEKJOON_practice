@@ -13,7 +13,7 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 int main(void)
 {
-    int y;
+    int y; // 변수 선언
     scanf("%d", &y);
     
     printf("%d\n", y-543);
