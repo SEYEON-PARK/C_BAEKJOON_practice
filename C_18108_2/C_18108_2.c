@@ -13,12 +13,12 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 void print(int year) // print() 함수 선언
 {
-    printf("%d\n", year-543);
+    printf("%d\n", year-543); // 결과(서기 연도) 출력하기
 }
 
 int main(void)
 {
-    int y;
+    int y; // 변수 선언
     scanf("%d", &y);
     
     print(y);
