@@ -11,7 +11,7 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 #include <stdio.h>
 
-void print(int year)
+void print(int year) // print() 함수 선언
 {
     printf("%d\n", year-543);
 }
