@@ -8,3 +8,20 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 불기 연도를 서기 연도로 변환한 결과를 출력한다.
 */
+
+#include <stdio.h>
+
+int v(int year)
+{
+    return year-543;
+}
+
+int main(void)
+{
+    int y;
+    scanf("%d", &y);
+    
+    printf("%d\n", v(y));
+    
+    return 0;
+}
