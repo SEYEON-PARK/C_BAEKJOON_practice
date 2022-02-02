@@ -19,9 +19,9 @@ void print(int year) // print() 함수 선언
 int main(void)
 {
     int y; // 변수 선언
-    scanf("%d", &y);
+    scanf("%d", &y); // 사용자로부터 정수 입력받기
     
-    print(y);
+    print(y); // print() 함수 이용하기
     
     return 0;
 }
