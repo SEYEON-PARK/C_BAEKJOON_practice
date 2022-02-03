@@ -18,8 +18,8 @@ int v(int year) // 함수 v() 선언
 
 int main(void)
 {
-    int y;
-    scanf("%d", &y);
+    int y; // 변수 선언
+    scanf("%d", &y); // 사용자로부터 정수 입력받기
     
     printf("%d\n", v(y));
     
