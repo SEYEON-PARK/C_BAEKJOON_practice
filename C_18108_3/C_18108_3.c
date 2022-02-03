@@ -11,9 +11,9 @@ ICPC Bangkok Regional에 참가하기 위해 수완나품 국제공항에 막 �
 
 #include <stdio.h>
 
-int v(int year)
+int v(int year) // 함수 v() 선언
 {
-    return year-543;
+    return year-543; // year-543 값 반환하기
 }
 
 int main(void)
