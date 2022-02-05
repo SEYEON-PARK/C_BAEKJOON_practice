@@ -12,7 +12,7 @@
 
 int main(void)
 {
-    char id[51];
+    char id[51]; // 문자형 배열 선언
     scanf("%s", id);
     
     printf("%s??!", id);
