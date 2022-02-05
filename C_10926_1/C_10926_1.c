@@ -15,7 +15,7 @@ int main(void)
     char id[51]; // 문자형 배열 선언
     scanf("%s", id); // 사용자로부터 문자열 입력받기
     
-    printf("%s??!", id);
+    printf("%s??!", id); // 사용자가 입력한 문자열에 "??!"를 붙여서 출력하기
     
     return 0;
 }
