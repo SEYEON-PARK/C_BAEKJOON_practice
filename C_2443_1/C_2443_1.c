@@ -16,13 +16,13 @@ int main(void)
     
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        for(int x=i;x>0;x--)
+        for(int x=i;x>0;x--) // x가 i부터 0보다 클 때까지 1씩 감소하며 반복
         {
-            printf(" ");
+            printf(" "); // 공백 출력하기
         }
-        for(int j=2*N-count;j>=1;j--)
+        for(int j=2*N-count;j>=1;j--) // j가 
         {
-            printf("*");
+            printf("*"); // "*" 
         }
         count+=2;
         
