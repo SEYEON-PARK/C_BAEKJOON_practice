@@ -20,7 +20,7 @@ int main(void)
         {
             printf(" "); // 공백 출력하기
         }
-        for(int j=2*N-count;j>=1;j--) // j가 2*N-count부터 1보다 크거나 같을 때까지 1씩 증가하며 반복
+        for(int j=2*N-count;j>=1;j--) // j가 2*N-count부터 1보다 크거나 같을 때까지 1씩 감소하며 반복
         {
             printf("*"); // "*" 출력하기
         }
