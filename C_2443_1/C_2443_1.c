@@ -6,3 +6,28 @@
 
 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N, count=1;
+    scanf("%d", &N);
+    
+    for(int i=0;i<N;i++)
+    {
+        for(int x=i;x>0;x--)
+        {
+            printf(" ");
+        }
+        for(int j=2*N-count;j>=1;j--)
+        {
+            printf("*");
+        }
+        count+=2;
+        
+        printf("\n");        
+    }
+    
+    return 0;
+}
