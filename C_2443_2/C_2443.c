@@ -17,9 +17,9 @@ void fun1(int num) // 함수 fun1() 선언
     }
 }
 
-void fun2(int num)
+void fun2(int num) // 함수 fun2() 선언
 {
-    for(int x=num;x>0;x--)
+    for(int x=num;x>0;x--) 
     {
         printf("*");
     }
@@ -27,10 +27,10 @@ void fun2(int num)
 
 int main(void)
 {
-    int N, count=1;
-    scanf("%d", &N);
+    int N, count=1; // 변수 선언 및 초기화
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // 
     {
         fun1(i);
         fun2(2*N-count);
