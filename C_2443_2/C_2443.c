@@ -9,11 +9,11 @@
 
 #include <stdio.h>
 
-void fun1(int num)
+void fun1(int num) // 함수 fun1() 선언
 {
-    for(int x=num;x>0;x--)
+    for(int x=num;x>0;x--) // x는 num부터 0보다 클 때까지 1씩 감소하며 반복
     {
-        printf(" ");
+        printf(" "); // 공백 출력하기
     }
 }
 
