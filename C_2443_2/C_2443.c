@@ -34,7 +34,7 @@ int main(void)
     {
         fun1(i); // i를 인수로 하여 fun1() 함수 호출 
         fun2(2*N-count); // 2*N-count를 인수로 하여 fun2() 함수 호출
-        count+=2; // count에 count+2 호출
+        count+=2; // count에 count+2 대입
         
         printf("\n"); // 한 줄 띄기
     }
