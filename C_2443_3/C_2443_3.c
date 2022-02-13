@@ -23,17 +23,17 @@ int main(void)
         fun2(2*N-count);
         count+=2;
         
-        printf("\n");        
+        printf("\n"); // 한 줄 띄기
     }
     
     return 0;
 }
 
-void fun1(int num)
+void fun1(int num) // 함수 fun1() 정의
 {
-    for(int x=num;x>0;x--)
+    for(int x=num;x>0;x--) // x가 num부터 0보다 클 때까지 1씩 감소하며 반복
     {
-        printf(" ");
+        printf(" "); // 공백 출력하기
     }
 }
 
