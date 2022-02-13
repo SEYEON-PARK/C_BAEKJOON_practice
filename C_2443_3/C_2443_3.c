@@ -10,7 +10,7 @@
 #include <stdio.h>
 
 void fun1(int num); // 함수 fun1()의 함수 원형
-void fun2(int num);
+void fun2(int num); // 함수 fun2()의 함수 원형
 
 int main(void)
 {
@@ -20,8 +20,8 @@ int main(void)
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
         fun1(i); // i의 값을 인수로 하여 함수 fun1() 호출하기
-        fun2(2*N-count);
-        count+=2;
+        fun2(2*N-count); // 2*N-count의 값을 인수로 하여 함수 fun2() 호출하기
+        count+=2; // count에 count+2 대입하기
         
         printf("\n"); // 한 줄 띄기
     }
@@ -37,10 +37,10 @@ void fun1(int num) // 함수 fun1() 정의
     }
 }
 
-void fun2(int num)
+void fun2(int num) // 함수 fun2() 정의
 {
-    for(int x=num;x>0;x--)
+    for(int x=num;x>0;x--) // x가 num부터 0보다 클 때까지 1씩 감소하며 반복
     {
-        printf("*");
+        printf("*"); // "*" 출력하기
     }
 }
