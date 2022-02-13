@@ -9,17 +9,17 @@
 
 #include <stdio.h>
 
-void fun1(int num);
+void fun1(int num); // 함수 fun1()의 함수 원형
 void fun2(int num);
 
 int main(void)
 {
-    int N, count=1;
-    scanf("%d", &N);
+    int N, count=1; // 변수 선언 및 초기화
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        fun1(i);
+        fun1(i); // i의 값을 인수로 하여 함수 fun1() 호출하기
         fun2(2*N-count);
         count+=2;
         
