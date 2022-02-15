@@ -20,9 +20,9 @@ void fun(int num, int t) // 함수 fun() 선언
     }
     else // t가 0이 아니라면
     {
-        for(int x=num;x>0;x--)
+        for(int x=num;x>0;x--) // x가 num부터 0보다 클 때까지 1씩 감소하며 반복
         {
-            printf("*");
+            printf("*"); // "*" 출력하기
         }
     }
 }
@@ -35,11 +35,11 @@ int main(void)
     
     for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        fun(i, 0); // i의 값과 0을 인수로 하여 함수 fun() 
-        fun(2*N-count, 1);
-        count+=2;
+        fun(i, 0); // i의 값과 0을 인수로 하여 함수 fun() 호출
+        fun(2*N-count, 1); // 2*N-count의 값과 1을 인수로 하여 함수 fun() 호출
+        count+=2; // count에 count+2 값 대입하기
         
-        printf("\n");        
+        printf("\n"); // 한 줄 띄기
     }
     
     return 0;
