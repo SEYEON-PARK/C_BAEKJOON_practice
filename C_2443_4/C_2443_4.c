@@ -18,7 +18,7 @@ void fun(int num, int t) // 함수 fun() 선언
             printf(" "); // 공백 출력하기
         }
     }
-    else
+    else // t가 0이 아니라면
     {
         for(int x=num;x>0;x--)
         {
@@ -30,12 +30,12 @@ void fun(int num, int t) // 함수 fun() 선언
 
 int main(void)
 {
-    int N, count=1;
-    scanf("%d", &N);
+    int N, count=1; // 변수 선언 및 초기화
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        fun(i, 0);
+        fun(i, 0); // i의 값과 0을 인수로 하여 함수 fun() 
         fun(2*N-count, 1);
         count+=2;
         
