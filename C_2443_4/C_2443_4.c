@@ -9,13 +9,13 @@
 
 #include <stdio.h>
 
-void fun(int num, int t)
+void fun(int num, int t) // 함수 fun() 선언
 {
-    if(t==0)
+    if(t==0) // 만약, t가 0이라면
     {
-        for(int x=num;x>0;x--)
+        for(int x=num;x>0;x--) // x가 num부터 0보다 클 때까지 1씩 감소하며 반복
         {
-            printf(" ");
+            printf(" "); // 공백 출력하기
         }
     }
     else
