@@ -8,3 +8,15 @@
 
 출력으로 홍익대학교의 개교 주년을 나타내는 정수를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    
+    printf("%d", N-1946);
+    
+    return 0;
+}
