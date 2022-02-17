@@ -13,7 +13,7 @@
 
 int main(void)
 {
-    int N;
+    int N; // 변수 선언
     scanf("%d", &N);
     
     printf("%d", N-1946);
