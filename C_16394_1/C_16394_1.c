@@ -16,7 +16,7 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    printf("%d", N-1946);
+    printf("%d", N-1946); // 결과(홍익대학교의 개교 주년) 출력하기
     
     return 0;
 }
