@@ -14,7 +14,7 @@
 int main(void)
 {
     int N; // 변수 선언
-    scanf("%d", &N);
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     printf("%d", N-1946);
     
