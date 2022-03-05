@@ -24,9 +24,9 @@ int main(void)
 {
     struct time one; // struct time의 객체 one 생성
     scanf("%d %d", &one.h, &one.m); // 사용자로부터 두 개의 정수 입력받기
-    scanf("%d", &one.plus);
+    scanf("%d", &one.plus); // 사용자로부터 정수 입력받기
     
-    one.h+=one.plus/60;
+    one.h+=one.plus/60; // one.h에 one.h+one.puls/60 값 대입하기
     one.m+=one.plus%60;
     
     if(one.m>59)
