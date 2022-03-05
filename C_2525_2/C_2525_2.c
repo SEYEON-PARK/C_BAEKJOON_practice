@@ -18,12 +18,12 @@ struct time
     int h;
     int m;
     int plus;
-};
+}; // 구조체 time 정의하기
 
 int main(void)
 {
-    struct time one;
-    scanf("%d %d", &one.h, &one.m);
+    struct time one; // struct time의 객체 one 생성
+    scanf("%d %d", &one.h, &one.m); // 사용자로부터 두 개의 정수 입력받기
     scanf("%d", &one.plus);
     
     one.h+=one.plus/60;
