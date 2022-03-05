@@ -23,23 +23,23 @@ struct time
 int main(void)
 {
     struct time one; // struct time의 객체 one 생성
-    scanf("%d %d", &one.h, &one.m); // 사용자로부터 두 개의 정수 입력받기
-    scanf("%d", &one.plus); // 사용자로부터 정수 입력받기
+    scanf("%d %d", &one.h, &one.m); // 사용자로부터 두 개의 정수(현재 시각) 입력받기
+    scanf("%d", &one.plus); // 사용자로부터 정수(요리하는 데 필요한 시간) 입력받기
     
-    one.h+=one.plus/60; // one.h에 one.h+one.puls/60 값 대입하기
-    one.m+=one.plus%60;
+    one.h+=one.plus/60; // one.h에 one.h+(one.plus/60) 값 대입하기
+    one.m+=one.plus%60; // one.m에 one.m+(one.plus%60) 값 대입하기
     
-    if(one.m>59)
+    if(one.m>59) // 만약, one.m이 59보다 크다면
     {
-        one.h++;
-        one.m-=60;
+        one.h++; // one.h에 1 더하기
+        one.m-=60; // one.m에 one.m-60 값 대입하기
     }
-    if(one.h>23)
+    if(one.h>23) // 만약, one.h가 23보다 크다면
     {
-        one.h-=24;
+        one.h-=24; // one.h에 one.h-24 값 대입하기
     }
        
-    printf("%d %d", one.h, one.m);
+    printf("%d %d", one.h, one.m); // 결과(종료되는 시각) 출력하기
     
     return 0;
 }
