@@ -5,3 +5,23 @@
 
 각 테스트 케이스에 대해서 히스토그램의 크기 k와 동일한 수의 '='를 출력한다. '='사이에 공백은 존재하지 않는다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int T, a;
+    scanf("%d", &T);
+    
+    for(int i=0;i<T;i++)
+    {
+        scanf("%d", &a);
+        for(int j=0;j<a;j++)
+        {
+            printf("=");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
