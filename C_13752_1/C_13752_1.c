@@ -11,16 +11,16 @@
 int main(void)
 {
     int T, a; // 변수 선언
-    scanf("%d", &T);
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<T;i++)
+    for(int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d", &a);
-        for(int j=0;j<a;j++)
+        scanf("%d", &a); // 사용자로부터 정수 입력받기
+        for(int j=0;j<a;j++) // j가 0부터 a보다 작을 때까지 1씩 증가하며 반복
         {
-            printf("=");
+            printf("="); // "=" 출력하기
         }
-        printf("\n");
+        printf("\n"); 
     }
     
     return 0;
