@@ -21,10 +21,10 @@ int main(void)
     {
         scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
         int r=a; // r에 a의 값 대입하기
-        for (int j = b; j > 1; j--)
+        for (int j = b; j > 1; j--) // j가 b부터 1보다 클 때까지 1씩 감소하며 반복
         {
-            a *= r;
-            a %= 10;
+            a *= r; // a에 a*r 값 대입하기
+            a %= 10; // a에 a%10 값 대입하기
         }
 
         if (a > 9)
