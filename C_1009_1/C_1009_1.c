@@ -14,13 +14,13 @@
 
 int main(void)
 {
-    int T, a, b;
-    scanf("%d", &T);
+    int T, a, b; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<T;i++)
+    for(int i=0;i<T;i++) // i가 0부터 T보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d", &a, &b);
-        int r=a;
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        int r=a; // r에 a의 값 대입하기
         for (int j = b; j > 1; j--)
         {
             a *= r;
