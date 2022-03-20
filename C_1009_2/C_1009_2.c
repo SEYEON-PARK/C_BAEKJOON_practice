@@ -9,3 +9,35 @@
 
 각 테스트 케이스에 대해 마지막 데이터가 처리되는 컴퓨터의 번호를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int T, a, b;
+    scanf("%d", &T);
+    
+    for(int i=0;i<T;i++)
+    {
+        scanf("%d %d", &a, &b);
+        int r=a;
+        a=1;
+        
+        for (int j = b; j > 0; j--)
+        {
+            a *= r;
+            a %= 10;
+        }
+
+        if (a == 0)
+        {
+            printf("10\n");
+        }
+        else
+        {
+            printf("%d\n", a);
+        }
+    }
+
+    return 0;
+}
