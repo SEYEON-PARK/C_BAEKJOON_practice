@@ -29,9 +29,9 @@ int main(void)
             a %= 10; // a에 a%10의 값 대입하기
         }
 
-        if (a == 0)
+        if (a == 0) // 만약, a가 0이라면
         {
-            printf("10\n");
+            printf("10\n"); // "10" 출력하기
         }
         else
         {
