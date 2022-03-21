@@ -33,9 +33,9 @@ int main(void)
         {
             printf("10\n"); // "10" 출력하기
         }
-        else
+        else // a가 0이 아니라면
         {
-            printf("%d\n", a);
+            printf("%d\n", a); // a의 값 출력하기
         }
     }
 
