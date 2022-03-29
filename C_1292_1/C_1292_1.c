@@ -31,12 +31,12 @@ int main(void)
         }
         else // a가 start보다 크거나 같거나, start가 b보다 크다면
         {
-            a=b;
-            b+=plus;
-            plus++;
+            a=b; // a에 b 값 대입하기
+            b+=plus; // b에 b+plus 값 대입하기
+            plus++; // plus에 1 더하기
         }
     }
     
-    printf("%d", result);
+    printf("%d", result); // 결과 출력하기
     
 }
