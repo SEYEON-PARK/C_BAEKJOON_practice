@@ -22,14 +22,14 @@ int main(void)
         start++; // start에 1 더하기
     }
     
-    while(end>=start)
+    while(end>=start) // end가 start보다 크거나 같다면(end번째 숫자까지 더해줘야 하기 때문에 같다는 조건을 넣었다.) 
     {
-        if(a<start && start<=b)
+        if(a<start && start<=b) // 만약, a가 start보다 작고 start가 b보다 작거나 같으면
         {
-            result+=plus-1;
-            start++;
+            result+=plus-1; // result에 result+plus-1 값 대입하기
+            start++; // start에 1 더하기
         }
-        else
+        else // a가 start보다 크거나 같거나, start가 b보다 크다면
         {
             a=b;
             b+=plus;
