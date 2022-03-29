@@ -12,14 +12,14 @@
 
 int main(void)
 {
-    int a=1, b=3, plus=3;
-    int start, end, result=0;
-    scanf("%d %d", &start, &end);
+    int a=1, b=3, plus=3; // 변수 선언 및 초기화(a, b는 구간, plus는 구간에 더해줄 수)
+    int start, end, result=0; // 변수 선언 및 초기화(start, end는 사용자가 입력할 변수, result는 결괏값을 저장할 변수)
+    scanf("%d %d", &start, &end); // 사용자로부터 두 개의 정수 입력받기
     
-    if(start==1)
+    if(start==1) // 만약, start가 1이라면
     {
-        result=1;
-        start++;
+        result=1; // result에 1 대입하기
+        start++; // start에 1 더하기
     }
     
     while(end>=start)
