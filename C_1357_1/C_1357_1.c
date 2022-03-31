@@ -26,10 +26,10 @@ int Rev(int a) // Rev() 함수 선언
 
 int main(void)
 {
-    int X, Y;
-    scanf("%d %d", &X, &Y);
+    int X, Y; // 변수 선언
+    scanf("%d %d", &X, &Y); // 사용자로부터 두 개의 정수 입력받기
     
-    printf("%d", Rev(Rev(X)+Rev(Y)));
+    printf("%d", Rev(Rev(X)+Rev(Y))); // Rev() 함수를 호출하여 결과 출력하기
     
     return 0; 
 }
