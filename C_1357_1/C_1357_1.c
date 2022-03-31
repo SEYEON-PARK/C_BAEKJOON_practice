@@ -10,13 +10,13 @@ Rev(X)를 X의 모든 자리수를 역순으로 만드는 함수라고 하자. �
 
 #include <stdio.h>
 
-int Rev(int a)
+int Rev(int a) // Rev() 함수 선언
 {
-    int result=0;
+    int result=0; // 변수 선언 및 초기화
     
-    while(a%10>0 || a/10>0)
+    while(a%10>0 || a/10>0) // a%10의 값이 0보다 크거나 a/10의 값이 0보다 크다면 반복
     {
-        result*=10;
+        result*=10; // result에 result*10 값 대입하기
         result+=a%10;
         a/=10;
     }
