@@ -17,11 +17,11 @@ int Rev(int a) // Rev() 함수 선언
     while(a%10>0 || a/10>0) // a%10의 값이 0보다 크거나 a/10의 값이 0보다 크다면 반복
     {
         result*=10; // result에 result*10 값 대입하기
-        result+=a%10;
-        a/=10;
+        result+=a%10; // result에 result+a%10 값 대입하기
+        a/=10; // a에 a/10 값 대입하기
     }
     
-    return result;
+    return result; // result 값 반환하기
 }
 
 int main(void)
