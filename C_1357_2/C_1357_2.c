@@ -29,7 +29,7 @@ int main(void)
     int X, Y; // 변수 선언
     scanf("%d %d", &X, &Y); // 사용자로부터 두 개의 정수 입력받기
     
-    printf("%d", Rev(Rev(X)+Rev(Y)));
+    printf("%d", Rev(Rev(X)+Rev(Y))); // 함수 Rev()를 이용하여 결과 출력하기
     
     return 0; 
 }
