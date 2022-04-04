@@ -22,11 +22,11 @@ int main(void)
     return 0; 
 }
 
-int Rev(int a)
+int Rev(int a) // 함수 Rev() 선언
 {
-    int result=0;
+    int result=0; // 변수 선언 및 초기화
     
-    while(a!=0)
+    while(a!=0) // a가 0이 아니라면 반복
     {
         result*=10;
         result+=a%10;
