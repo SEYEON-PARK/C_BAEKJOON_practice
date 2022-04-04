@@ -28,10 +28,10 @@ int Rev(int a) // 함수 Rev() 선언
     
     while(a!=0) // a가 0이 아니라면 반복
     {
-        result*=10;
-        result+=a%10;
-        a/=10;
+        result*=10; // result에 result*10 값 대입하기
+        result+=a%10; // result에 result+a%10 값 대입하기
+        a/=10; // a에 a/10 값 대입하기
     }
     
-    return result;
+    return result; // result 값 
 }
