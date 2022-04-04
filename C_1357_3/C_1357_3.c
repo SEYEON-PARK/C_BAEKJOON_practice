@@ -33,5 +33,5 @@ int Rev(int a) // 함수 Rev() 선언
         a/=10; // a에 a/10 값 대입하기
     }
     
-    return result; // result 값 
+    return result; // result 값 반환하기
 }
