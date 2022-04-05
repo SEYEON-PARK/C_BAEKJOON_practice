@@ -9,3 +9,40 @@
 
 마지막 줄에 "Before", "After"나 "Special"을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int month, day;
+    scanf("%d %d", &month, &day);
+    
+    if(month>2)
+    {
+        printf("After\n");
+    }
+    else
+    {
+        if(month==1)
+        {
+            printf("Before\n");
+        }
+        else
+        {
+            if(day>18)
+            {
+                printf("After\n");
+            }
+            else if(day<18)
+            {
+                printf("Before\n");
+            }
+            else
+            {
+                printf("Special\n");
+            }
+        }
+    }
+    
+    return 0;
+}
