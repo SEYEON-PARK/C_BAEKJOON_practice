@@ -14,12 +14,12 @@
 
 int main(void)
 {
-    int month, day;
-    scanf("%d %d", &month, &day);
+    int month, day; // 변수 선언
+    scanf("%d %d", &month, &day); // 사용자로부터 두 개의 정수(월과 달) 입력받기
     
-    if(month>2)
+    if(month>2) // 만약, month(월)가 2보다 크다면
     {
-        printf("After\n");
+        printf("After\n"); // "After" 출력하기
     }
     else
     {
