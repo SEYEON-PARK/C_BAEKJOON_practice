@@ -15,31 +15,31 @@
 int main(void)
 {
     int month, day; // 변수 선언
-    scanf("%d %d", &month, &day); // 사용자로부터 두 개의 정수(월과 달) 입력받기
+    scanf("%d %d", &month, &day); // 사용자로부터 두 개의 정수(월과 날짜) 입력받기
     
     if(month>2) // 만약, month(월)가 2보다 크다면
     {
         printf("After\n"); // "After" 출력하기
     }
-    else
+    else // month(월)가 2보다 작거나 같다면
     {
         if(month==1) // 만약, month(월)이 1과 같다면
         {
             printf("Before\n"); // "Before" 출력하기
         }
-        else
+        else // month(월)이 1이 아니라면
         {
-            if(day>18)
+            if(day>18) // 만약, day(날짜)가 18보다 크다면
             {
-                printf("After\n");
+                printf("After\n"); // "After" 출력하기
             }
-            else if(day<18)
+            else if(day<18) // 만약, day(날짜)가 18보다 크지 않고 작다면
             {
-                printf("Before\n");
+                printf("Before\n"); // "Before" 출력하기
             }
-            else
+            else // day(날짜)가 18보다 크지 않고 작지도 않으면(18과 같다면)
             {
-                printf("Special\n");
+                printf("Special\n"); // "Special" 출력하기
             }
         }
     }
