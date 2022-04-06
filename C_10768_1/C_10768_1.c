@@ -23,9 +23,9 @@ int main(void)
     }
     else
     {
-        if(month==1)
+        if(month==1) // 만약, month(월)이 1과 같다면
         {
-            printf("Before\n");
+            printf("Before\n"); // "Before" 출력하기
         }
         else
         {
