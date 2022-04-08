@@ -11,8 +11,8 @@
 
 int main(void)
 {
-    int M, F;
-    while(1)
+    int M, F; // 변수 선언
+    while(1) // 무한 반복
     {
         scanf("%d %d", &M, &F);
         if(M==0 && F==0)
