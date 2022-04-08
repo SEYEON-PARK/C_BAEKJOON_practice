@@ -14,7 +14,7 @@ int main(void)
     int M, F; // 변수 선언
     while(1) // 무한 반복
     {
-        scanf("%d %d", &M, &F);
+        scanf("%d %d", &M, &F); // 사용자로부터 두 개의 정수(상근이의 남자 친구의 수와 여자 친구의 수) 입력받기
         if(M==0 && F==0)
         {
             break;
