@@ -14,12 +14,12 @@ int main(void)
     int M, F; // 변수 선언
     for(;;) // 무한 반복
     {
-        scanf("%d %d", &M, &F);
-        if(M==0 && F==0)
+        scanf("%d %d", &M, &F); // 사용자로부터 두 개의 정수 입력받기
+        if(M==0 && F==0) // 만약, M이 0이고 F도 0이라면
         {
-            break;
+            break; // 가장 가까운 반복문을 빠져 나가기
         }
-        printf("%d\n", M+F);
+        printf("%d\n", M+F); // 결과 출력하기
     }
     
     return 0;
