@@ -6,3 +6,19 @@
 
 각 테스트 케이스마다 상근이의 친구의 수를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int M, F;
+    for(;;)
+    {
+        scanf("%d %d", &M, &F);
+        if(M==0 && F==0)
+            break;
+        printf("%d\n", M+F);
+    }
+    
+    return 0;
+}
