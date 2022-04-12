@@ -15,9 +15,9 @@ int main(void)
     for(;;) // 무한 반복
     {
         scanf("%d %d", &M, &F); // 사용자로부터 두 개의 정수 입력받기
-        if(M==0 && F==0)
-            break;
-        printf("%d\n", M+F);
+        if(M==0 && F==0) // 만약, M이 0이고 F도 0이라면
+            break; // 가장 가까운 반복문 빠져 나가기
+        printf("%d\n", M+F); // 결과 출력하기
     }
     
     return 0;
