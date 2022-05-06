@@ -17,11 +17,11 @@ int main(void)
     
     if(B-A>C-B) // 만약, B-A의 값이 C-B의 값보다 크다면 
     {
-        printf("%d", B-A-1); // 
+        printf("%d", B-A-1); // B-A-1 값 출력하기
     }
-    else
+    else // B-A의 값이 C-B의 값보다 작거나 같다면 
     {
-        printf("%d", C-B-1);
+        printf("%d", C-B-1); // C-B-1 값 출력하기
     }
     
     return 0;
