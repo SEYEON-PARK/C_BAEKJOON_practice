@@ -7,3 +7,24 @@
 
 캥거루가 최대 몇 번 움직일 수 있는지 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int A, B, C, result;
+    scanf("%d %d %d", &A, &B, &C);
+    
+    if(B-A>C-B)
+    {
+        result=B-A;
+    }
+    else
+    {
+        result=C-B;
+    }
+    
+    printf("%d", result-1);
+    
+    return 0;
+}
