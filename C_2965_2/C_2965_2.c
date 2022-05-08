@@ -19,12 +19,12 @@ int main(void)
     {
         result=B-A; // result에 B-A의 값 대입하기
     }
-    else
+    else // B-A가 C-B보다 작거나 같다면
     {
-        result=C-B;
+        result=C-B; // result에 C-B의 값 대입하기
     }
     
-    printf("%d", result-1);
+    printf("%d", result-1); // 결과(result-1) 출력하기
     
     return 0;
 }
