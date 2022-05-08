@@ -15,9 +15,9 @@ int main(void)
     int A, B, C, result; // 변수 선언
     scanf("%d %d %d", &A, &B, &C); // 사용자로부터 세 개의 정수 입력받기
     
-    if(B-A>C-B)
+    if(B-A>C-B) // 만약, B-A가 C-B보다 크다면
     {
-        result=B-A;
+        result=B-A; // result에 B-A의 값 대입하기
     }
     else
     {
