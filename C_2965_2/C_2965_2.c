@@ -12,8 +12,8 @@
 
 int main(void)
 {
-    int A, B, C, result;
-    scanf("%d %d %d", &A, &B, &C);
+    int A, B, C, result; // 변수 선언
+    scanf("%d %d %d", &A, &B, &C); // 사용자로부터 세 개의 정수 입력받기
     
     if(B-A>C-B)
     {
