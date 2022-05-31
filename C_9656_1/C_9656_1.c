@@ -17,7 +17,7 @@ int main(void)
     
     if(N%2==0) // 만약, N%2의 값이 0과 같다면
     {
-        printf("SK");
+        printf("SK"); // "SK" 출력하기
     }
     else
     {
