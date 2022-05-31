@@ -12,10 +12,10 @@
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    if(N%2==0)
+    if(N%2==0) // 만약, N%2의 값이 0과 같다면
     {
         printf("SK");
     }
