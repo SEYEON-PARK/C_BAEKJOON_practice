@@ -15,8 +15,8 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    if(N%2==0)
-        printf("SK");
+    if(N%2==0) // 만약, N%2의 값이 0이라면
+        printf("SK"); // "SK" 출력하기
     else
         printf("CY");
     
