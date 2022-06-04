@@ -19,9 +19,9 @@ int main(void)
     {
         printf("CY"); // "CY" 출력하기
     }
-    else
+    else // N%2의 값이 1이 아니라면
     {
-        printf("SK");
+        printf("SK"); // "SK" 출력하기
     }
     
     return 0;
