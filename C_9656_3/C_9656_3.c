@@ -15,9 +15,9 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    if(N%2==1)
+    if(N%2==1) // 만약, N%2의 값이 1이라면
     {
-        printf("CY");
+        printf("CY"); // "CY" 출력하기
     }
     else
     {
