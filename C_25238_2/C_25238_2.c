@@ -9,3 +9,18 @@
 
 몬스터에게 대미지를 줄 수 있으면 1, 그렇지 않으면 0을 출력해 주세요.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    
+    if(a-a*b/100.0>=100)
+        printf("0");
+    else
+        printf("1");
+    
+    return 0;
+}
