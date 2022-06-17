@@ -13,14 +13,14 @@
 
 #include <stdio.h>
 
-int main(void)
+int main(void
 {
     int a, b; // 변수 선언
     scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
     
-    if(a-a*(b/100.0)>=100)
+    if(a-a*(b/100.0)>=100) // a-a*(b/100.0)의 값이 100보다 크거나 같다면
         printf("0"); // "0" 출력하기
-    else
+    else // a-a*(b/100.0)의 값이 100보다 작다면
         printf("1"); // "1" 출력하기
     
     return 0;
