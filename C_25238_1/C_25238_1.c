@@ -19,9 +19,9 @@ int main(void)
     scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
     
     if(a-a*(b/100.0)>=100)
-        printf("0");
+        printf("0"); // "0" 출력하기
     else
-        printf("1");
+        printf("1"); // "1" 출력하기
     
     return 0;
 }
