@@ -15,10 +15,10 @@
 
 int main(void)
 {
-    int a, b;
-    scanf("%d %d", &a, &b);
+    int a, b; // 변수 선언
+    scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
     
-    if(a-a*(b/(float)100)>=100)
+    if(a-a*(b/(float)100)>=100) // 만약,
         printf("0");
     else
         printf("1");
