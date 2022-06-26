@@ -16,8 +16,8 @@
 
 int main(void)
 {
-    double a, b, r;
-    scanf("%lf %lf", &a, &b);
+    double a, b, r; // 변수 선언
+    scanf("%lf %lf", &a, &b); // 사용자로부터 두 개의 실수 입력받기
     
     r=a-(a*(b/100));
     
