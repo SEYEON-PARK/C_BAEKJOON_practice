@@ -19,12 +19,12 @@ int main(void)
     double a, b, r; // 변수 선언
     scanf("%lf %lf", &a, &b); // 사용자로부터 두 개의 실수 입력받기
     
-    r=a-(a*(b/100)); // r에 
+    r=a-(a*(b/100)); // r에 a-(a*(b/100)) 대입하기
     
-    if(r>=100)
-        printf("0");
-    else
-        printf("1");
+    if(r>=100) // 만약, r이 100보다 크거나 같다면
+        printf("0"); // "0" 출력하기
+    else // r이 100보다 작다면
+        printf("1"); // "1" 출력하기
     
     return 0;
 }
