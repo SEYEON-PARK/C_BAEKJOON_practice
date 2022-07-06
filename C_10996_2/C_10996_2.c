@@ -16,8 +16,8 @@ int main(void)
     for(int i=0;i<2*N;i++) // i가 0부터 2*N이 되기 전까지 1씩 증가하며 반복
     {
         if(i%2==0) // 만약, i%2의 값이 0과 같다면
-            a=1;
-        else
+            a=1; // a에 1 대입하기
+        else 
             a=0;
             
         for(int j=0;j<N;j++)
