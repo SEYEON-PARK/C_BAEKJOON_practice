@@ -10,10 +10,10 @@
 
 int main(void)
 {
-    int N, a;
-    scanf("%d", &N);
+    int N, a; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
 
-    for(int i=0;i<2*N;i++)
+    for(int i=0;i<2*N;i++) // i가 0부터 2*N이 되기 전까지 1씩 증가하며 반복
     {
         if(i%2==0)
             a=1;
