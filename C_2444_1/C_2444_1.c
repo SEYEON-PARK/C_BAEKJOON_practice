@@ -10,12 +10,12 @@
 
 int main(void)
 {
-    int N, j, minus=3;
-    scanf("%d", &N);
+    int N, j, minus=3; // 변수 선언 및 초기화
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<2*N-1;i++)
+    for(int i=0;i<2*N-1;i++) // i가 0부터 2*N-1가 되기 전까지 1씩 증가하며 반복
     {
-        if(i<=N-1)
+        if(i<=N-1) 
         {
             for(j=0;j<N-i-1;j++)
             {
