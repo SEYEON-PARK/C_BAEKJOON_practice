@@ -26,22 +26,22 @@ int main(void)
                 printf("*"); // "*" 출력하기
             }
             
-            printf("\n");
+            printf("\n"); // 한 줄 띄기
         }
-        else
+        else // i가 N-1보다 작거나 같지 않다면(크다면)
         {
-            for(j=0;j<i-N+1;j++)
+            for(j=0;j<i-N+1;j++) // j가 0부터 i-N+1보다 작을 때까지 1씩 증가하며 반복
             {
-                printf(" ");
+                printf(" "); // " " 출력하기
             }
-            for(int k=2*N-minus;k>0;k--)
+            for(int k=2*N-minus;k>0;k--) //k가 2*N-minus부터 0보다 클 때까지 1씩 감소하며 반복
             {
-                printf("*");
+                printf("*"); // "*" 출력하기
             }
-            minus++;
-            minus++;
+            minus++; // minus에 1 더하기
+            minus++; // minus에 1 더하기
             
-            printf("\n");
+            printf("\n"); // 한 줄 띄기
         }
         
         
