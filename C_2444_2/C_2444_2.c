@@ -19,14 +19,14 @@ int main(void)
         {
             for(j=0;j<N-i-1;j++) // j가 0부터 N-i-1가 되기 전까지 1씩 증가하며 반복
             {
-                printf(" ");
+                printf(" "); // " " 출력하기
             }
-            for(int k=0;k<2*(i+1)-1;k++)
+            for(int k=0;k<2*(i+1)-1;k++) // k가 0부터 2*(i+1)-1보다 작을 때까지 1씩 증가하며 반복
             {
-                printf("*");
+                printf("*"); // "*" 출력하기
             }
             
-            printf("\n");
+            printf("\n"); // 한 줄 띄기
         }
         else
         {
