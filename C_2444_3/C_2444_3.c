@@ -28,19 +28,19 @@ int main(void)
             
             printf("\n"); // 한 줄 띄기
         }
-        else
+        else // i가 N-1보다 작거나 같지 않다면(크다면)
         {
-            for(int j=0;j<i-N+1;j++) //
+            for(int j=0;j<i-N+1;j++) // j가 0부터 1-N+1이 되기 전까지 1씩 증가하며 반복
             {
-                printf(" ");
+                printf(" "); // " " 출력하기
             }
-            for(int k=2*N-minus;k>0;k--)
+            for(int k=2*N-minus;k>0;k--) // k가 2*N-minus부터 0이 되기 전까지 1씩 감소하며 반복
             {
-                printf("*");
+                printf("*"); // "*" 출력하기
             }
-            minus+=2;
+            minus+=2; // minus에 minus+2의 값 대입하기
             
-            printf("\n");
+            printf("\n"); // 한 줄 띄기
         }
         
         
