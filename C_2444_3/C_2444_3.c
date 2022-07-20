@@ -30,7 +30,7 @@ int main(void)
         }
         else
         {
-            for(int j=0;j<i-N+1;j++)
+            for(int j=0;j<i-N+1;j++) //
             {
                 printf(" ");
             }
