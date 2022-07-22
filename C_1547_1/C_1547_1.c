@@ -20,9 +20,9 @@ int main(void)
     int M, x, y, ball_cup=1; // 변수 선언 및 초기화
     scanf("%d", &M); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<M;i++)
+    for(int i=0;i<M;i++) // i가 0부터 M보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d", &x, &y);
+        scanf("%d %d", &x, &y); // 사용자로부터 두 개의 정수 입력받기
         if(x==ball_cup)
             ball_cup=y;
         else if(y==ball_cup)
