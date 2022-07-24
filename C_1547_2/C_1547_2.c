@@ -23,16 +23,16 @@ int main(void)
     for(int i=0;i<M;i++) // i가 0부터 M이 되기 전까지 1씩 증가하며 반복
     {
         scanf("%d %d", &x, &y); // 사용자로부터 두 개의 정수 입력받기
-        if(x==ball_cup) // 
+        if(x==ball_cup) // 만약, x의 값이 ball_cup의 값과 같다면
         {
-            ball_cup=y;
-            x=0, y=0;
+            ball_cup=y; // ball_cup에 y의 값 대입하기
+            x=0, y=0; // x에 0 대입하고, y에 0 대입하기
         }
-        if(y==ball_cup)
-            ball_cup=x;
+        if(y==ball_cup) // 만약, y의 값이 ball_cup의 값과 같다면
+            ball_cup=x; // ball_cup에 x의 값 대입하기
     }
     
-    printf("%d", ball_cup);
+    printf("%d", ball_cup); // 결과 출력하기
     
     return 0;
 }
