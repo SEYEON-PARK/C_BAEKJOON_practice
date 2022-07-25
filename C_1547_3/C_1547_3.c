@@ -12,3 +12,24 @@ X와 Y의 값은 3보다 작거나 같고, X와 Y가 같을 수도 있다.
 
 첫째 줄에 공이 들어있는 컵의 번호를 출력한다. 공이 사라져서 컵 밑에 없는 경우에는 -1을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int M, x, y, ball_cup=1;
+    scanf("%d", &M);
+    
+    for(int i=M;i>0;i--)
+    {
+        scanf("%d %d", &x, &y);
+        if(x==ball_cup)
+            ball_cup=y;
+        else if(y==ball_cup)
+            ball_cup=x;
+    }
+    
+    printf("%d\n", ball_cup);
+    
+    return 0;
+}
