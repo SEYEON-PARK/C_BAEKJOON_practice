@@ -23,8 +23,8 @@ int main(void)
     for(int i=M;i>0;i--) // i가 M부터 0이 되기 전까지 1씩 감소하며 반복
     {
         scanf("%d %d", &x, &y); // 사용자로부터 두 개의 정수 입력받기
-        if(x==ball_cup) // 만약, x
-            ball_cup=y;
+        if(x==ball_cup) // 만약, x의 값이 ball_cup의 값과 같다면
+            ball_cup=y; // ball_cup에 y의 값 대입하기
         else if(y==ball_cup)
             ball_cup=x;
     }
