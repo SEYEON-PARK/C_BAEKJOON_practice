@@ -10,12 +10,12 @@
 
 int main(void)
 {
-    printf("         ,r'\"7\n"); // 새싹 출력하기
+    printf("         ,r'\"7\n");
     printf("r`-_   ,'  ,/\n");
     printf(" \\. \". L_r'\n");
     printf("   `~\\/\n");
     printf("      |\n");
-    printf("      |\n");
+    printf("      |\n"); // 새싹 출력하기
     
     return 0;
 }
