@@ -21,13 +21,13 @@ int main(void)
     scanf("%d", &X); // 사용자로부터 정수 입력받기
     scanf("%d", &N); // 사용자로부터 정수 입력받기
 
-    for(i=0;i<N;i++)
+    for(i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d", &a, &b);
-        sum+=(a*b);
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        sum+=(a*b); // sum에 sum+(a*b)의 값 대입하기
     }
 
-    if(sum==X)
+    if(sum==X) // 만약, sum의 값과 X의 값이 같다면
     {
         printf("Yes");
     }
