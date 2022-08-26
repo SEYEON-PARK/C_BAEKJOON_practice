@@ -17,9 +17,9 @@
 
 int main(void)
 {
-    int X, N, a, b, i, sum=0;
-    scanf("%d", &X);
-    scanf("%d", &N);
+    int X, N, a, b, i, sum=0; // 변수 선언 및 초기화
+    scanf("%d", &X); // 사용자로부터 정수 입력받기
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
 
     for(i=0;i<N;i++)
     {
