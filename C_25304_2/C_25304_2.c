@@ -18,22 +18,22 @@
 int main(void)
 {
     int X, N, a, b, i, sum=0; // 변수 선언 및 초기화
-    scanf("%d", &X); // 사용자로부터 정수 입력받기
-    scanf("%d", &N); // 사용자로부터 정수 입력받기
+    scanf("%d", &X); // 사용자로부터 정수(영수증에 적힌 총 금액) 입력받기
+    scanf("%d", &N); // 사용자로부터 정수(영수증에 적힌 구매한 물건의 종류의 수) 입력받기
 
     for(i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수(물건의 가격 a와 개수 b) 입력받기
         sum+=(a*b); // sum에 sum+(a*b)의 값 대입하기
     }
 
     if(sum==X) // 만약, sum의 값과 X의 값이 같다면
     {
-        printf("Yes");
+        printf("Yes"); // "Yes" 출력하기
     }
-    else
+    else // sum의 값과 X의 값이 같지 않다면
     {
-        printf("No");
+        printf("No"); // "No" 출력하기
     }
     
     return 0;
