@@ -18,14 +18,14 @@
 
 int main(void)
 {
-    int X, N, a, b, i, sum=0;
-    scanf("%d", &X);
-    scanf("%d", &N);
+    int X, N, a, b, i, sum=0; // 변수 선언 및 초기화
+    scanf("%d", &X); // 사용자로부터 정수 입력받기
+    scanf("%d", &N); // 
 
-    for(i=N;i>0;i--)
+    for(i=N;i>0;i--) // i가 N부터 0이 되기 전까지 1씩 감소하며 반복
     {
-        scanf("%d %d", &a, &b);
-        sum+=(a*b);
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        sum+=(a*b); // 
     }
 
     if(sum==X)
