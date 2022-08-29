@@ -25,11 +25,11 @@ int main(void)
     for(i=N;i>0;i--) // i가 N부터 0이 되기 전까지 1씩 감소하며 반복
     {
         scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
-        sum+=(a*b); // 
+        sum+=(a*b); // sum에 sum+(a*b)의 값 대입하기
     }
 
-    if(sum==X)
-        printf("Yes");
+    if(sum==X) // 만약, sum의 값이 X의 값과 같다면
+        printf("Yes"); // "Yes" 
     else
         printf("No");
     
