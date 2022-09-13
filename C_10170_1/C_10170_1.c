@@ -22,7 +22,7 @@ int main(void)
     printf("Green Bay      8   7  1\n");
     printf("Chicago        8   8  0\n");
     printf("Detroit        7   9  0\n");
-    printf("Minnesota      5  10  1\n");
+    printf("Minnesota      5  10  1\n"); // 
     
     return 0;
 }
