@@ -4,6 +4,7 @@
 없음
 
 예제와 같이 NFC 서부와 북부 디비전 순위를 출력한다.
+
 */
 
 #include <stdio.h>
@@ -22,7 +23,7 @@ int main(void)
     printf("Green Bay      8   7  1\n");
     printf("Chicago        8   8  0\n");
     printf("Detroit        7   9  0\n");
-    printf("Minnesota      5  10  1\n"); // 
+    printf("Minnesota      5  10  1\n"); // 결과 출력하기
     
     return 0;
 }
