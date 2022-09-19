@@ -20,11 +20,11 @@ int main(void)
     int x, y; // 변수 선언
     scanf("%d %d", &x, &y); // 사용자로부터 정수 입력받기
     
-    if(y>x)
+    if(y>x) // 만약, y의 값이 x의 값보다 크다면
     {
-        y=y%x;
-        printf("%d", y);
-        return 0;
+        y=y%x; // y에 y%x의 값 대입하기
+        printf("%d", y); // y의 값 출력하기
+        return 0; // 0 반환 및 종료
     }
     
     printf("%d", x+y);
