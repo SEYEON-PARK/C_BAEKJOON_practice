@@ -18,7 +18,7 @@
 int main(void)
 {
     int x, y; // 변수 선언
-    scanf("%d %d", &x, &y); // 사용자로부터 정수 입력받기
+    scanf("%d %d", &x, &y); // 사용자로부터 정수(버스 타고 이동 시간, 버스가 제2공학관으로 도착하기까지의 시간) 입력받기
     
     if(y>x) // 만약, y의 값이 x의 값보다 크다면
     {
@@ -27,7 +27,7 @@ int main(void)
         return 0; // 0 반환 및 종료
     }
     
-    printf("%d", x+y);
+    printf("%d", x+y); // x+y의 값 출력하기
     
     return 0;
 }
