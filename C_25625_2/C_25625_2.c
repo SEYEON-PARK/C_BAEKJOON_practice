@@ -12,3 +12,22 @@
 
 첫째 줄에 민준이가 버스에 탑승하기 위해서 기다려야 하는 최소 시간을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int x, y;
+    scanf("%d %d", &x, &y);
+    
+    if(y>x)
+    {
+        y=y-x;
+        printf("%d", y);
+        return 0;
+    }
+    
+    printf("%d", x+y);
+    
+    return 0;
+}
