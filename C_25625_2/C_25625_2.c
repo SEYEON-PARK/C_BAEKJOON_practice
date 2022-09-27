@@ -17,8 +17,8 @@
 
 int main(void)
 {
-    int x, y;
-    scanf("%d %d", &x, &y);
+    int x, y; // 변수 선언
+    scanf("%d %d", &x, &y); // 사용자로부터 두 개의 정수 입력받기
     
     if(y>x)
     {
