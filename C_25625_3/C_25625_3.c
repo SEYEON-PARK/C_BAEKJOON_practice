@@ -23,11 +23,11 @@ int main(void)
     if(y>x) // y의 값이 x의 값보다 크다면
     {
         y=y%x; // y에 y%x의 값 대입하기
-        printf("%d", y);
+        printf("%d", y); // y의 값 출력하기
     }
-    else
+    else // y의 값이 x의 값보다 크지 않다면(작다면)
     {
-        printf("%d", x+y);
+        printf("%d", x+y); // x+y의 값 출력하기
     }
     
     return 0;
