@@ -17,12 +17,12 @@
 
 int main(void)
 {
-    int x, y;
-    scanf("%d %d", &x, &y);
+    int x, y; // 변수 선언
+    scanf("%d %d", &x, &y); // 사용자로부터 두 개의 정수 입력받기
     
-    if(y>x)
+    if(y>x) // y의 값이 x의 값보다 크다면
     {
-        y=y%x;
+        y=y%x; // y에 y%x의 값 대입하기
         printf("%d", y);
     }
     else
