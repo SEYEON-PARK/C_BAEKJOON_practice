@@ -8,3 +8,22 @@
 
 첫째 줄에 검증수를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a, b, c, d, e;
+    int sum=0;
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+    
+    sum+=a*a;
+    sum+=b*b;
+    sum+=c*c;
+    sum+=d*d;
+    sum+=e*e;
+    
+    printf("%d", sum%10);
+    
+    return 0;
+}
