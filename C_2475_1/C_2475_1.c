@@ -23,7 +23,7 @@ int main(void)
     sum+=d*d; // sum에 sum+(d*d)의 값 대입하기
     sum+=e*e; // sum에 sum+(e*e)의 값 대입하기
     
-    printf("%d", sum%10); // 
+    printf("%d", sum%10); // 결과 출력하기
     
     return 0;
 }
