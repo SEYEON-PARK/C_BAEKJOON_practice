@@ -17,13 +17,13 @@ int main(void)
     int sum=0; // 합을 저장할 변수 sum 선언 및 초기화
     scanf("%d %d %d %d %d", &a, &b, &c, &d, &e); // 사용자로부터 다섯 개의 정수 입력받기
     
-    sum+=a*a;
-    sum+=b*b;
-    sum+=c*c;
-    sum+=d*d;
-    sum+=e*e;
+    sum+=a*a; // sum에 sum+(a*a)의 값 대입하기
+    sum+=b*b; // sum에 sum+(b*b)의 값 대입하기
+    sum+=c*c; // sum에 sum+(c*c)의 값 대입하기
+    sum+=d*d; // sum에 sum+(d*d)의 값 대입하기
+    sum+=e*e; // sum에 sum+(e*e)의 값 대입하기
     
-    printf("%d", sum%10);
+    printf("%d", sum%10); // 
     
     return 0;
 }
