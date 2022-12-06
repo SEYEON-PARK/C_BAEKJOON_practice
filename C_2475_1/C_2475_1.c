@@ -15,7 +15,7 @@ int main(void)
 {
     int a, b, c, d, e; // 변수 선언
     int sum=0; // 합을 저장할 변수 sum 선언 및 초기화
-    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e); // 사용자로부터 다섯 개의 정수 입력받기
     
     sum+=a*a;
     sum+=b*b;
