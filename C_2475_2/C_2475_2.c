@@ -13,8 +13,8 @@
 
 int main(void)
 {
-    int num[5];
-    int sum=0;
+    int num[5]; // 배열 선언
+    int sum=0; // 변수 선언 및 초기화
     for(int i=0;i<5;i++)
     {
         scanf("%d", &num[i]);
