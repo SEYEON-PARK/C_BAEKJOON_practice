@@ -17,11 +17,11 @@ int main(void)
     int sum=0; // 변수 선언 및 초기화
     for(int i=0;i<5;i++) // i가 0부터 5보다 작을 때까지 1씩 증가하며 반복
     {
-        scanf("%d", &num[i]);
-        sum+=num[i]*num[i];
+        scanf("%d", &num[i]); // 사용자로부터 정수 입력받기
+        sum+=num[i]*num[i]; // sum에 sum+(num[i]*num[i])의 값 대입하기
     }
     
-    printf("%d", sum%10);
+    printf("%d", sum%10); // 결과 출력하기
     
     return 0;
 }
