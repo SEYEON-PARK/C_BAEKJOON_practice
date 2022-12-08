@@ -15,7 +15,7 @@ int main(void)
 {
     int num[5]; // 배열 선언
     int sum=0; // 변수 선언 및 초기화
-    for(int i=0;i<5;i++)
+    for(int i=0;i<5;i++) // i가 0부터 5보다 작을 때까지 1씩 증가하며 반복
     {
         scanf("%d", &num[i]);
         sum+=num[i]*num[i];
