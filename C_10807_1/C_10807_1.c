@@ -13,19 +13,19 @@ int main(void)
 {
     int N, num[100], v, count=0; // 변수, 배열 선언
     scanf("%d", &N); // 사용자로부터 정수(정수의 개수) 입력받기
-    for(int i=0;i<N;i++) // i가 0부터 N보다 작을 때까지 1씩 증가하며 반복
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 1씩 증가하며 반복
     {
         scanf("%d", &num[i]); // 사용자로부터 정수 입력받기
     }
     scanf("%d", &v); // 사용자로부터 정수(찾으려고 하는 정수) 입력받기
     
-    for(int i=0;i<N;i++) 
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 1씩 증가하며 반복
     {
-        if(num[i]==v)
-            count++;
+        if(num[i]==v) // num[i]의 값이 v의 값과 같다면
+            count++; // count에 1 더하기
     }
     
-    printf("%d", count);
+    printf("%d", count); // 결론 출력하기
     
     return 0;
 }
