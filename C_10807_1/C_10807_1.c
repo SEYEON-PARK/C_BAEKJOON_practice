@@ -11,8 +11,8 @@
 
 int main(void)
 {
-    int N, num[100], v, count=0;
-    scanf("%d", &N);
+    int N, num[100], v, count=0; // 변수, 배열 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     for(int i=0;i<N;i++)
     {
         scanf("%d", &num[i]);
