@@ -5,3 +5,27 @@
 
 첫째 줄에 입력으로 주어진 단어에서 대문자는 소문자로, 소문자는 대문자로 바꾼 단어를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char s[101];
+    scanf("%s", s);
+    
+    for(int i=0;s[i]!='\0';i++)
+    {
+        if(s[i]>=65 && s[i]<=90)
+        {
+            s[i]=s[i]+32;
+        }
+        else
+        {
+            s[i]=s[i]-32;
+        }
+    }
+    
+    printf("%s", s);
+    
+    return 0;
+}
