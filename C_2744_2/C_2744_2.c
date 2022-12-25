@@ -10,8 +10,8 @@
 
 int main(void)
 {
-    char s[101];
-    scanf("%s", s);
+    char s[101]; // 배열 선언
+    scanf("%s", s); // 사용자로부터 문자열 입력받기
     
     for(int i=0;s[i]!=NULL;i++)
     {
