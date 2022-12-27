@@ -19,13 +19,13 @@ int main(void)
         {
             s[i]+=32; // s[i]에 s[i]+32의 값 대입하기
         }
-        else
+        else // s[i]가 'A'보다 작거나 s[i]가 'Z'보다 크다면
         {
             s[i]-=32; // s[i]에 s[i]-32의 값 대입하기
         }
     }
     
-    printf("%s", s);
+    printf("%s", s); // 결과 출력하기
     
     return 0;
 }
