@@ -10,14 +10,14 @@
 
 int main(void)
 {
-    char s[101];
-    scanf("%s", s);
+    char s[101]; // 배열 선언
+    scanf("%s", s); // 사용자로부터 문자열 입력받기
     
-    for(int i=0;s[i]!=NULL;i++)
+    for(int i=0;s[i]!=NULL;i++) // i가 0부터 s[i]가 NULL이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        if(s[i]>='A' && s[i]<='Z')
+        if(s[i]>='A' && s[i]<='Z') // 만약, s[i]가 'A'보다 크거나 같고 s[i]가 'Z'보다 작거나 같다면
         {
-            s[i]+=32;
+            s[i]+=32; // s[i]에 s[i]+32의 값 대입하기
         }
         else
         {
