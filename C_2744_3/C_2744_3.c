@@ -21,7 +21,7 @@ int main(void)
         }
         else
         {
-            s[i]-=32;
+            s[i]-=32; // s[i]에 s[i]-32의 값 대입하기
         }
     }
     
