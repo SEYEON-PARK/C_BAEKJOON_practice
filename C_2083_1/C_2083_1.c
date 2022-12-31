@@ -7,3 +7,26 @@
 
 입력 받은 각 회원에 대해 이름과 분류를 출력한다. 성인부 회원이면 'Senior', 청소년부 회원이면 'Junior'를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{  
+    while(1)
+    {
+        char name[11];
+        int age;
+        double weight;
+        
+        scanf("%s %d %lf", name, &age, &weight);
+        
+        if(name[0]=='#' && age==0 && weight==0)
+            break;
+        if(age>17 || weight>=80)
+            printf("%s Senior\n", name);
+        else
+            printf("%s Junior\n", name);
+    }
+    
+    return 0;
+}
