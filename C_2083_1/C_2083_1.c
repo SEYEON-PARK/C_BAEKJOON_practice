@@ -12,11 +12,11 @@
 
 int main(void)
 {  
-    while(1)
+    while(1) // 무한 반복
     {
-        char name[11];
-        int age;
-        double weight;
+        char name[11]; // 배열 선언
+        int age; // 변수 age 선언
+        double weight; // 변수 weight 선언
         
         scanf("%s %d %lf", name, &age, &weight);
         
