@@ -18,12 +18,12 @@ int main(void)
         int age; // 변수 age 선언
         double weight; // 변수 weight 선언
         
-        scanf("%s %d %lf", name, &age, &weight);
+        scanf("%s %d %lf", name, &age, &weight); // 사용자로부터 문자열, 정수, 실수 입력받아 저장하기
         
-        if(name[0]=='#' && age==0 && weight==0)
-            break;
-        if(age>17 || weight>=80)
-            printf("%s Senior\n", name);
+        if(name[0]=='#' && age==0 && weight==0) // 만약, name[0]이 '#'과 같고 age가 0이며 weight가 0이라면
+            break; // 반복문을 빠져 나가기
+        if(age>17 || weight>=80) // 만약, age가 17보다 크거나 weight가 80보다 크거나 같다면
+            printf("%s Senior\n", name); 
         else
             printf("%s Junior\n", name);
     }
