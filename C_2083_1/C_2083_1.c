@@ -23,9 +23,9 @@ int main(void)
         if(name[0]=='#' && age==0 && weight==0) // 만약, name[0]이 '#'과 같고 age가 0이며 weight가 0이라면
             break; // 반복문을 빠져 나가기
         if(age>17 || weight>=80) // 만약, age가 17보다 크거나 weight가 80보다 크거나 같다면
-            printf("%s Senior\n", name); 
-        else
-            printf("%s Junior\n", name);
+            printf("%s Senior\n", name); // 문자열 name 뒤에 "Senior"을 함께 출력하기
+        else // age가 17보다 작거나 같고 weight가 80보다 작다면
+            printf("%s Junior\n", name); // 문자열 name 뒤에 "Junior"을 함께 출력하기
     }
     
     return 0;
