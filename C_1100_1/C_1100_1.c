@@ -6,3 +6,43 @@
 
 첫째 줄에 문제의 정답을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char chess[8][9];
+    int count=0;
+    
+    for(int i=0;i<8;i++)
+    {   
+        scanf("%s", chess[i]);
+    }
+    
+    for(int i=0;i<8;i++){
+        if(i%2==0)
+        {
+            for(int j=0;j<7;j=j+2)
+            {
+                if(chess[i][j]=='F')
+                {
+                    count++;
+                }
+            }
+        }
+        else
+        {
+            for(int j=1;j<8;j=j+2)
+            {
+                if(chess[i][j]=='F')
+                {
+                    count++;
+                }
+            }
+        }
+    }
+    
+    printf("%d", count);
+    
+    return 0;
+}
