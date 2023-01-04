@@ -14,9 +14,9 @@ int main(void)
     char chess[8][9]; // 배열 선언
     int count=0; // 변수 선언 및 초기화
     
-    for(int i=0;i<8;i++)
+    for(int i=0;i<8;i++) // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
     {   
-        scanf("%s", chess[i]);
+        scanf("%s", chess[i]); // 사용자로부터 문자열 입력받기
     }
     
     for(int i=0;i<8;i++){
