@@ -19,8 +19,8 @@ int main(void)
         scanf("%s", chess[i]); // 사용자로부터 문자열 입력받기
     }
     
-    for(int i=0;i<8;i++){
-        if(i%2==0)
+    for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
+        if(i%2==0) // 만약, i%2의 값이 0과 같다면
         {
             for(int j=0;j<7;j=j+2)
             {
