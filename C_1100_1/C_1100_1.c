@@ -22,27 +22,27 @@ int main(void)
     for(int i=0;i<8;i++){ // i가 0부터 8이 되기 전까지 1씩 증가시키며 반복
         if(i%2==0) // 만약, i%2의 값이 0과 같다면
         {
-            for(int j=0;j<7;j=j+2)
+            for(int j=0;j<7;j=j+2) // j가 0부터 7이 되기 전까지 j에 2씩 더하며 반복
             {
-                if(chess[i][j]=='F')
+                if(chess[i][j]=='F') // 만약, chess[i][j]가 'F'와 같다면
                 {
-                    count++;
+                    count++; // count에 1 더하기
                 }
             }
         }
-        else
+        else // i%2의 값이 0과 같지 않다면(1과 같다면)
         {
-            for(int j=1;j<8;j=j+2)
+            for(int j=1;j<8;j=j+2) // j가 1부터 8이 되기 전까지 j에 2씩 더하며 반복
             {
-                if(chess[i][j]=='F')
+                if(chess[i][j]=='F') // 만약, chess[i][j]가 'F'와 같다면
                 {
-                    count++;
+                    count++; // count에 1 더하기
                 }
             }
         }
     }
     
-    printf("%d", count);
+    printf("%d", count); // 결과 출력하기
     
     return 0;
 }
