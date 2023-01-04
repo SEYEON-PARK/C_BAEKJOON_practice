@@ -11,8 +11,8 @@
 
 int main(void)
 {
-    char chess[8][9];
-    int count=0;
+    char chess[8][9]; // 배열 선언
+    int count=0; // 변수 선언 및 초기화
     
     for(int i=0;i<8;i++)
     {   
