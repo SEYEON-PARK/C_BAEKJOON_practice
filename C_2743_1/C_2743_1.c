@@ -5,3 +5,22 @@
 
 첫째 줄에 입력으로 주어진 단어의 길이를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char s[101];
+    scanf("%s", s, sizeof(s));
+    
+    int count=0;
+    
+    for(int i=0;s[i]!='\0';i++)
+    {
+        count++;
+    }
+    
+    printf("%d", count);
+    
+    return 0;
+}
