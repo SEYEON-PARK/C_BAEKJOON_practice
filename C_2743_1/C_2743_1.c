@@ -15,12 +15,12 @@ int main(void)
     
     int count=0; // 변수 count 선언 및 초기화
     
-    for(int i=0;s[i]!='\0';i++)
+    for(int i=0;s[i]!='\0';i++) // i가 0부터 s[i]가 '\0'이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        count++;
+        count++; // count에 1 더하기
     }
     
-    printf("%d", count);
+    printf("%d", count); // 
     
     return 0;
 }
