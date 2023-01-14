@@ -10,10 +10,10 @@
 
 int main(void)
 {
-    char s[101];
-    scanf("%s", s, sizeof(s));
+    char s[101]; // 배열 s 선언
+    scanf("%s", s, sizeof(s)); // 사용자로부터 문자열 입력받기
     
-    int count=0;
+    int count=0; // 변수 count 선언 및 초기화
     
     for(int i=0;s[i]!='\0';i++)
     {
