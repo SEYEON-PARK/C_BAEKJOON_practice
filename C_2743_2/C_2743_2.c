@@ -13,11 +13,11 @@ int main(void)
     char s[101]; // 배열 선언
     scanf("%s", s, sizeof(s)); // 사용자로부터 문자열 입력받기
     
-    int count=0;
+    int count=0; // 변수 count 선언 및 초기화
     
-    for(int i=0;s[i]!=NULL;i++)
+    for(int i=0;s[i]!=NULL;i++) // i가 0부터 s[i]가 NULL이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        count++;
+        count++; // count에 1 더하기
     }
     
     printf("%d", count);
