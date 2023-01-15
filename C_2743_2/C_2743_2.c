@@ -20,7 +20,7 @@ int main(void)
         count++; // count에 1 더하기
     }
     
-    printf("%d", count);
+    printf("%d", count); // 결과 출력하기
     
     return 0;
 }
