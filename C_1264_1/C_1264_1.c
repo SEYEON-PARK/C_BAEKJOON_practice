@@ -8,26 +8,26 @@
 */
 
 #include <stdio.h>
-#include <ctype.h> // toupper()을 사용하기 위해서
+#include <ctype.h> // isalpha(), toupper()을 사용하기 위해서
 
 int main(void)
 {
     while(1) // 무한 반복
     {
         char s[256]; // 배열 선언
-        gets(s); // 사용자로부터 문자열 입력받기
+        gets(s); // 사용자로부터 문자열 입력받기(띄어쓰기 상관없이 한 줄 입력받고자 gets()를 사용했다.)
         
-        if(s[0]=='#')
-            break;
+        if(s[0]=='#') // 만약, s[0]이 '#'과 같다면
+            break; // 반복문 빠져 나가기
         
-        int count=0;
-        for(int i=0;s[i]!='\0';i++)
+        int count=0; // 변수 선언 및 초기화
+        for(int i=0;s[i]!='\0';i++) // i가 0부터 s[i]가 '\0'이 아닐 때까지 i를 1씩 증가시키며 반복
         {
-            if(isalpha(s[i]))
+            if(isalpha(s[i])) // 만약, s[i]가 알파벳이면
             {
-                char a=toupper(s[i]);
-                if(a=='A' || a=='E' || a=='O' || a=='I' || a=='U')
-                    count++;
+                char a=toupper(s[i]); // s[i]를 대문자로 바꾸어 변수 a에 저장
+                if(a=='A' || a=='E' || a=='O' || a=='I' || a=='U') // 만약, a가 'A'와 같거나 'E'와 같거나 'O'와 같거나 'I'와 같거나 'U'와 같다면
+                    count++; // count에 1 더하기
             }
         }
         
