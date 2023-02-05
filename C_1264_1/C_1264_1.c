@@ -6,3 +6,33 @@
 
 각 줄마다 모음의 개수를 세서 출력한다.
 */
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void)
+{
+    while(1)
+    {
+        char s[256];
+        gets(s);
+        
+        if(s[0]=='#')
+            break;
+        
+        int count=0;
+        for(int i=0;s[i]!='\0';i++)
+        {
+            if(isalpha(s[i]))
+            {
+                char a=toupper(s[i]);
+                if(a=='A' || a=='E' || a=='O' || a=='I' || a=='U')
+                    count++;
+            }
+        }
+        
+        printf("%d\n", count);
+    }
+    
+    return 0;
+}
