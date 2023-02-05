@@ -8,14 +8,14 @@
 */
 
 #include <stdio.h>
-#include <ctype.h>
+#include <ctype.h> // toupper()을 사용하기 위해서
 
 int main(void)
 {
-    while(1)
+    while(1) // 무한 반복
     {
-        char s[256];
-        gets(s);
+        char s[256]; // 배열 선언
+        gets(s); // 사용자로부터 문자열 입력받기
         
         if(s[0]=='#')
             break;
