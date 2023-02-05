@@ -15,7 +15,7 @@ int main(void)
     while(1) // 무한 반복
     {
         char s[256]; // 배열 선언
-        gets(s); // 사용자로부터 문자열 입력받기(띄어쓰기 상관없이 한 줄 입력받고자 gets()를 사용했다.)
+        gets(s); // 사용자로부터 문자열 입력받기(띄어쓰기 상관없이 한 줄을 입력받고자 gets()를 사용했다.)
         
         if(s[0]=='#') // 만약, s[0]이 '#'과 같다면
             break; // 반복문 빠져 나가기
@@ -31,7 +31,7 @@ int main(void)
             }
         }
         
-        printf("%d\n", count);
+        printf("%d\n", count); // 결과 출력하기
     }
     
     return 0;
