@@ -5,3 +5,12 @@
 
 첫째 줄에 “고려대학교”를 출력하세요.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    printf("고려대학교");
+    
+    return 0;
+}
