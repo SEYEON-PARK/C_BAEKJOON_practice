@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    printf("고려대학교"); //
+    printf("고려대학교"); // "고려대학교" 출력하기
     
     return 0;
 }
