@@ -29,7 +29,7 @@ int main(void)
         
         if(B%A==0) // 만약, B%A의 값이 0과 같다면
         {
-            printf("factor\n");
+            printf("factor\n"); //
         }
         else if(A%B==0)
         {
