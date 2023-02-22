@@ -17,17 +17,17 @@
 
 int main(void)
 {
-    while(1)
+    while(1) // 무한 반복
     {
-        int A, B;
-        scanf("%d %d", &A, &B);
+        int A, B; // 변수 선언
+        scanf("%d %d", &A, &B); // 사용자로부터 두 개의 정수 입력받기
         
-        if(A==0 && B==0)
+        if(A==0 && B==0) // 만약, A가 0이고 B도 0이라면
         {
-            break;
+            break; // 가장 가까운 반복문을 빠져 나간다.
         }
         
-        if(B%A==0)
+        if(B%A==0) // 만약, B%A의 값이 0과 같다면
         {
             printf("factor\n");
         }
