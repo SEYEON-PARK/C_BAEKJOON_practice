@@ -29,15 +29,15 @@ int main(void)
         
         if(B%A==0) // 만약, B%A의 값이 0과 같다면
         {
-            printf("factor\n"); //
+            printf("factor\n"); // "factor" 출력하기
         }
-        else if(A%B==0)
+        else if(A%B==0) // 만약, B%A의 값이 0과 같지 않고, A%B의 값이 0과 같다면
         {
-            printf("multiple\n");
+            printf("multiple\n"); // "multiple" 출력하기
         }
-        else
+        else // B%A의 값이 0과 같지 않고, A%B의 값이 0과 같지 않다면
         {
-            printf("neither\n");
+            printf("neither\n"); // "neither" 출력하기
         }
     }
     
