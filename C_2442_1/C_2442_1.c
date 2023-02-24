@@ -18,11 +18,11 @@ int main(void)
     {
         for(int x=N-i;x>0;x--) // x가 N-i부터 0보다 클 때까지 x를 1씩 감소시키며 반복
         {
-            printf(" ");
+            printf(" "); // 띄어쓰기 출력하기
         }
-        for(int y=i*2-1;y>0;y--)
+        for(int y=i*2-1;y>0;y--) // y가 i*2-1부터 0보다 클 때까지 1씩 감소시키며 반복
         {
-            printf("*");
+            printf("*"); // 별 출력하기
         }
         
         printf("\n");
