@@ -25,7 +25,7 @@ int main(void)
             printf("*"); // 별 출력하기
         }
         
-        printf("\n");
+        printf("\n"); // 한 줄 띄기
     }
     
     return 0;
