@@ -21,19 +21,19 @@ int main(void)
         scanf("%d", &plug[i]); // 사용자로부터 정수 입력받아 plug[i]에 저장하기
     }
     
-    for(int i=0;i<N;i++) 
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        if(i+1==N)
+        if(i+1==N) // 만약, i+1이 N과 같다면
         {
-            sum+=plug[i];
+            sum+=plug[i]; // sum에 sum+plug[i]의 값 대입하기
         }
-        else
+        else // i+1이 N과 같지 않다면
         {
-            sum+=plug[i]-1;
+            sum+=plug[i]-1; // sum에 sum+(plug[i]-1)의 값 대입하기
         }
     }
     
-    printf("%d", sum);
+    printf("%d", sum); // 결과 출력하기
     
     return 0;
 }
