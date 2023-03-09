@@ -12,9 +12,9 @@
 
 int main(void)
 {
-    int N, sum=0;
-    int plug[500000];
-    scanf("%d", &N);
+    int N, sum=0; // 변수 선언 및 초기화
+    int plug[500000]; // 배열 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     for(int i=0;i<N;i++)
     {
