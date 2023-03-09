@@ -16,12 +16,12 @@ int main(void)
     int plug[500000]; // 배열 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        scanf("%d", &plug[i]);
+        scanf("%d", &plug[i]); // 사용자로부터 정수 입력받아 plug[i]에 저장하기
     }
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) 
     {
         if(i+1==N)
         {
