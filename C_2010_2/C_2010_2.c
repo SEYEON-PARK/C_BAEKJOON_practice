@@ -21,11 +21,11 @@ int main(void)
         scanf("%d", &plug[i]); // 사용자로부터 정수 입력받기
     }
     
-    for(int i=0;plug[i]!=0;i++)
+    for(int i=0;plug[i]!=0;i++) // i가 0부터 plug[i]가 0이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        if(plug[i+1]==0)
+        if(plug[i+1]==0) // 만약, plug[i+1]가 0이라면
         {
-            sum+=plug[i];
+            sum+=plug[i]; // sum에 sum+plug[i]의 값 대입하기
         }
         else
         {
