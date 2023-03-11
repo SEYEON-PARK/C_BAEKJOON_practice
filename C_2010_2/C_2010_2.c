@@ -23,7 +23,7 @@ int main(void)
     
     for(int i=0;plug[i]!=0;i++) // i가 0부터 plug[i]가 0이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        if(plug[i+1]==0) // 만약, plug[i+1]가 0이라면
+        if(plug[i+1]==0) // 만약, plug[i+1]가 0이라면(i+1 인덱스까지 검사하므로 500000개라면 500001개의 배열 공간이 있어야 한다!)
         {
             sum+=plug[i]; // sum에 sum+plug[i]의 값 대입하기
         }
