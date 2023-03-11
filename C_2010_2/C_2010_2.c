@@ -12,13 +12,13 @@
 
 int main(void)
 {
-    int N, sum=0;
-    int plug[500001]={0};
-    scanf("%d", &N);
+    int N, sum=0; // 변수 선언 및 초기화
+    int plug[500001]={0}; // 배열 선언 및 초기화(지역 배열은 초기화하지 않으면 쓰레기값이 들어간다! 따라서 초기화시켜주는 것이 낫다.)
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        scanf("%d", &plug[i]);
+        scanf("%d", &plug[i]); // 사용자로부터 정수 입력받기
     }
     
     for(int i=0;plug[i]!=0;i++)
