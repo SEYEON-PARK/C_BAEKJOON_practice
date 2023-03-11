@@ -7,3 +7,33 @@
 
 첫째 줄에 최대로 전원에 연결될 수 있는 컴퓨터의 수를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N, sum=0;
+    int plug[500001]={0};
+    scanf("%d", &N);
+    
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d", &plug[i]);
+    }
+    
+    for(int i=0;plug[i]!=NULL;i++)
+    {
+        if(plug[i+1]==0)
+        {
+            sum+=plug[i];
+        }
+        else
+        {
+            sum+=plug[i]-1;
+        }
+    }
+    
+    printf("%d", sum);
+    
+    return 0;
+}
