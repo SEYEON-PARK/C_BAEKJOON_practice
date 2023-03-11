@@ -27,13 +27,13 @@ int main(void)
         {
             sum+=plug[i]; // sum에 sum+plug[i]의 값 대입하기
         }
-        else
+        else // plug[i+1]가 0이 아니라면
         {
-            sum+=plug[i]-1;
+            sum+=plug[i]-1; // sum에 (sum+plug[i]-1)의 값 대입하기
         }
     }
     
-    printf("%d", sum);
+    printf("%d", sum); // 결과 출력하기
     
     return 0;
 }
