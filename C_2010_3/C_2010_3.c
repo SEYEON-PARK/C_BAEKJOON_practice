@@ -16,18 +16,18 @@ int main(void)
     int plug[500001]={0}; // 배열 선언 및 초기화(지역 배열에서는 초기화를 해주지 않으면 쓰레기값이 들어가서 'plug[i]!=NULL'의 조건을 통해 원하는 대로 걸러낼 수가 없다.) 
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i가 0부터 N이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        scanf("%d", &plug[i]);
+        scanf("%d", &plug[i]); // 사용자로부터 정수 입력받기
     }
     
-    for(int i=0;plug[i]!=NULL;i++)
+    for(int i=0;plug[i]!=NULL;i++) // i가 0부터 plug[i]가 NULL이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        if(plug[i+1]==0)
+        if(plug[i+1]==0) // 만약, plug[i+1]의 값이 0과 같다면
         {
-            sum+=plug[i];
+            sum+=plug[i]; // sum에 sum+plug[i]의 값 대입하기
         }
-        else
+        else //
         {
             sum+=plug[i]-1;
         }
