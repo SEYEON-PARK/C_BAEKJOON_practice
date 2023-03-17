@@ -11,7 +11,7 @@ A+B+C의 값을 출력한다.
 int main(void)
 {
     long a, b, c; // 변수 선언
-    scanf("%ld %ld %ld", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
+    scanf("%ld %ld %ld", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기(자료형이 long이므로, 형식지정자는 '%ld'로 해야 한다.)
     
     printf("%ld", a+b+c); // 결과 출력하기
     
