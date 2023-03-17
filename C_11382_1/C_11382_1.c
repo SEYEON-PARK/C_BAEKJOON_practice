@@ -10,7 +10,7 @@ A+B+C의 값을 출력한다.
 
 int main(void)
 {
-    long a, b, c;
+    long a, b, c; // 변수 선언
     scanf("%ld %ld %ld", &a, &b, &c);
     
     printf("%ld", a+b+c);
