@@ -18,9 +18,9 @@ int main(void)
     
     long long m=b-a; // 변수 m에 b-a의 값 대입하기
     
-    if(m<0)
+    if(m<0) // 만약, m이 0보다 작다면
     {
-        m=-m;
+        m=-m; // m에 -m의 값 대입하기(양수로 만들기)
     }
     
     printf("%lld", m);
