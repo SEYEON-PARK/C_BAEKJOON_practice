@@ -9,3 +9,22 @@
 
 첫째 줄에 두 유명도의 차이 (|N-M|)을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    long a, b;
+    scanf("%ld %ld", &a, &b);
+    
+    long long m=b-a;
+    
+    if(m<0)
+    {
+        m=-m;
+    }
+    
+    printf("%lld", m);
+    
+    return 0;
+}
