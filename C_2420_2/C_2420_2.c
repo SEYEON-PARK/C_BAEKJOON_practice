@@ -24,7 +24,7 @@ int main(void)
         m=-m; // m에 -m의 값 대입하기
     }
     
-    printf("%lld", m);
+    printf("%lld", m); // 결과 출력하기(m이 long long 타입이므로 형식 지정자를 '%lld'로 했다.)
     
     return 0;
 }
