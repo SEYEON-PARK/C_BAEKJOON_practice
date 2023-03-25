@@ -14,10 +14,10 @@
 
 int main(void)
 {
-    int a, b;
-    scanf("%d %d", &a, &b);
+    int a, b; // 변수 선언
+    scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
     
-    long long m=(long)b-a;
+    long long m=(long)b-a; // m에 b-a의 값 저장하기(m이 long long형이지만, long형으로만 형변환해줘도 된다.)
     
     if(m<0)
     {
