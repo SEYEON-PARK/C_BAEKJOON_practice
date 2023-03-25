@@ -19,9 +19,9 @@ int main(void)
     
     long long m=(long)b-a; // m에 b-a의 값 저장하기(m이 long long형이지만, long형으로만 형변환해줘도 된다.)
     
-    if(m<0)
+    if(m<0) // 만약, m이 0보다 작다면
     {
-        m=-m;
+        m=-m; // m에 -m의 값 대입하기
     }
     
     printf("%lld", m);
