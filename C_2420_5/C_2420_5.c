@@ -24,7 +24,7 @@ int main(void)
         m=-m; // m에 -m의 값 대입하기
     }
     
-    printf("%lld", m);
+    printf("%lld", m); // 결과 출력하기
     
     return 0;
 }
