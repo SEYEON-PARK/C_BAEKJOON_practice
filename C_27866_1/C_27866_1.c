@@ -17,7 +17,7 @@ int main(void)
     scanf("%s", s); // 사용자로부터 단어(문자열) 입력받기
     scanf("%d", &i); // 사용자로부터 정수 입력받기(몇 번째 글자를 출력할 건지)
     
-    printf("%c", s[i-1]);
+    printf("%c", s[i-1]); // 결과 출력하기
     
     return 0;
 }
