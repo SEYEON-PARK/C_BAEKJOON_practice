@@ -14,8 +14,8 @@ int main(void)
     char s[1001]; // 배열 선언
     int i; // 변수 선언
     
-    scanf("%s", s);
-    scanf("%d", &i);
+    scanf("%s", s); // 사용자로부터 단어(문자열) 입력받기
+    scanf("%d", &i); // 사용자로부터 정수 입력받기(몇 번째 글자를 출력할 건지)
     
     printf("%c", s[i-1]);
     
