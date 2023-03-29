@@ -13,3 +13,18 @@ $1 \le i \le \left|S\right|$)
 $S$의 
 $i$번째 글자를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char s[1001];
+    int i;
+    
+    scanf("%s", s);
+    scanf("%d", &i);
+    
+    printf("%c", s[i-1]);
+    
+    return 0;
+}
