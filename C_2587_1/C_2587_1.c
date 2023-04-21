@@ -14,17 +14,17 @@
 
 int main(void)
 {
-    int num[5];
-    int sum = 0;
+    int num[5]; // 배열 선언
+    int sum = 0; // 변수 선언 및 초기화
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) // i가 0부터 5가 되기 전까지 1씩 증가시키며 반복
     {
-        scanf("%d", &num[i]);
-        sum += num[i];
+        scanf("%d", &num[i]); // 사용자로부터 정수 입력받기
+        sum += num[i]; // sum에 sum+num[i]의 값 대입하기
     }
 
-    int temp;
-    for (int i = 4; i >= 0; i--)
+    int temp; // 변수 선언
+    for (int i = 4; i >= 0; i--) // i가 4부터 0보다 크거나 같을 때까지 i를 1씩 감소시키며 반복
     {
         int big = num[0];
         int index=0;
