@@ -34,16 +34,16 @@ int main(void)
             if (num[j] > big) // 만약, num[j]가 big보다 크다면
             {
                 big = num[j]; // big에 num[j]의 값 대입하기
-                index = j;
+                index = j; // index에 j의 값 대입하기
             }
         }
 
-        temp = num[i];
-        num[i] = num[index];
-        num[index] = temp;
+        temp = num[i]; // temp에 num[i]의 값 대입하기
+        num[i] = num[index]; // num[i]에 num[index]의 값 대입하기
+        num[index] = temp; // num[index]에 temp의 값 대입하기
     }
 
-    printf("%d\n%d", sum / 5, num[2]);
+    printf("%d\n%d", sum / 5, num[2]); // 결과 출력하기
 
     return 0;
 }
