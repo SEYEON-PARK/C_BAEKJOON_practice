@@ -9,3 +9,41 @@
 
 첫째 줄에는 평균을 출력하고, 둘째 줄에는 중앙값을 출력한다. 평균과 중앙값은 모두 자연수이다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int num[5];
+    int sum = 0;
+
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &num[i]);
+        sum += num[i];
+    }
+
+    int temp;
+    for (int i = 4; i >= 0; i--)
+    {
+        int big = num[0];
+        int index=0;
+        
+        for (int j = 0; j <= i; j++)
+        {
+            if (num[j] > big)
+            {
+                big = num[j];
+                index = j;
+            }
+        }
+
+        temp = num[i];
+        num[i] = num[index];
+        num[index] = temp;
+    }
+
+    printf("%d\n%d", sum / 5, num[2]);
+
+    return 0;
+}
