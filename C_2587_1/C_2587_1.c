@@ -26,14 +26,14 @@ int main(void)
     int temp; // 변수 선언
     for (int i = 4; i >= 0; i--) // i가 4부터 0보다 크거나 같을 때까지 i를 1씩 감소시키며 반복
     {
-        int big = num[0];
-        int index=0;
+        int big = num[0]; // 변수 선언 및 초기화
+        int index=0; // 변수 선언 및 초기화
         
-        for (int j = 0; j <= i; j++)
+        for (int j = 0; j <= i; j++) // j가 0부터 i보다 작거나 같을 때까지 j를 1씩 증가시키며 반복
         {
-            if (num[j] > big)
+            if (num[j] > big) // 만약, num[j]가 big보다 크다면
             {
-                big = num[j];
+                big = num[j]; // big에 num[j]의 값 대입하기
                 index = j;
             }
         }
