@@ -7,3 +7,31 @@ level, noon은 팰린드롬이고, baekjoon, online, judge는 팰린드롬이 �
 
 첫째 줄에 팰린드롬이면 1, 아니면 0을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char s[101];
+    scanf("%s", s);
+    int count=0;
+    
+    for(int i=0;s[i]!=NULL;i++)
+    {
+        count++;
+    }
+    
+    for(int i=0;i<=count/2;i++)
+    {
+        if(s[i]==s[count-i-1])
+            continue;
+        else
+        {
+            printf("0");
+            return 0;
+        }
+    }
+    printf("1");
+    return 0;
+    
+}
