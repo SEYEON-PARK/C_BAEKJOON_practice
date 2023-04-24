@@ -21,7 +21,7 @@ int main(void)
         count++; // count에 1 더하기
     }
     
-    for(int i=0;i<=count/2;i++) // i가 0부터 count/2의 값과 작거나 같을 때까지 i를 1씩 증가시키며 반복
+    for(int i=0;i<=count/2;i++) // i가 0부터 count/2의 값보다 작거나 같을 때까지 i를 1씩 증가시키며 반복
     {
         if(s[i]==s[count-i-1]) // 만약, s[i]의 값이 s[count-i-1]의 값과 같다면
             continue; // 계속 하기
