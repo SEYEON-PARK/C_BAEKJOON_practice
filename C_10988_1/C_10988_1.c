@@ -18,12 +18,12 @@ int main(void)
     
     for(int i=0;s[i]!=NULL;i++) // i가 0부터 s[i]가 NULL이 되기 전까지 i를 1씩 증가시키며 반복
     {
-        count++;
+        count++; // count에 1 더하기
     }
     
-    for(int i=0;i<=count/2;i++)
+    for(int i=0;i<=count/2;i++) // i가 0부터 count/2의 값과 작거나 같을 때까지 i를 1씩 증가시키며 반복
     {
-        if(s[i]==s[count-i-1])
+        if(s[i]==s[count-i-1]) // 만약, s[i]의 값이 s[count-i-1]의 값과 같다면
             continue;
         else
         {
