@@ -31,7 +31,7 @@ int main(void)
             return 0;
         }
     }
-    printf("1"); "1" 출력하기
+    printf("1"); // "1" 출력하기
     return 0;
     
 }
