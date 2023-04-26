@@ -23,15 +23,15 @@ int main(void)
     
     for(int i=0;i<=count/2;i++) // i가 0부터 count/2보다 작거나 같을 때까지 i를 1씩 증가시키며 반복
     {
-        if(s[i]==s[count-i-1])
-            continue;
-        else
+        if(s[i]==s[count-i-1]) // 만약, s[i]와 s[count-i-1]의 값이 같다면
+            continue; // 반복문 계속 돌기
+        else // s[i]와 s[count-i-1]의 값이 같지 않다면
         {
-            printf("0");
+            printf("0"); // "0" 출력하기
             return 0;
         }
     }
-    printf("1");
+    printf("1"); "1" 출력하기
     return 0;
     
 }
