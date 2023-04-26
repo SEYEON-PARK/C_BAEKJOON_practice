@@ -16,12 +16,12 @@ int main(void)
     scanf("%s", s); // 사용자로부터 문자열 입력받기
     int count=0; // 변수 선언 및 초기화
     
-    for(int i=0;s[i]!='\0';i++)
+    for(int i=0;s[i]!='\0';i++) // i가 0부터 s[i]가 '\0'이 아닐 때까지 i를 1씩 증가시키며 반복
     {
-        count++;
+        count++; // count에 1 더하기
     }
     
-    for(int i=0;i<=count/2;i++)
+    for(int i=0;i<=count/2;i++) // i가 0부터 count/2보다 작거나 같을 때까지 i를 1씩 증가시키며 반복
     {
         if(s[i]==s[count-i-1])
             continue;
