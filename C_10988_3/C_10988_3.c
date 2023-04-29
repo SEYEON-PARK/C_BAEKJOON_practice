@@ -12,8 +12,8 @@ level, noon은 팰린드롬이고, baekjoon, online, judge는 팰린드롬이 �
 
 int main(void)
 {
-    char s[101];
-    scanf("%s", s);
+    char s[101]; // 배열 선언
+    scanf("%s", s); // 사용자로부터 문자열 입력받기
     int count=0;
     
     for(int i=0;s[i]!='\0';i++)
