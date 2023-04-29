@@ -18,20 +18,20 @@ int main(void)
     
     for(int i=0;s[i]!='\0';i++) // i가 0부터 s[i]가 '\0'이 되기 전까지 i를 1씩 증가하며 반복
     {
-        count++;
+        count++; // count에 1 더하기
     }
     
-    for(int i=0;i<count/2;i++)
+    for(int i=0;i<count/2;i++) // i가 0부터 count/2보다 작을 때까지 i를 1씩 증가하며 반복
     {
-        if(s[i]==s[count-i-1])
-            continue;
-        else
+        if(s[i]==s[count-i-1]) // 만약, s[i]가 s[count-i-1]과 같다면
+            continue; // 계속하기
+        else // s[i]가 s[count-i-1]과 같지 않다면
         {
-            printf("0");
-            return 0;
+            printf("0"); // "0" 출력하기
+            return 0; // 프로그램 종료하기
         }
     }
-    printf("1");
-    return 0;
+    printf("1"); // "1" 출력하기
+    return 0; // 프로그램 종료하기
     
 }
