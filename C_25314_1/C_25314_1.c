@@ -26,13 +26,13 @@ int main(void)
         printf("long "); // "long " 출력하기
         N-=4; // N에 N-4의 값 대입하기
     }
-    if(N==0)
+    if(N==0) // 만약, N이  0이라면
     {
-        printf("int");
+        printf("int"); // "int" 출력하기
     }
-    else
+    else // N이 0이 아니라면
     {
-        printf("long int");
+        printf("long int"); // "long int" 출력하기
     }
     
     return 0;
