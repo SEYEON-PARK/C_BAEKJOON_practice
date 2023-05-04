@@ -18,13 +18,13 @@ long long int는 8바이트 정수까지 저장할 수 있는 정수 자료형�
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 변수 입력받기
     
-    while(N/4!=0)
+    while(N/4!=0) // N/4가 0이 아니라면 반복
     {
-        printf("long ");
-        N-=4;
+        printf("long "); // "long " 출력하기
+        N-=4; // N에 N-4의 값 대입하기
     }
     if(N==0)
     {
