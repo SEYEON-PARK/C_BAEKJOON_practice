@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    int a, b;
+    int a, b; // 변수 선언
     scanf("%d %d", &a, &b);
     printf("%d", a*b);
     
