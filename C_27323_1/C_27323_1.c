@@ -12,7 +12,7 @@ int main(void)
 {
     int a, b; // 변수 선언
     scanf("%d %d", &a, &b); // 사용자로부터 정수 입력받기
-    printf("%d", a*b);
+    printf("%d", a*b); // 결과 출력하기
     
     return 0;
 }
