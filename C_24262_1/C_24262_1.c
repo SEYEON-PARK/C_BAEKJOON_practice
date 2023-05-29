@@ -17,8 +17,8 @@ MenOfPassion 알고리즘은 다음과 같다.
 
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
+    int n; // 변수 선언
+    scanf("%d", &n); 
     
     printf("1\n0");
     
