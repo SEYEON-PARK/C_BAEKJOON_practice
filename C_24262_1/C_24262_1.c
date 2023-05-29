@@ -20,7 +20,7 @@ int main(void)
     int n; // 변수 선언
     scanf("%d", &n); // 사용자로부터 정수 입력받기
     
-    printf("1\n0");
+    printf("1\n0"); // 결과 출력하기
     
     return 0;
 }
