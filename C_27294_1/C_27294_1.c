@@ -39,9 +39,9 @@ int main(void)
     {
         printf("280"); // "280" 출력하기
     }
-    else
+    else // S가 0이고, T가 12보다 크거나 같고, T가 16보다 작거나 같다면
     {
-        printf("320");
+        printf("320"); // "320" 출력하기
     }
     
     return 0;
