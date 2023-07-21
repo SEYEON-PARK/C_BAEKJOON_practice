@@ -14,8 +14,8 @@
 
 int main(void)
 {
-    int R1, S;
-    scanf("%d %d", &R1, &S);
+    int R1, S; // 변수 선언
+    scanf("%d %d", &R1, &S); // 사용자로부터 두 개의 정수 입력받기
     
     int result=S*2-R1;
     printf("%d", result);
