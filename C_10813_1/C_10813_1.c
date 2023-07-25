@@ -20,17 +20,17 @@ int main(void)
     
     int arr1[100]; // 배열 선언
     int num=1; // 배열 요소에 대입할 변수 num 선언 및 초기화
-    for(int i=0;i<N;i++){
-        arr1[i]=num;
-        num++;
+    for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 1를 1씩 더하며 반복
+        arr1[i]=num; // arr1[i]에 num의 값 대입하기
+        num++; // num에 1 더하기
     }
     
-    int one, two, tmp;
-    for(int j=0;j<M;j++){
-        scanf("%d %d", &one, &two);
-        tmp=arr1[one-1];
+    int one, two, tmp; // 변수 선언
+    for(int j=0;j<M;j++){ // j가 0부터 M이 되기 전까지 j에 1씩 더하며 반복
+        scanf("%d %d", &one, &two); // 사용자로부터 교환할 두 개의 정수(인덱스 번호) 입력받기
+        tmp=arr1[one-1]; 
         arr1[one-1]=arr1[two-1];
-        arr1[two-1]=tmp;
+        arr1[two-1]=tmp; // arr1[one-1]과 arr1[two-1]의 숫자를 서로 바꾸기
     }
     
     for(int i=0;i<N;i++){
