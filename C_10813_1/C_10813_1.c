@@ -20,7 +20,7 @@ int main(void)
     
     int arr1[100]; // 배열 선언
     int num=1; // 배열 요소에 대입할 변수 num 선언 및 초기화
-    for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 1를 1씩 더하며 반복
+    for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 i에 1씩 더하며 반복
         arr1[i]=num; // arr1[i]에 num의 값 대입하기
         num++; // num에 1 더하기
     }
@@ -33,8 +33,8 @@ int main(void)
         arr1[two-1]=tmp; // arr1[one-1]과 arr1[two-1]의 숫자를 서로 바꾸기
     }
     
-    for(int i=0;i<N;i++){
-        printf("%d ", arr1[i]);
+    for(int i=0;i<N;i++){ // i가 0부터 N보다 작을 때까지 i에 1씩 더하며 반복
+        printf("%d ", arr1[i]); // 결과 출력하기
     }
     
     return 0;
