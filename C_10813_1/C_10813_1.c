@@ -10,3 +10,32 @@
 
 1번 바구니부터 N번 바구니에 들어있는 공의 번호를 공백으로 구분해 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N, M;
+    scanf("%d %d", &N, &M);
+    
+    int arr1[100];
+    int num=1;
+    for(int i=0;i<N;i++){
+        arr1[i]=num;
+        num++;
+    }
+    
+    int one, two, tmp;
+    for(int j=0;j<M;j++){
+        scanf("%d %d", &one, &two);
+        tmp=arr1[one-1];
+        arr1[one-1]=arr1[two-1];
+        arr1[two-1]=tmp;
+    }
+    
+    for(int i=0;i<N;i++){
+        printf("%d ", arr1[i]);
+    }
+    
+    return 0;
+}
