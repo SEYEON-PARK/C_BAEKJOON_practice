@@ -5,3 +5,24 @@
 
 단어에 포함되어 있는 a의 개수, b의 개수, …, z의 개수를 공백으로 구분해서 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int count[26]={0};
+    char S[101];
+    scanf("%s", S);
+    
+    for(int i=0;S[i]!=NULL;i++)
+    {
+        count[(int)S[i]-97]++;
+    }
+    
+    for(int i=0;i<26;i++)
+    {
+        printf("%d ", count[i]);
+    }
+    
+    return 0;
+}
