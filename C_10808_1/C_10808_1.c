@@ -19,9 +19,9 @@ int main(void)
         count[(int)S[i]-97]++; // count[(int)S[i]-97]의 값을 1 증가시키기
     }
     
-    for(int i=0;i<26;i++)
+    for(int i=0;i<26;i++) // i가 0부터 26이 되기 전까지 1씩 증가시키며 반복
     {
-        printf("%d ", count[i]);
+        printf("%d ", count[i]); // 결과(count[i]의 값) 출력하기
     }
     
     return 0;
