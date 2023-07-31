@@ -14,9 +14,9 @@ int main(void)
     char S[101]; // 문자열을 입력받을 배열 선언
     scanf("%s", S); // 사용자로부터 문자열 입력받기
     
-    for(int i=0;S[i]!=NULL;i++)
+    for(int i=0;S[i]!=NULL;i++) // i가 0부터 S[i]가 NULL이 아니라면 i를 1씩 증가시키면서 반복
     {
-        count[(int)S[i]-97]++;
+        count[(int)S[i]-97]++; // count[(int)S[i]-97]의 값을 1 증가시키기
     }
     
     for(int i=0;i<26;i++)
