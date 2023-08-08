@@ -6,3 +6,27 @@ X대학 M교수님은 프로그래밍 수업을 맡고 있다. 교실엔 학생�
 
 출력은 2줄이다. 1번째 줄엔 제출하지 않은 학생의 출석번호 중 가장 작은 것을 출력하고, 2번째 줄에선 그 다음 출석번호를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+    int num[31]={0};
+    
+    for(int i=0;i<28;i++)
+    {
+        scanf("%d", &n);
+        num[n]=1;
+    }
+    
+    for(int i=1;i<31;i++)
+    {
+        if(num[i]==0)
+        {
+            printf("%d\n", i);
+        }
+    }
+    
+    return 0;
+}
