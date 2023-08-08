@@ -20,11 +20,11 @@ int main(void)
         num[n]=1; // 해당 인덱스 요소의 값을 1로 바꾸기 
     }
     
-    for(int i=1;i<31;i++)
+    for(int i=1;i<31;i++) // i가 1부터 31보다 작을 때까지 i에 1씩 더하며 반복
     {
-        if(num[i]==0)
+        if(num[i]==0) // 만약, num[i]가 0과 같다면
         {
-            printf("%d\n", i);
+            printf("%d\n", i); // i의 값 출력하기
         }
     }
     
