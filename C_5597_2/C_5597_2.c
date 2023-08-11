@@ -22,11 +22,11 @@ int main(void)
         num[n]=1; // num[n]에 1 대입하기
     }
     
-    for(int i=1;i<NUM2;i++)
+    for(int i=1;i<NUM2;i++) // i가 1부터 NUM2보다 작을 때까지 i를 1씩 증가시키며 반복
     {
-        if(num[i]==0)
+        if(num[i]==0) // 만약, num[i]가 0과 같다면
         {
-            printf("%d\n", i);
+            printf("%d\n", i); // 결과(i의 값) 출력하기
         }
     }
     
