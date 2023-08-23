@@ -10,7 +10,7 @@
 
 int main(void)
 {
-    printf("143\n");
+    printf("143\n"); // 맞은 문제 수 출력하기
     printf("fourleaf");
     
     return 0;
