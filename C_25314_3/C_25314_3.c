@@ -13,3 +13,23 @@ long long int는 8바이트 정수까지 저장할 수 있는 정수 자료형�
 
 혜아가 N바이트 정수까지 저장할 수 있다고 생각하는 정수 자료형의 이름을 출력하여라.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    
+    while(N/4!=0)
+    {
+        printf("long ");
+        N-=4;
+    }
+    if(N==0)
+    {
+        printf("int");
+    }
+    
+    return 0;
+}
