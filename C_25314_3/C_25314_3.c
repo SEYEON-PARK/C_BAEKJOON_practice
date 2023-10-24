@@ -21,10 +21,10 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    while(N/4!=0)
+    while(N/4!=0) // N을 4로 나눴을 때의 몫이 0이 아니라면 계속 반복
     {
-        printf("long ");
-        N-=4;
+        printf("long "); // "long " 출력하기
+        N-=4; // N에 N-4의 값 대입하기
     }
     if(N==0)
     {
