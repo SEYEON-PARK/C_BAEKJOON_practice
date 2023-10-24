@@ -26,9 +26,9 @@ int main(void)
         printf("long "); // "long " 출력하기
         N-=4; // N에 N-4의 값 대입하기
     }
-    if(N==0)
+    if(N==0) // 만약, N이 0과 같다면
     {
-        printf("int");
+        printf("int"); // "int" 출력하기
     }
     
     return 0;
