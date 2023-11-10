@@ -25,10 +25,11 @@ int main(void)
         scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
         if(a>b) // 만약, a가 b보다 크다면
             B=B-a; // B에 B-a의 값 대입하기
-        else if(b>a) // 만약, 
-            A=A-b;
+        else if(b>a) // 만약 a가 b보다 크지 않고, b가 a보다 크다면
+            A=A-b; // A에 A-b의 값 대입하기
     }
-    
+
+    // 결과 출력하기!
     printf("%d\n", A);
     printf("%d", B);
     
