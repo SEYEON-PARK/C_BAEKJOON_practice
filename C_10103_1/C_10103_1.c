@@ -15,8 +15,8 @@
 
 int main(void)
 {
-    int A=100, B=100;
-    int roundCount, a, b;
+    int A=100, B=100; // 두 사람의 점수를 100으로 초기화
+    int roundCount, a, b; // 변수 선언
     
     scanf("%d", &roundCount);
     
