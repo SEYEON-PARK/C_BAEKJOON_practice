@@ -18,14 +18,14 @@ int main(void)
     int A=100, B=100; // 두 사람의 점수를 100으로 초기화
     int roundCount, a, b; // 변수 선언
     
-    scanf("%d", &roundCount);
+    scanf("%d", &roundCount); // 사용자로부터 정수 입력받기(몇 번의 라운드를 반복할 것인가)
     
-    for(int i=0;i<roundCount;i++)
+    for(int i=0;i<roundCount;i++) // i에 0부터 roundCount가 되기 전까지 1씩 증가시킨 값을 대입하며 반복!(roundCount번 반복!)
     {
-        scanf("%d %d", &a, &b);
-        if(a>b)
-            B=B-a;
-        else if(b>a)
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        if(a>b) // 만약, a가 b보다 크다면
+            B=B-a; // B에 B-a의 값 대입하기
+        else if(b>a) // 만약, 
             A=A-b;
     }
     
