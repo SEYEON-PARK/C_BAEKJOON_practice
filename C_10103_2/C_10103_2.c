@@ -15,10 +15,10 @@
 
 int main(void)
 {
-    int A=100, B=100;
-    int roundCount, a, b;
+    int A=100, B=100; // 두 사람의 점수를 100으로 초기화
+    int roundCount, a, b; // 변수 선언
     
-    scanf("%d", &roundCount);
+    scanf("%d", &roundCount); // 사용자로부터 정수 입력받기(몇 번의 라운드를 반복할 것인가)
     
     for(int i=0;i<roundCount;i++)
     {
