@@ -28,7 +28,8 @@ int main(void)
         else if(b>a) // 만약 a가 b보다 크지 않고, b가 a보다 크다면
             A-=b; // A에 A-b의 값 대입하기
     }
-    
+
+    // 결과 출력하기
     printf("%d\n", A);
     printf("%d", B);
     
