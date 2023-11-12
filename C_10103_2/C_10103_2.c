@@ -20,13 +20,13 @@ int main(void)
     
     scanf("%d", &roundCount); // 사용자로부터 정수 입력받기(몇 번의 라운드를 반복할 것인가)
     
-    for(int i=0;i<roundCount;i++)
+    for(int i=0;i<roundCount;i++) // i에 0부터 roundCount가 되기 전까지 1씩 증가시킨 값을 대입하며 반복!(roundCount번 반복!)
     {
-        scanf("%d %d", &a, &b);
-        if(a>b)
-            B-=a;
-        else if(b>a)
-            A-=b;
+        scanf("%d %d", &a, &b); // 사용자로부터 두 개의 정수 입력받기
+        if(a>b) // 만약, a가 b보다 크다면
+            B-=a; // B에 B-a의 값 대입하기
+        else if(b>a) // 만약 a가 b보다 크지 않고, b가 a보다 크다면
+            A-=b; // A에 A-b의 값 대입하기
     }
     
     printf("%d\n", A);
