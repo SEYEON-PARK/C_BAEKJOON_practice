@@ -17,10 +17,10 @@ long long fac(int n) // 팩토리얼 함수 fac() 선언(20까지의 수가 매�
 
 int main(void)
 {
-    int n;
-    scanf("%d", &n);
+    int n; // 변수 선언
+    scanf("%d", &n); // 사용자로부터 정수 입력받기!
     
-    printf("%lld", fac(n));
+    printf("%lld", fac(n)); // 결과 출력하기!(long long형으로!)
     
     return 0;
 }
