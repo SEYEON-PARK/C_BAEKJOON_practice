@@ -7,7 +7,7 @@
 */
 
 #include <stdio.h>
-long long fac(int n)
+long long fac(int n) // 팩토리얼 함수 fac() 선언(20까지의 수가 매개변수로 전달될 수 있기 때문에 반환형을 long long으로 해줘야만 한다!)
 {
     if(n <= 1)
         return 1;
