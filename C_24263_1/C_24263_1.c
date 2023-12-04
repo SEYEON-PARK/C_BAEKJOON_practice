@@ -22,6 +22,6 @@ int main(void)
     int n; // 변수 선언
     scanf("%d", &n); // 사용자로부터 정수 입력받기
     
-    printf("%d\n", n);
+    printf("%d\n", n); // n의 값 출력하기
     printf("1");
 }
