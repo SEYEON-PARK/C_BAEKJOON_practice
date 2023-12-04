@@ -23,5 +23,5 @@ int main(void)
     scanf("%d", &n); // 사용자로부터 정수 입력받기
     
     printf("%d\n", n); // n의 값 출력하기
-    printf("1");
+    printf("1"); // "1" 출력하기
 }
