@@ -14,3 +14,35 @@ KMP 알고리즘이 KMP인 이유는 이를 만든 사람의 성이 Knuth, Morri
 
 첫 줄에 짧은 형태 이름을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char message[101];
+    scanf("%s", message);
+    
+    char result[100];
+    int j=0;
+    
+    for(int i=0;message[i]!=NULL;i++)
+    {
+        if(i==0)
+        {
+            result[j]=message[i];
+            j++;
+        }
+        if(message[i]=='-')
+        {
+            result[j]=message[i+1];
+            j++;
+        }
+    }
+    
+    for(int i=0;i<strlen(result);i++)
+    {
+        printf("%c", result[i]);
+    }
+    
+    return 0;
+}
