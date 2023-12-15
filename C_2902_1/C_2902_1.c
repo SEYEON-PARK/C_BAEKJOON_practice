@@ -32,16 +32,16 @@ int main(void)
             result[j]=message[i]; // result[j]에 message[i]의 값 대입하기
             j++; // j에 1 더하기
         }
-        if(message[i]=='-')
+        if(message[i]=='-') // 만약, message[i]가 '-'과 같다면
         {
-            result[j]=message[i+1];
-            j++;
+            result[j]=message[i+1]; // result[j]에 message[i+1]의 값 대입하기
+            j++; // j에 1 더하기
         }
     }
     
-    for(int i=0;i<strlen(result);i++)
+    for(int i=0;i<strlen(result);i++) // 0부터 result 안에 있는 문자열의 길이(NULL 문자 전까지)보다 작을 때까지 1씩 증가시킨 값을 i에 대입하며 반복
     {
-        printf("%c", result[i]);
+        printf("%c", result[i]); // 결과 출력하기
     }
     
     return 0;
