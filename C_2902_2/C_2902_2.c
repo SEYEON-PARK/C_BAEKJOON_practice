@@ -25,12 +25,12 @@ int main(void)
     char result[100]; // 결과를 저장할 char형 배열 result 생성
     int j=0; // 변수 선언 및 초기화
     
-    for(int i=0;message[i]!=NULL;i++)
+    for(int i=0;message[i]!=NULL;i++) // 0부터 message[i]가 NULL이 아닐 때까지 i에 1씩 증가시킨 값을 대입하며 반복 
     {
-        if(i==0)
+        if(i==0) // 만약, i가 0과 같다면
         {
-            result[j]=message[i];
-            j++;
+            result[j]=message[i]; // result[j]에 message[i]의 값 대입하기
+            j++; // j에 1 더하기
         }
         if(message[i]=='-')
         {
