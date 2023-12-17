@@ -19,11 +19,11 @@ KMP 알고리즘이 KMP인 이유는 이를 만든 사람의 성이 Knuth, Morri
 
 int main(void)
 {
-    char message[101];
-    scanf("%s", message);
+    char message[101]; // char형 배열 message 생성
+    scanf("%s", message); // 사용자로부터 문자열 입력받기
     
-    char result[100];
-    int j=0;
+    char result[100]; // 결과를 저장할 char형 배열 result 생성
+    int j=0; // 변수 선언 및 초기화
     
     for(int i=0;message[i]!=NULL;i++)
     {
