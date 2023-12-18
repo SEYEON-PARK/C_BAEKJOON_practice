@@ -11,10 +11,10 @@
 
 int main(void)
 {
-    int C;
-    scanf("%d", &C);
+    int C; // 변수 선언
+    scanf("%d", &C); // 사용자로부터 정수 입력받기
     
-    int array[1000];
+    int array[1000]; // 배열 선언
     
     for(int i=0;i<C;i++)
     {
