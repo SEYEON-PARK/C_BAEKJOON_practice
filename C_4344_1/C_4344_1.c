@@ -16,20 +16,20 @@ int main(void)
     
     int array[1000]; // 배열 선언
     
-    for(int i=0;i<C;i++)
+    for(int i=0;i<C;i++) // i에 0부터 C가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        int T, sum=0, count=0;
-        double avg;
+        int T, sum=0, count=0; // 변수 선언 및 초기화
+        double avg; // 변수 선언
         
-        scanf("%d", &T);
+        scanf("%d", &T); // 사용자로부터 정수 입력받기
         
-        for(int j=0;j<T;j++)
+        for(int j=0;j<T;j++) // j에 0부터 T가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
         {
-            scanf("%d", &array[j]);
-            sum+=array[j];
+            scanf("%d", &array[j]); // 사용자로부터 정수 입력받기
+            sum+=array[j]; // sum에 sum+array[j]의 값 대입하기
         }
         
-        avg=(double)sum/T;
+        avg=(double)sum/T; // 평균 구하기
         
         for(int j=0;j<T;j++)
         {
