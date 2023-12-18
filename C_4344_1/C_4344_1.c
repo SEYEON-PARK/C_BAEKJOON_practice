@@ -12,7 +12,7 @@
 int main(void)
 {
     int C; // 변수 선언
-    scanf("%d", &C); // 사용자로부터 정수 입력받기
+    scanf("%d", &C); // 사용자로부터 정수(테스트 케이스의 개수) 입력받기
     
     int array[1000]; // 배열 선언
     
@@ -21,23 +21,23 @@ int main(void)
         int T, sum=0, count=0; // 변수 선언 및 초기화
         double avg; // 변수 선언
         
-        scanf("%d", &T); // 사용자로부터 정수 입력받기
+        scanf("%d", &T); // 사용자로부터 정수(학생의 수) 입력받기
         
         for(int j=0;j<T;j++) // j에 0부터 T가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
         {
-            scanf("%d", &array[j]); // 사용자로부터 정수 입력받기
+            scanf("%d", &array[j]); // 사용자로부터 정수(학생의 점수) 입력받기
             sum+=array[j]; // sum에 sum+array[j]의 값 대입하기
         }
         
         avg=(double)sum/T; // 평균 구하기
         
-        for(int j=0;j<T;j++)
+        for(int j=0;j<T;j++) // j에 0부터 T가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
         {
-            if(array[j]>avg)
-                count++;
+            if(array[j]>avg) // 만약, array[j]가 avg보다 크다면
+                count++; // count에 1 더하기
         }
         
-        printf("%.3lf%\n", (double)count/T*100);
+        printf("%.3lf%\n", (double)count/T*100); // 반올림하여 소수점 세 번째 자리까지만 출력하기 
     }
     
     return 0;
