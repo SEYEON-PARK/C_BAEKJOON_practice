@@ -6,3 +6,39 @@
 
 각 케이스마다 한 줄씩 평균을 넘는 학생들의 비율을 반올림하여 소수점 셋째 자리까지 출력한다. 정답과 출력값의 절대/상대 오차는 10의 -3승 이하이면 정답이다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int C;
+    scanf("%d", &C);
+    
+    int array[1000];
+    
+    for(int i=0;i<C;i++)
+    {
+        int sum=0, count=0;
+        double T, avg;
+        
+        scanf("%lf", &T);
+        
+        for(int j=0;j<T;j++)
+        {
+            scanf("%d", &array[j]);
+            sum+=array[j];
+        }
+        
+        avg=sum/T;
+        
+        for(int j=0;j<T;j++)
+        {
+            if(array[j]>avg)
+                count++;
+        }
+        
+        printf("%.3lf%\n", count/T*100);
+    }
+    
+    return 0;
+}
