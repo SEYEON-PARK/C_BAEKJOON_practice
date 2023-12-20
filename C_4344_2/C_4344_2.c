@@ -11,17 +11,17 @@
 
 int main(void)
 {
-    int C;
-    scanf("%d", &C);
+    int C; // 변수 선언
+    scanf("%d", &C); // 사용자로부터 정수(테스트 케이스의 개수) 입력받기
     
-    int array[1000];
+    int array[1000]; // 배열 선언
     
-    for(int i=0;i<C;i++)
+    for(int i=0;i<C;i++) // i에 0부터 C가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        int sum=0, count=0;
-        double T, avg;
+        int sum=0, count=0; // 변수 선언 및 초기화
+        double T, avg; // 변수 선언
         
-        scanf("%lf", &T);
+        scanf("%lf", &T); // 사용자로부터 실수(학생의 수) 입력받기
         
         for(int j=0;j<T;j++)
         {
