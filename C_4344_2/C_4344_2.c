@@ -29,15 +29,15 @@ int main(void)
             sum+=array[j]; // sum에 sum+array[j]의 값 대입하기
         }
         
-        avg=sum/T;
+        avg=sum/T; // 평균 구하기
         
-        for(int j=0;j<T;j++)
+        for(int j=0;j<T;j++) // j에 0부터 T가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
         {
-            if(array[j]>avg)
-                count++;
+            if(array[j]>avg) // 만약, array[j]가 avg보다 크다면
+                count++; // count에 1 더하기
         }
         
-        printf("%.3lf%\n", count/T*100);
+        printf("%.3lf%\n", count/T*100); // 반올림하여 소수점 세 번째 자리까지만 출력하기 
     }
     
     return 0;
