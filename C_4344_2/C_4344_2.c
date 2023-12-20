@@ -23,10 +23,10 @@ int main(void)
         
         scanf("%lf", &T); // 사용자로부터 실수(학생의 수) 입력받기
         
-        for(int j=0;j<T;j++)
+        for(int j=0;j<T;j++) // j에 0부터 T가 되기 전까지 1씩 증가시킨 값을 대입하며 반복
         {
-            scanf("%d", &array[j]);
-            sum+=array[j];
+            scanf("%d", &array[j]); // 사용자로부터 정수(학생의 점수) 입력받기
+            sum+=array[j]; // sum에 sum+array[j]의 값 대입하기
         }
         
         avg=sum/T;
