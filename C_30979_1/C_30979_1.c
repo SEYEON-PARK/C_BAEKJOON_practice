@@ -19,14 +19,14 @@
 
 int main(void)
 {
-    int T;
-    int candyNum;
-    int sum=0;
+    int T; // 변수 선언
+    int candyNum; // 변수 선언
+    int sum=0; // 변수 선언 및 초기화
     
-    scanf("%d", &T);
-    scanf("%d", &candyNum);
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
+    scanf("%d", &candyNum); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<candyNum;i++)
+    for(int i=0;i<candyNum;i++) // 
     {
         int candy;
         scanf("%d", &candy);
