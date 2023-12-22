@@ -26,12 +26,12 @@ int main(void)
     scanf("%d", &T); // 사용자로부터 정수 입력받기
     scanf("%d", &candyNum); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<candyNum;i++) // 
+    for(int i=0;i<candyNum;i++) // i에 0부터 candyNum보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     {
-        int candy;
-        scanf("%d", &candy);
+        int candy; // 변수 선언
+        scanf("%d", &candy); // 사용자로부터 정수 입력받기
         
-        sum += candy;
+        sum += candy; // sum에 sum + candy의 값 대입하기
     }
     
     if(sum >= T)
