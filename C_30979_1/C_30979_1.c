@@ -14,3 +14,30 @@
 
 파댕이를 T분 동안 울지 않게 만들 수 있다면 "Padaeng_i Happy"를 출력한다. 이외의 경우에는 "Padaeng_i Cry"를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int T;
+    int candyNum;
+    int sum=0;
+    
+    scanf("%d", &T);
+    scanf("%d", &candyNum);
+    
+    for(int i=0;i<candyNum;i++)
+    {
+        int candy;
+        scanf("%d", &candy);
+        
+        sum += candy;
+    }
+    
+    if(sum >= T)
+        printf("Padaeng_i Happy\n");
+    else
+        printf("Padaeng_i Cry\n");
+    
+    return 0;
+}
