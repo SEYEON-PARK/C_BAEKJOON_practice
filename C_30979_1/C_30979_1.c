@@ -19,25 +19,25 @@
 
 int main(void)
 {
-    int T; // 변수 선언
-    int candyNum; // 변수 선언
+    int T; // 변수(파댕이를 돌봐야 하는 시간 저장) 선언
+    int candyNum; // 변수(가지고 있는 사탕의 총 개수 저장) 선언
     int sum=0; // 변수 선언 및 초기화
     
-    scanf("%d", &T); // 사용자로부터 정수 입력받기
-    scanf("%d", &candyNum); // 사용자로부터 정수 입력받기
+    scanf("%d", &T); // 사용자로부터 정수(파댕이를 돌봐야 하는 시간) 입력받기
+    scanf("%d", &candyNum); // 사용자로부터 정수(가지고 있는 사탕의 총 개수) 입력받기
     
     for(int i=0;i<candyNum;i++) // i에 0부터 candyNum보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     {
-        int candy; // 변수 선언
-        scanf("%d", &candy); // 사용자로부터 정수 입력받기
+        int candy; // 변수(각 사탕의 맛 저장) 선언
+        scanf("%d", &candy); // 사용자로부터 정수(각 사탕의 맛) 입력받기
         
         sum += candy; // sum에 sum + candy의 값 대입하기
     }
     
-    if(sum >= T)
-        printf("Padaeng_i Happy\n");
-    else
-        printf("Padaeng_i Cry\n");
+    if(sum >= T) // 만약, sum이 T보다 크거나 같다면
+        printf("Padaeng_i Happy\n"); // "Padaeng_i Happy\n" 출력하기
+    else // sum이 T보다 크거나 같지 않다면(작다면)
+        printf("Padaeng_i Cry\n"); // "Padaeng_i Cry\n" 출력하기
     
     return 0;
 }
