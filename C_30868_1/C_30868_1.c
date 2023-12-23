@@ -11,3 +11,31 @@
 
 각 후보에 대해, 칠판에 그려지게 되는 결과를 한 줄에 하나씩 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int T;
+    scanf("%d", &T);
+    
+    for(int i=0;i<T;i++)
+    {
+        int hubo;
+        scanf("%d", &hubo);
+        
+        while(hubo / 5 > 0)
+        {
+            printf("++++ ");
+            hubo -= 5;
+        }
+        
+        for(int j=0;j<hubo;j++)
+        {
+            printf("|");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
