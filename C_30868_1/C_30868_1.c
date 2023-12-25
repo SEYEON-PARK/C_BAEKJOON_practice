@@ -26,13 +26,13 @@ int main(void)
         
         while(hubo / 5 > 0) // hubo를 5로 나눈 몫이 0보다 크다면
         {
-            printf("++++ ");
-            hubo -= 5;
+            printf("++++ "); // "++++ " 출력하기
+            hubo -= 5; // hubo에 hubo-5의 값 대입하기
         }
         
-        for(int j=0;j<hubo;j++)
+        for(int j=0;j<hubo;j++) // 0부터 hubo가 되기 전까지 1씩 증가시킨 값을 j에 대입하며 반복
         {
-            printf("|");
+            printf("|"); // "|" 출력하기
         }
         printf("\n");
     }
