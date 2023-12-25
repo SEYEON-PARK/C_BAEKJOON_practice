@@ -16,15 +16,15 @@
 
 int main(void)
 {
-    int T;
-    scanf("%d", &T);
+    int T; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for(int i=0;i<T;i++)
+    for(int i=0;i<T;i++) // 0부터 T가 되기 전까지 1씩 증가시킨 값을 i에 대입하며 반복
     {
-        int hubo;
-        scanf("%d", &hubo);
+        int hubo; // 변수 선언
+        scanf("%d", &hubo); // 사용자로부터 정수 입력받기
         
-        while(hubo / 5 > 0)
+        while(hubo / 5 > 0) // hubo를 5로 나눈 몫이 0보다 크다면
         {
             printf("++++ ");
             hubo -= 5;
