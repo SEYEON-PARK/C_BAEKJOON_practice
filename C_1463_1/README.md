@@ -1,0 +1,2 @@
+# C_BAEKJOON_14
+C언어 BAEKJOON 1463번 문제 풀기!(1)
