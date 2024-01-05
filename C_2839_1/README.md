@@ -1,0 +1,2 @@
+# C_BAEKJOON_13
+C언어 BAEKJOON 2839번 문제 풀기!(1)
