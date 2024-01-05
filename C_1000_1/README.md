@@ -1,0 +1,2 @@
+# C_BAEKJOON_1
+C언어 BAEKJOON 1000번 문제 풀기!(1)
