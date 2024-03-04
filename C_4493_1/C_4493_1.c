@@ -10,3 +10,37 @@
 
 각 테스트 케이스에 대해서 승자를 출력한다. (Player 1 또는 Player 2) 만약, 비겼을 경우에는 TIE를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int T;
+    scanf("%d", &T);
+    
+    for(int i=0;i<T;i++)
+    {
+        int n, player1=0, player2=0;
+        scanf("%d", &n);
+        
+        for(int j=0;j<n;j++)
+        {
+            char a, b;
+            scanf(" %c %c", &a, &b);
+            
+            if((a=='S' && b=='P') || (a=='P' && b=='R') || (a=='R' && b=='S'))
+                player1++;
+            else if((a=='S' && b=='R') || (a=='P' && b=='S') || (a=='R' && b=='P'))
+                player2++;
+        }
+        
+        if(player1 > player2)
+            printf("Player 1\n");
+        else if(player2 > player1)
+            printf("Player 2\n");
+        else
+            printf("TIE\n");
+    }
+    
+    return 0;
+}
