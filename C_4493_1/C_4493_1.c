@@ -21,9 +21,9 @@ int main(void)
     for(int i=0;i<T;i++) // i에 0부터 T보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
     {
         int n, player1=0, player2=0; // 변수 선언 및 초기화
-        scanf("%d", &n);
+        scanf("%d", &n); // 사용자로부터 정수 입력받기
         
-        for(int j=0;j<n;j++)
+        for(int j=0;j<n;j++) // 
         {
             char a, b;
             scanf(" %c %c", &a, &b);
