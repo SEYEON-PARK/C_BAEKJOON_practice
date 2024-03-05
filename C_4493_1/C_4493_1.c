@@ -23,23 +23,23 @@ int main(void)
         int n, player1=0, player2=0; // 변수 선언 및 초기화
         scanf("%d", &n); // 사용자로부터 정수 입력받기
         
-        for(int j=0;j<n;j++) // 
+        for(int j=0;j<n;j++) // j에 0부터 n보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
         {
-            char a, b;
-            scanf(" %c %c", &a, &b);
+            char a, b; // 변수 선언
+            scanf(" %c %c", &a, &b); // 사용자로부터 두 개의 문자 입력받기(이전 '\n' 값이 남아있을 수 있으므로 앞에 띄어쓰기가 있어야만 한다.)
             
-            if((a=='S' && b=='P') || (a=='P' && b=='R') || (a=='R' && b=='S'))
-                player1++;
-            else if((a=='S' && b=='R') || (a=='P' && b=='S') || (a=='R' && b=='P'))
-                player2++;
+            if((a=='S' && b=='P') || (a=='P' && b=='R') || (a=='R' && b=='S')) // 만약, a가 이길 상황이라면
+                player1++; // player1에 1 더하기
+            else if((a=='S' && b=='R') || (a=='P' && b=='S') || (a=='R' && b=='P')) // 만약 a가 이길 상황이 아니라, b가 이길 상황이라면
+                player2++; // player2에 1 더하기
         }
         
-        if(player1 > player2)
-            printf("Player 1\n");
-        else if(player2 > player1)
-            printf("Player 2\n");
-        else
-            printf("TIE\n");
+        if(player1 > player2) // 만약, player1이 player2보다 크다면
+            printf("Player 1\n"); // "Player 1\n" 출력하기
+        else if(player2 > player1) // 만약 player1이 player2보다 크지 않고, player2가 player1보다 크다면 
+            printf("Player 2\n"); // "Player 2\n" 출력하기
+        else // player1이 player2보다 크지 않고, player2가 player1보다 크지도 않다면(같다면)
+            printf("TIE\n"); // "TIE\n" 출력하기
     }
     
     return 0;
