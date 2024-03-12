@@ -20,7 +20,7 @@ MenOfPassion 알고리즘은 다음과 같다.
 
 int main(void)
 {
-    int N;
+    int N; // 변수 선언
     scanf("%d", &N);
     
     printf("%lld\n", (long long)N*N);
