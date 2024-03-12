@@ -23,8 +23,8 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    printf("%lld\n", (long long)N*N);
-    printf("%d", 2);
+    printf("%lld\n", (long long)N*N); // 코드 1의 수행 횟수 출력하기!(숫자 크기가 크기 때문에 long long으로 변환해준 형변환한 후 계산해야 한다!)
+    printf("%d", 2); // 최고차항의 차수 출력하기!
     
     return 0;
 }
