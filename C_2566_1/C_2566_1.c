@@ -28,12 +28,12 @@ int main(void)
     {
         for(int j=0;j<9;j++)
         {
-            scanf("%d", &number[i][j]);
-            if(number[i][j]>big)
+            scanf("%d", &number[i][j]); // 사용자로부터 정수 입력받기
+            if(number[i][j]>big) // 만약, number[i][j]가 big보다 크다면
             {
-                big=number[i][j];
-                x=i+1;
-                y=j+1;
+                big=number[i][j]; // big에 number[i][j]의 값 대입하기
+                x=i+1; // x에 i+1의 값 대입하기
+                y=j+1; // y에 j+1의 값 대입하기
             }
         }
     }
