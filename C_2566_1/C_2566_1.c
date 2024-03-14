@@ -26,7 +26,7 @@ int main(void)
     int big=-1, x, y; // 변수 선언 및 초기화
     for(int i=0;i<9;i++) // i에 0부터 9보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복 
     {
-        for(int j=0;j<9;j++)
+        for(int j=0;j<9;j++) // j에 0부터 9보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복 
         {
             scanf("%d", &number[i][j]); // 사용자로부터 정수 입력받기
             if(number[i][j]>big) // 만약, number[i][j]가 big보다 크다면
@@ -38,8 +38,8 @@ int main(void)
         }
     }
     
-    printf("%d\n", big);
-    printf("%d %d", x, y);
+    printf("%d\n", big); // 최댓값 출력하기
+    printf("%d %d", x, y); // 최댓값이 위치한 행 번호와 열 번호 출력하기
     
     return 0;
 }
