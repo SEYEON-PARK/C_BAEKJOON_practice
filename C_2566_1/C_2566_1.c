@@ -22,9 +22,9 @@
 
 int main(void)
 {
-    int number[9][9];
-    int big=-1, x, y;
-    for(int i=0;i<9;i++)
+    int number[9][9]; // 배열 선언
+    int big=-1, x, y; // 변수 선언 및 초기화
+    for(int i=0;i<9;i++) // i에 0부터 9보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복 
     {
         for(int j=0;j<9;j++)
         {
