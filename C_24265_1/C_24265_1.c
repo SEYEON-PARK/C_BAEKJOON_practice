@@ -29,8 +29,8 @@ int main(void)
         result += i; // result에 result + i의 값 대입하기
     }
     
-    printf("%lld\n", result);
-    printf("%d", 2);
+    printf("%lld\n", result); // 결과(코드1의 수행 횟수) 출력하기
+    printf("%d", 2); // 결과(코드1의 수행 횟수를 다항식으로 나타내었을 때, 최고차항의 차수) 출력하기
     
     return 0;
 }
