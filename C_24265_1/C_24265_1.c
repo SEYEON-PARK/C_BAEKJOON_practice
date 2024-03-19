@@ -22,11 +22,11 @@ int main(void)
 {
     int N; // 변수 선언
     long long result = 0; // 변수 선언 및 초기화
-    scanf("%d", &N);
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    for(int i=1;i<N;i++)
+    for(int i=1;i<N;i++) // i가 1부터 N보다 작을 때까지 1씩 증가시키며 반복 
     {
-        result += i;
+        result += i; // result에 result + i의 값 대입하기
     }
     
     printf("%lld\n", result);
