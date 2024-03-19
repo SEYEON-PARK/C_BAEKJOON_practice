@@ -20,8 +20,8 @@ MenOfPassion(A[], n) {
 
 int main(void)
 {
-    int N;
-    long long result = 0;
+    int N; // 변수 선언
+    long long result = 0; // 변수 선언 및 초기화
     scanf("%d", &N);
     
     for(int i=1;i<N;i++)
