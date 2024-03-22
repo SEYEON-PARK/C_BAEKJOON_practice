@@ -25,7 +25,7 @@ int main(void)
     scanf("%lld", &N); // 사용자로부터 정수 입력받기
     
     printf("%lld\n", N*N*N); // 결과 출력하기
-    printf("%d", 3); 
+    printf("%d", 3); // 결과 출력하기
     
     return 0;
 }
