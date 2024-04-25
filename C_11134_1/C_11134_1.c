@@ -8,3 +8,36 @@ C개 미만의 쿠키가 남아 있다면 전부 먹는다. 철수가 쿠키 N�
 각 테스트케이스마다 한 줄씩 철수가 며칠 동안 쿠키를 먹을 수 있는지 출력한다.
 */
 
+#include <stdio.h>
+
+int main(void)
+{
+    int T;
+    scanf("%d", &T);
+    
+    for(int i = 0; i < T; i++)
+    {
+        int N, C, count = 0;
+        scanf("%d %d", &N, &C);
+        
+        while(1)
+        {
+            count = N / C;
+            N %= C;
+            
+            if(N % C != 0)
+            {
+                count++;
+                break;
+            }
+            else
+            {
+                break;
+            }
+        }
+        
+        printf("%d\n", count);
+    }
+    
+    return 0;
+}
