@@ -18,17 +18,17 @@ int main(void)
     for(int i = 0; i < T; i++) // i가 0부터 T보다 작을 때까지 1씩 증가시키며 반복
     {
         int N, C, count = 0; // 변수 선언 및 초기화
-        scanf("%d %d", &N, &C); 
+        scanf("%d %d", &N, &C); // 사용자로부터 두 개의 정수 입력받기
         
-        while(1)
+        while(1) // 무한 반복
         {
-            count = N / C;
-            N %= C;
+            count = N / C; // count에 N을 C로 나눴을 때의 몫을 저장하기(정수 나눗셈)
+            N %= C; // N에 N % C의 값 대입하기(N을 C로 나눴을 때의 나머지)
             
-            if(N % C != 0)
+            if(N % C != 0) // 만약, N % C의 값이 0이 아니라면(나머지가 남아 있다면)
             {
-                count++;
-                break;
+                count++; // count에 1 더하기
+                break; // 반복문 빠져 나가기
             }
             else
             {
