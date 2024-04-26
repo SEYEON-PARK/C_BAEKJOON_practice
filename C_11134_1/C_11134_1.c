@@ -30,13 +30,13 @@ int main(void)
                 count++; // count에 1 더하기
                 break; // 반복문 빠져 나가기
             }
-            else
+            else // 만약, N % C의 값이 0이라면(나머지가 남아 있지 않다면)
             {
-                break;
+                break; // 반복문 빠져 나가기
             }
         }
         
-        printf("%d\n", count);
+        printf("%d\n", count); // 결과 출력하기
     }
     
     return 0;
