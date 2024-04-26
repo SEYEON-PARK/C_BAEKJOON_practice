@@ -12,13 +12,13 @@ C개 미만의 쿠키가 남아 있다면 전부 먹는다. 철수가 쿠키 N�
 
 int main(void)
 {
-    int T;
-    scanf("%d", &T);
+    int T; // 변수 선언
+    scanf("%d", &T); // 사용자로부터 정수 입력받기
     
-    for(int i = 0; i < T; i++)
+    for(int i = 0; i < T; i++) // i가 0부터 T보다 작을 때까지 1씩 증가시키며 반복
     {
-        int N, C, count = 0;
-        scanf("%d %d", &N, &C);
+        int N, C, count = 0; // 변수 선언 및 초기화
+        scanf("%d %d", &N, &C); 
         
         while(1)
         {
