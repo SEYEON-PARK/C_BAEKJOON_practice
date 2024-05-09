@@ -13,3 +13,30 @@
 
 빈칸에 들어갈 양의 정수를 출력한다. 답이 있는 입력만 주어진다.
 */
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    
+    if(a == 0)
+    {
+        a = c*c - b;
+        printf("%d", a);
+    }
+    else if(b == 0)
+    {
+        b = c*c - a;
+        printf("%d", b);
+    }
+    else
+    {
+        c = (int)sqrt(a+b);
+        printf("%d", c);
+    }
+    
+    return 0;
+}
