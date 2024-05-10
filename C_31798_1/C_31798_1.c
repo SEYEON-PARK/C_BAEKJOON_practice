@@ -27,15 +27,15 @@ int main(void)
         a = c*c - b; // a에 c*c - b의 값 대입하기
         printf("%d", a); // a 출력하기
     }
-    else if(b == 0)
+    else if(b == 0) // 만약 a가 0과 같지 않고, b가 0과 같다면
     {
-        b = c*c - a;
-        printf("%d", b);
+        b = c*c - a; // b에 c*c - a의 값 대입하기
+        printf("%d", b); // b 출력하기
     }
-    else
+    else // 만약 a가 0과 같지 않고, b도 0과 같지 않다면
     {
-        c = (int)sqrt(a+b);
-        printf("%d", c);
+        c = (int)sqrt(a+b); // (a+b)의 제곱근을 정수로 구해서 c에 대입하기
+        printf("%d", c); // c 출력하기
     }
     
     return 0;
