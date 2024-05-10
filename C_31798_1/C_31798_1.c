@@ -19,13 +19,13 @@
 
 int main(void)
 {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
+    int a, b, c; // 변수 선언
+    scanf("%d %d %d", &a, &b, &c); // 사용자로부터 세 개의 정수 입력받기
     
-    if(a == 0)
+    if(a == 0) // 만약, a가 0과 같다면
     {
-        a = c*c - b;
-        printf("%d", a);
+        a = c*c - b; // a에 c*c - b의 값 대입하기
+        printf("%d", a); // a 출력하기
     }
     else if(b == 0)
     {
