@@ -17,14 +17,14 @@
 
 int main(void)
 {
-    int N, M;
-    scanf("%d %d", &N, &M);
-    int *num = (int *)malloc(sizeof(int) * N);
+    int N, M; // 변수 선언
+    scanf("%d %d", &N, &M); // 사용자로부터 두 개의 정수 입력받기
+    int *num = (int *)malloc(sizeof(int) * N); // N만큼의 int형 배열 동적 할당
     
-    for(int i=0 ; i<M ; i++)
+    for(int i=0 ; i<M ; i++) // i에 0부터 M보다 작을 때까지 1씩 증가시킨 값을 넣으며 반복
     {
-        int start, end, number;
-        scanf("%d %d %d", &start, &end, &number);
+        int start, end, number; // 변수 선언
+        scanf("%d %d %d", &start, &end, &number); // 사용자로부터 세 개의 정수 입력받기
         
         for(int j=start-1 ; j<end ; j++)
         {
