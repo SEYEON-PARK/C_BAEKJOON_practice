@@ -26,9 +26,9 @@ int main(void)
         int start, end, number; // 변수 선언
         scanf("%d %d %d", &start, &end, &number); // 사용자로부터 세 개의 정수 입력받기
         
-        for(int j=start-1 ; j<end ; j++)
+        for(int j=start-1 ; j<end ; j++) // j에 start-1부터 end보다 작을 때까지 1씩 증가시킨 값을 대입하며 반복
         {
-            num[j]=number;
+            num[j]=number; // num[j]에 number 대입하기
         }
     }
     
