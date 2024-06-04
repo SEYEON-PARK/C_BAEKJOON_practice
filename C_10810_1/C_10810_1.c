@@ -32,12 +32,12 @@ int main(void)
         }
     }
     
-    for(int i=0 ; i<N ; i++)
+    for(int i=0 ; i<N ; i++) // i에 0부터 N보다 작을 때까지 1씩 증가시킨 값을 넣으며 반복
     {
-        printf("%d ", num[i]);
+        printf("%d ", num[i]); // 결과 출력하기
     }
     
-    free(num);
+    free(num); // 메모리 동적 할당 받았던 거 해제하기!
     
     return 0;
 }
