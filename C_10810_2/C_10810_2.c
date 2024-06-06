@@ -14,7 +14,7 @@
 */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> // malloc()을 사용하기 위해
 
 int main(void)
 {
