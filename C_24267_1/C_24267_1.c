@@ -25,7 +25,7 @@ int main(void)
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
     long long cal = 0; // 누적하여 계산할 때 사용할 변수 cal 선언 및 초기화
-    long long result = 0; // 결과 값을 저장할 변수 result 선언 및 초기화
+    long long result = 0; // 결과 값을 저장할 변수 result 선언 및 초기화(값이 충분히 커질 수 있기 때문에 long long을 써줘야 한다.)
     
     for(int i=1 ; i<=N-2 ; i++) // i가 1부터 N-2보다 작거나 같을 때까지 1씩 증가시키며 반복
     {
