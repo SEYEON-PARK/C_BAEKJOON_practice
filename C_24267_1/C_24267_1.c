@@ -24,16 +24,16 @@ int main(void)
     int N; // 변수 선언
     scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    long long cal = 0;
-    long long result = 0;
+    long long cal = 0; // 누적하여 계산할 때 사용할 변수 cal 선언 및 초기화
+    long long result = 0; // 결과 값을 저장할 변수 result 선언 및 초기화
     
-    for(int i=1 ; i<=N-2 ; i++)
+    for(int i=1 ; i<=N-2 ; i++) // i가 1부터 N-2보다 작거나 같을 때까지 1씩 증가시키며 반복
     {
-        cal += i;
-        result += cal;
+        cal += i; // cal에 cal + i의 값 대입하기
+        result += cal; // result에 result + cal의 값 대입하기
     }
     
-    printf("%lld\n%lld", result, 3);
+    printf("%lld\n%lld", result, 3); // 결과 출력하기
     
     return 0;
 }
