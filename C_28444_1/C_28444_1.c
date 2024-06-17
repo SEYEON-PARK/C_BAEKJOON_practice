@@ -18,10 +18,10 @@ int main(void)
     int H, I, A, R, C; // 변수 선언
     scanf("%d %d %d %d %d", &H, &I, &A, &R, &C); // 사용자로부터 다섯 개의 정수 입력받기
     
-    int first = H * I;
-    int second = A * R * C;
+    int first = H * I; // 첫 번째 수 계산하기
+    int second = A * R * C; // 두 번째 수 계산하기
     
-    printf("%d", first - second);
+    printf("%d", first - second); // 결과 출력하기
     
     return 0;
 }
