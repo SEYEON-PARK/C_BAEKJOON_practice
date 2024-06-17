@@ -10,3 +10,18 @@ HI-ARC 수식은 HI-ARC 학회에서 최근에 개발한 독특한 수식으로,
 
 수식을 계산한 결과값을 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int H, I, A, R, C;
+    scanf("%d %d %d %d %d", &H, &I, &A, &R, &C);
+    
+    int first = H * I;
+    int second = A * R * C;
+    
+    printf("%d", first - second);
+    
+    return 0;
+}
