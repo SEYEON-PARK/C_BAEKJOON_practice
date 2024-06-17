@@ -15,8 +15,8 @@ HI-ARC 수식은 HI-ARC 학회에서 최근에 개발한 독특한 수식으로,
 
 int main(void)
 {
-    int H, I, A, R, C;
-    scanf("%d %d %d %d %d", &H, &I, &A, &R, &C);
+    int H, I, A, R, C; // 변수 선언
+    scanf("%d %d %d %d %d", &H, &I, &A, &R, &C); // 사용자로부터 다섯 개의 정수 입력받기
     
     int first = H * I;
     int second = A * R * C;
