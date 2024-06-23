@@ -21,35 +21,35 @@ int main(void)
     int *helmet = (int *)malloc(sizeof(int) * N); // int형 배열 요소를 동적으로 N개 만들어서 helmet과 연결
     int *vest = (int *)malloc(sizeof(int) * M); // int형 배열 요소를 동적으로 M개 만들어서 vest와 연결
     
-    for(int i=0;i<N;i++)
+    for(int i=0;i<N;i++) // i에 0부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        scanf("%d", &helmet[i]);
+        scanf("%d", &helmet[i]); // 사용자로부터 정수 입력받기
     }
     
-    for(int i=0;i<M;i++)
+    for(int i=0;i<M;i++) // i에 0부터 M이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        scanf("%d", &vest[i]);
+        scanf("%d", &vest[i]); // 사용자로부터 정수 입력받기
     }
     
-    int bigHelmet = helmet[0];
-    int bigVest = vest[0];
+    int bigHelmet = helmet[0]; // bigHelmet에 helmet[0]의 값 대입하기
+    int bigVest = vest[0]; // bigVest에 vest[0]의 값 대입하기
     
-    for(int i=1;i<N;i++)
+    for(int i=1;i<N;i++) // i에 1부터 N이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        if(helmet[i]>bigHelmet)
-            bigHelmet = helmet[i];
+        if(helmet[i]>bigHelmet) // 만약, helmet[i]가 bigHelmet보다 크다면
+            bigHelmet = helmet[i]; // bigHelmet에 helmet[i]의 값 대입하기
     }
     
-    for(int i=1;i<M;i++)
+    for(int i=1;i<M;i++) // i에 1부터 M이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        if(vest[i]>bigVest)
-            bigVest = vest[i];
+        if(vest[i]>bigVest) // 만약, vest[i]가 bigVest보다 크다면
+            bigVest = vest[i]; // bigVest에 vest[i]의 값 대입하기
     }
     
-    printf("%d", bigHelmet + bigVest);
+    printf("%d", bigHelmet + bigVest); // 결과 출력하기
     
-    free(helmet);
-    free(vest);
+    free(helmet); // helmet 동적 메모리 해제
+    free(vest); // vest 동적 메모리 해제
     
     return 0;
 }
