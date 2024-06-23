@@ -18,8 +18,8 @@ int main(void)
     int N, M; // 변수 선언
     scanf("%d %d", &N, &M); // 사용자로부터 두 개의 정수 입력받기
     
-    int *helmet = (int *)malloc(sizeof(int) * N);
-    int *vest = (int *)malloc(sizeof(int) * M);
+    int *helmet = (int *)malloc(sizeof(int) * N); // int형 배열 요소를 동적으로 N개 만들어서 helmet과 연결
+    int *vest = (int *)malloc(sizeof(int) * M); // int형 배열 요소를 동적으로 M개 만들어서 vest와 연결
     
     for(int i=0;i<N;i++)
     {
