@@ -9,3 +9,47 @@
 
 경수가 얻을 수 있는 방어력의 최댓값을 출력한다.
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int N, M;
+    scanf("%d %d", &N, &M);
+    
+    int *helmet = (int *)malloc(sizeof(int) * N);
+    int *vest = (int *)malloc(sizeof(int) * M);
+    
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d", &helmet[i]);
+    }
+    
+    for(int i=0;i<M;i++)
+    {
+        scanf("%d", &vest[i]);
+    }
+    
+    int bigHelmet = helmet[0];
+    int bigVest = vest[0];
+    
+    for(int i=1;i<N;i++)
+    {
+        if(helmet[i]>bigHelmet)
+            bigHelmet = helmet[i];
+    }
+    
+    for(int i=1;i<M;i++)
+    {
+        if(vest[i]>bigVest)
+            bigVest = vest[i];
+    }
+    
+    printf("%d", bigHelmet + bigVest);
+    
+    free(helmet);
+    free(vest);
+    
+    return 0;
+}
