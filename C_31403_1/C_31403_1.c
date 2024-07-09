@@ -15,12 +15,12 @@ A, B, C를 각각 수와 문자열로 생각했을 때 A+B-C를 출력하세요.
 
 int main(void)
 {
-    int A, B, C;
-    scanf("%d %d %d", &A, &B, &C);
+    int A, B, C; // 변수 선언
+    scanf("%d %d %d", &A, &B, &C); // 사용자로부터 정수 입력받기
     
-    printf("%d\n", A+B-C);
+    printf("%d\n", A+B-C); // 결과 출력하기
     
-    if (B < 10)
+    if (B < 10) 
         printf("%d", A*10+B-C);
     else if (B < 100)
         printf("%d", A*100+B-C);
