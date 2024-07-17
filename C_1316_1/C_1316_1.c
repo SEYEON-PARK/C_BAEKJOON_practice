@@ -8,3 +8,46 @@
 
 첫째 줄에 그룹 단어의 개수를 출력한다.
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int N;
+    scanf("%d", &N);
+    int count = 0;
+    
+    for(int i=0;i<N;i++)
+    {
+        int alpha[26]={0};
+        
+        char s[101];
+        scanf("%s", s);
+        
+        int state = 1;
+        
+        for(int j=0;s[j]!=NULL;j++)
+        {
+            if(alpha[(int)s[j]-97]!=0)
+            {
+                if(s[j]==s[j-1])
+                    continue;
+                else
+                {
+                    state = 0;
+                    break;
+                }
+            }
+            else
+            {
+                alpha[(int)s[j]-97]++;
+            }
+        }
+        
+        if(state)
+            count++;
+    }
+    
+    printf("%d", count);
+    return 0;
+}
