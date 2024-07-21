@@ -13,13 +13,13 @@ N = 1일 경우: 연세대학교의 슬로건을 출력한다.
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    if(N)
-        printf("Leading the Way to the Future");
-    else
-        printf("YONSEI");
+    if(N) // 만약, N이 참이라면(0이 아닌 수라면)
+        printf("Leading the Way to the Future"); // 출력하기
+    else // N이 거짓이라면(0이라면)
+        printf("YONSEI"); // 출력하기
     
     return 0;
 }
