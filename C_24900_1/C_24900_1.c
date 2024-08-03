@@ -75,5 +75,5 @@ int main(void)
 	printf("                                                ?DNNDD?~DD          ~NN~~=NDD$                                          \n");
 	printf("                                                     :DDD.            NNNN=                                               ");
 
-  return 0;
+  	return 0;
 }
