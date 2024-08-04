@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 
+// 결과 출력하기
 int main(void) 
 {
 	printf("                                                           :8DDDDDDDDDDDDDD$.                                           \n");
