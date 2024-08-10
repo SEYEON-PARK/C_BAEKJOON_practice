@@ -15,19 +15,19 @@
 
 int main(void)
 {
-    int a, b, c, d;
-    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int a, b, c, d; // 변수 선언
+    scanf("%d %d %d %d", &a, &b, &c, &d); // 사용자로부터 네 개의 정수 입력받기
     
-    while(a!=0 || b!=0 || c!=0 || d!=0)
+    while(a!=0 || b!=0 || c!=0 || d!=0) // a, b, c, d 중에 0이 하나라도 있다면 계속 반복
     {
-        int bigAB = (a > b) ? a : b;
-        int smallAB = (a < b) ? a : b;
-        int bigCD = (c > d) ? c : d;
-        int smallCD = (c < d) ? c : d;
+        int bigAB = (a > b) ? a : b; // a, b 중 큰 값 저장
+        int smallAB = (a < b) ? a : b; // a, b 중 작은 값 저장
+        int bigCD = (c > d) ? c : d; // c, d 중 큰 값 저장
+        int smallCD = (c < d) ? c : d; // c, d 중 작은 값 저장
         
-        printf("%d %d\n", smallCD-bigAB, bigCD-smallAB);
+        printf("%d %d\n", smallCD-bigAB, bigCD-smallAB); // 결과 출력하기
         
-        scanf("%d %d %d %d", &a, &b, &c, &d);
+        scanf("%d %d %d %d", &a, &b, &c, &d); // 사용자로부터 네 개의 정수 다시 입력받기
     }
     
     return 0;
