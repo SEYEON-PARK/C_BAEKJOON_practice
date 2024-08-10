@@ -18,7 +18,7 @@ int main(void)
     int a, b, c, d; // 변수 선언
     scanf("%d %d %d %d", &a, &b, &c, &d); // 사용자로부터 네 개의 정수 입력받기
     
-    while(a!=0 || b!=0 || c!=0 || d!=0) // a, b, c, d 중에 0이 하나라도 있다면 계속 반복
+    while(a!=0 || b!=0 || c!=0 || d!=0) // a, b, c, d 중에 0이 아닌 수가 하나라도 있다면 계속 반복
     {
         int bigAB = (a > b) ? a : b; // a, b 중 큰 값 저장
         int smallAB = (a < b) ? a : b; // a, b 중 작은 값 저장
