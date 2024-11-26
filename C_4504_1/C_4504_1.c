@@ -10,20 +10,20 @@
 
 int main(void)
 {
-    int standardNumber;
-    scanf("%d", &standardNumber);
+    int standardNumber; // 변수(기준 숫자) 선언
+    scanf("%d", &standardNumber); // 사용자로부터 정수(기준 숫자) 입력받기
     
-    int getNumber;
-    scanf("%d", &getNumber);
+    int getNumber; // 변수(배수인지 검사할 숫자) 선언
+    scanf("%d", &getNumber); // 사용자로부터 정수(배수인지 검사할 숫자) 입력받기
     
-    while(getNumber != 0)
+    while(getNumber != 0) // getNumber(배수인지 검사할 숫자)가 0이 아니면 계속 반복
     {
-        if(getNumber % standardNumber == 0)
-            printf("%d is a multiple of %d.\n", getNumber, standardNumber);
-        else
-            printf("%d is NOT a multiple of %d.\n", getNumber, standardNumber);
+        if(getNumber % standardNumber == 0) // 만약, getNumber(배수인지 검사할 숫자)가 standardNumber(기준 숫자)로 나누어 떨어진다면
+            printf("%d is a multiple of %d.\n", getNumber, standardNumber); // 결과(배수) 출력하기
+        else // getNumber(배수인지 검사할 숫자)가 standardNumber(기준 숫자)로 나누어 떨어지지 않는다면
+            printf("%d is NOT a multiple of %d.\n", getNumber, standardNumber); // 결과(배수 아님) 출력하기
         
-        scanf("%d", &getNumber);
+        scanf("%d", &getNumber); // 사용자로부터 정수(배수인지 검사할 숫자) 입력받기
     }
     
     return 0;
