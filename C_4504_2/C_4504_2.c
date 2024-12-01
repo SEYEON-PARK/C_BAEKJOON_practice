@@ -10,17 +10,17 @@
 
 int main(void)
 {
-    int standardNumber, getNumber;
-    scanf("%d %d", &standardNumber, &getNumber);
+    int standardNumber, getNumber; // 변수 선언
+    scanf("%d %d", &standardNumber, &getNumber); // 사용자로부터 두 개의 정수 입력받기
     
-    while(getNumber != 0)
+    while(getNumber != 0) // getNumber이 0이 아니라면 계속 반복
     {
-        if(getNumber % standardNumber == 0)
-            printf("%d is a multiple of %d.\n", getNumber, standardNumber);
-        else
-            printf("%d is NOT a multiple of %d.\n", getNumber, standardNumber);
+        if(getNumber % standardNumber == 0) // 만약, getNumber % standardNumber의 값이 0과 같다면(나누어 떨어진다면)
+            printf("%d is a multiple of %d.\n", getNumber, standardNumber); // 결과(배수) 출력하기
+        else // getNumber % standardNumber의 값이 0과 같지 않다면(나누어 떨어지지 않는다면)
+            printf("%d is NOT a multiple of %d.\n", getNumber, standardNumber); // 결과(배수 아님) 출력하기
         
-        scanf("%d", &getNumber);
+        scanf("%d", &getNumber); // 사용자로부터 정수 입력받기
     }
     
     return 0;
