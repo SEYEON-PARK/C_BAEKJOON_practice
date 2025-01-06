@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-int return_each_sum(int N)
+int return_each_sum(int N) // 각 자릿수의 합을 반환하는 함수 선언 
 {
     int each_sum = 0;
     while(N % 10 != 0 || N / 10 != 0)
@@ -29,13 +29,13 @@ int return_each_sum(int N)
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    while(N != 0)
+    while(N != 0) // N이 0이 아니라면 계속 반복
     {
-        printf("%d\n", return_each_sum(N));
-        scanf("%d", &N);
+        printf("%d\n", return_each_sum(N)); // 결과 출력하기
+        scanf("%d", &N); // 사용자로부터 새로운 정수 입력받기
     }
     
     return 0;
