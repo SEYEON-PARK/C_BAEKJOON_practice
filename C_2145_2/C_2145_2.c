@@ -12,30 +12,30 @@
 
 #include <stdio.h>
 
-int return_each_sum(int N)
+int return_each_sum(int N) // 각 자릿수의 합을 반환하는 함수 선언
 {
-    int each_sum = 0;
-    while(N != 0)
+    int each_sum = 0; // 결과를 저장할 변수 선언 및 초기화
+    while(N != 0) // N이 0이 아니라면 계속 반복
     {
-        each_sum += (N % 10);
-        N /= 10;
+        each_sum += (N % 10); // each_sum에 (each_sum + N을 10으로 나눴을 때의 나머지) 값 대입하기
+        N /= 10; // N에 N / 10의 값(N을 10으로 나눴을 때의 몫) 대입하기
     }
     
-    if(each_sum / 10 != 0)
-        return return_each_sum(each_sum);
-    else
-        return each_sum;
+    if(each_sum / 10 != 0) // 만약, each_sum / 10의 값이 0이 아니라면(각 자릿수의 합이 한 자릿수가 아니라면)
+        return return_each_sum(each_sum); // 재귀 호출
+    else // each_sum / 10의 값이 0이라면(각 자릿수의 합이 한 자릿수라면)
+        return each_sum; // 결과 반환하기
 }
 
 int main(void)
 {
-    int N;
-    scanf("%d", &N);
+    int N; // 변수 선언
+    scanf("%d", &N); // 사용자로부터 정수 입력받기
     
-    while(N != 0)
+    while(N != 0) // N이 0이 아니라면 계속 반복
     {
-        printf("%d\n", return_each_sum(N));
-        scanf("%d", &N);
+        printf("%d\n", return_each_sum(N)); // 결과 출력하기
+        scanf("%d", &N); // 사용자로부터 새로운 정수 입력받기
     }
     
     return 0;
