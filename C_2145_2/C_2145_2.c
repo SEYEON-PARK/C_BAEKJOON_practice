@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-int return_each_sum(int N) // 각 자릿수의 합을 반환하는 함수 선언
+int return_each_sum(int N) // 각 자릿수의 합을 반환하는 함수 return_each_sum() 선언
 {
     int each_sum = 0; // 결과를 저장할 변수 선언 및 초기화
     while(N != 0) // N이 0이 아니라면 계속 반복
