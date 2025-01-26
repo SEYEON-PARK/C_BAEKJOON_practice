@@ -14,14 +14,14 @@ int main(void)
     char S[101]; // 문자열을 저장할 배열 S 선언
     scanf("%s", S); // 사용자로부터 문자열 입력받기
     
-    for(int i=0;S[i]!=NULL;i++)
+    for(int i=0;S[i]!=NULL;i++) // i에 0부터 S[i]가 NULL이 되기 전까지 계속 반복
     {
-        count[S[i]-'a']++;
+        count[S[i]-'a']++; // count[S[i]-'a']에 1 더하기(해당 알파벳 개수 1 더하기)
     }
     
-    for(int i=0;i<26;i++)
+    for(int i=0;i<26;i++) // i에 0부터 26이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        printf("%d ", count[i]);
+        printf("%d ", count[i]); // 결과 출력하기
     }
     
     return 0;
