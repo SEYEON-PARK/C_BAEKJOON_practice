@@ -10,9 +10,9 @@
 
 int main(void)
 {
-    int count[26]={0};
-    char S[101];
-    scanf("%s", S);
+    int count[26]={0}; // 각 알파벳 개수 저장할 배열 선언 및 0으로 초기화
+    char S[101]; // 문자열을 저장할 배열 S 선언
+    scanf("%s", S); // 사용자로부터 문자열 입력받기
     
     for(int i=0;S[i]!=NULL;i++)
     {
