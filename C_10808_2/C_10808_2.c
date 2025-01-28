@@ -21,7 +21,7 @@ int main(void)
     
     for(int i=0;i<26;i++) // i에 0부터 26이 되기 전까지 1씩 증가시킨 값을 대입하며 반복
     {
-        printf("%d ", count[i]); // 결과 출력하기
+        printf("%d ", count[i]); // 결과(각 알파벳의 개수) 출력하기
     }
     
     return 0;
